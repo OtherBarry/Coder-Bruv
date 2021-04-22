@@ -1,15 +1,14 @@
 from game_state import GameState
 import asyncio
-import random
 import os
 
-uri = os.environ.get(
-    'GAME_CONNECTION_STRING') or "ws://127.0.0.1:3000/?role=agent&agentId=agentId&name=defaultName"
+uri = (
+    os.environ.get("GAME_CONNECTION_STRING")
+    or "ws://127.0.0.1:3000/?role=agent&agentId=agentId&name=defaultName"
+)
 
-actions = ["up", "down", "left", "right", "bomb", "detonate"]
 
-
-class Agent():
+class Agent:
     def __init__(self):
         self._client = GameState(uri)
 
@@ -17,43 +16,16 @@ class Agent():
         loop = asyncio.get_event_loop()
         connection = loop.run_until_complete(self._client.connect())
         tasks = [
-            asyncio.ensure_future(self._client._handle_messages(connection)),
+            asyncio.ensure_future(self._client.handle_messages(connection)),
         ]
         loop.run_until_complete(asyncio.wait(tasks))
 
-    def _get_bomb_to_detonate(self, game_state) -> [int, int] or None:
-        agent_number = game_state.get("connection").get("agent_number")
-        entities = self._client._state.get("entities")
-        bombs = list(filter(lambda entity: entity.get(
-            "owner") == agent_number and entity.get("type") == "b", entities))
-        bomb = next(iter(bombs or []), None)
-        if bomb != None:
-            return [bomb.get("x"), bomb.get("y")]
-        else:
-            return None
-
     async def _on_game_tick(self, tick_number, game_state):
-        random_action = self.generate_random_action()
-        if random_action in ["up", "left", "right", "down"]:
-            await self._client.send_move(random_action)
-        elif random_action == "bomb":
-            await self._client.send_bomb()
-        elif random_action == "detonate":
-            bomb_coordinates = self._get_bomb_to_detonate(game_state)
-            if bomb_coordinates != None:
-                x, y = bomb_coordinates
-                await self._client.send_detonate(x, y)
-        else:
-            print(f"Unhandled action: {random_action}")
-
-    def generate_random_action(self):
-        actions_length = len(actions)
-        return actions[random.randint(0, actions_length - 1)]
-
-
-def main():
-    Agent()
+        # move: self._client.send_move(direction) - can be "up", "down", "left" or "right"
+        # bomb: self._client.send_bomb()
+        # detonate: self._client.send_detonate(x, y)
+        pass
 
 
 if __name__ == "__main__":
-    main()
+    Agent()

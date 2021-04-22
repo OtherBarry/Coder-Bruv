@@ -13,7 +13,7 @@ services:
             - INITIAL_HP=3
             - PRNG_SEED=1234
             - SHUTDOWN_ON_GAME_END_ENABLED=1
-            - TELEMETRY_ENABLED=1
+            - TELEMETRY_ENABLED=0
             - TICK_RATE_HZ=10
             - TRAINING_MODE_ENABLED=0
             - WORLD_SEED=1234
@@ -29,19 +29,9 @@ services:
             - FWD_MODEL_CONNECTION_STRING=ws://fwd-server-a:6969/?role=admin
         depends_on:
             - game-server
-            - fwd-server-a
         networks:
             - coderone-tournament
 
-    fwd-server-a:
-        extends:
-            file: base-compose.yml
-            service: game-server
-        environment:
-            - TELEMETRY_ENABLED=0
-            - PORT=6969
-        networks:
-            - coderone-tournament
 
     # UNCOMMENT THE NEXT BLOCK AFTER YOU HAVE CONNECTED AS A HUMAN AGENT PLAYING AGAINST THE RANDOM_AGENT
 
@@ -55,18 +45,9 @@ services:
     #         - FWD_MODEL_CONNECTION_STRING=ws://fwd-server-b:6969/?role=admin
     #     depends_on:
     #         - game-server
-    #         - fwd-server-b
     #     networks:
     #         - coderone-tournament
 
-    fwd-server-b:
-        extends:
-            file: base-compose.yml
-            service: game-server
-        environment:
-            - TELEMETRY_ENABLED=0
-            - PORT=6969
-        networks:
-            - coderone-tournament
+
 networks:
     coderone-tournament:

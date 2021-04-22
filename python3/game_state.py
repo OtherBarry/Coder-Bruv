@@ -35,7 +35,7 @@ class GameState:
         packet = {"type": "detonate", "coordinates": [x, y]}
         await self._send(packet)
 
-    async def _handle_messages(self, connection: str):
+    async def handle_messages(self, connection: str):
         while True:
             try:
                 raw_data = await connection.recv()
