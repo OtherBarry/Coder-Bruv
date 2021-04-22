@@ -1,0 +1,39 @@
+agent_state
+    triggered when:
+        agent plants bomb
+        agent detonated bomb
+        power up is picked up
+        ammo is picked up
+        
+    data:
+        see initial game state agent_state
+        
+agent
+    triggered when:
+        agent moves
+        agent plants bomb
+        agent detonates bomb
+        
+enitity_spawned
+    triggered when:
+        any entity is added to the map
+        
+      data:
+        "x" - x coord
+        "y" - y coord
+        "type" - entity type
+        "owner" - the agent that owns the bomb (if entity is bomb)
+        "expires" - the tick number that the entity expires on
+        
+entity_expired
+    triggered when:
+        any entity is removed from the map
+        
+    data:
+        [x, y] - list of x and y coords
+        
+        
+Notes:
+    agent_action events occur one tick before any events that result from that action. For example:
+        Tick 1: events = [agent_action (plant bomb)]
+        Tick 2: events = [enitity_spawned (new bomb), agent_state (ammo reduced by one)]
