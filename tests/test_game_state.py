@@ -11,7 +11,7 @@ def generate_default_state():
 
 
 @patch("bot.game_state.Map", autospec=True)
-@patch("bot.game_state.Player", autospec=True)
+@patch("bot.game_state.Player", autospec=True)  # Note applied bottom up
 class TestGameState(TestCase):
     def setUp(self):
         self.gs = GameState()
@@ -28,15 +28,21 @@ class TestGameState(TestCase):
     def test_set_state_agents_correct(self, player_mock, map_mock):
         default_state = generate_default_state()
         self.gs.set_state(default_state)
-        player_mock.assert_has_calls([call(s) for s in default_state["agent_state"].values()], any_order=True)
-        self.assertCountEqual(default_state["agent_state"].keys(), self.gs.agents.keys())
+        player_mock.assert_has_calls(
+            [call(s) for s in default_state["agent_state"].values()], any_order=True
+        )
+        self.assertCountEqual(
+            default_state["agent_state"].keys(), self.gs.agents.keys()
+        )
         for agent in self.gs.agents.values():
             self.assertIsInstance(agent, player_mock.__class__)
 
     def test_set_state_map_correct(self, player_mock, map_mock):
         default_state = generate_default_state()
         self.gs.set_state(default_state)
-        map_mock.assert_called_once_with(default_state["world"], default_state["entities"], self.gs.agents)
+        map_mock.assert_called_once_with(
+            default_state["world"], default_state["entities"], self.gs.agents
+        )
 
     def test_update_tick_matches(self, player_mock, map_mock):
         self.gs.set_state(generate_default_state())
