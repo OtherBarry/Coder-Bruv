@@ -58,6 +58,8 @@ class Map:
 
     def remove_entity(self, coords):
         """Removes an entity from the map at the given coordinates"""
+        # TODO: Handle multiple bomb blast zones
+        # TODO: Handle removal of bomb barrier prior to detonation
         if coords in self.graph:
             self.graph.nodes[coords]["weight"] -= Map.WEIGHT_MAP[
                 self.graph.nodes[coords]["entity"]
@@ -68,5 +70,6 @@ class Map:
                     self.graph.nodes[impacted_coords]["weight"] -= Map.WEIGHT_MAP[
                         "Future Blast Zone"
                     ]
+                del self._bombs["coords"]
             self.graph.add_node(coords, weight=0)
             self.graph.add_edges_from(self._generate_edges(coords))
