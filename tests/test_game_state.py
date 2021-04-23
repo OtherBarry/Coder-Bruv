@@ -2,7 +2,7 @@ import json
 from unittest import TestCase
 from unittest.mock import call, patch
 
-from bot.game_state import GameState
+from app.bot.game_state import GameState
 
 
 def generate_default_state():
@@ -10,8 +10,8 @@ def generate_default_state():
         return json.load(f)
 
 
-@patch("bot.game_state.Map", autospec=True)
-@patch("bot.game_state.Player", autospec=True)  # Note applied bottom up
+@patch("app.bot.game_state.Map", autospec=True)
+@patch("app.bot.game_state.Player", autospec=True)  # Note applied bottom up
 class TestGameState(TestCase):
     def setUp(self):
         self.gs = GameState()
