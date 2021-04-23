@@ -50,7 +50,9 @@ class TestMap(TestCase):
         impacted_nodes = ((0, 1), (2, 1), (1, 0), (1, 2))
         for node in map.graph.nodes:
             if node in impacted_nodes:
-                self.assertEqual(Map.WEIGHT_MAP["Future Blast Zone"], map.graph.nodes[node]["weight"])
+                self.assertEqual(
+                    Map.WEIGHT_MAP["Future Blast Zone"], map.graph.nodes[node]["weight"]
+                )
             else:
                 self.assertEqual(0, map.graph.nodes[node]["weight"])
 
@@ -67,13 +69,23 @@ class TestMap(TestCase):
             }
         )
         self.assertNotIn((2, 2), map.graph)
-        impacted_nodes = ((0, 2), (1, 2), (3, 2), (4, 2), (2, 0), (2, 1), (2, 3), (2, 4))
+        impacted_nodes = (
+            (0, 2),
+            (1, 2),
+            (3, 2),
+            (4, 2),
+            (2, 0),
+            (2, 1),
+            (2, 3),
+            (2, 4),
+        )
         for node in map.graph.nodes:
             if node in impacted_nodes:
-                self.assertEqual(Map.WEIGHT_MAP["Future Blast Zone"], map.graph.nodes[node]["weight"])
+                self.assertEqual(
+                    Map.WEIGHT_MAP["Future Blast Zone"], map.graph.nodes[node]["weight"]
+                )
             else:
                 self.assertEqual(0, map.graph.nodes[node]["weight"])
-
 
     def test_add_entity_powerup(self):
         map = generate_empty_map()
