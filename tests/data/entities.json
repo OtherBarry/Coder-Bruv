@@ -1,0 +1,45 @@
+[
+    {
+      "x": 0,
+      "y": 0,
+      "type": "a",
+      "expires": 40
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "type": "b",
+      "blast_diameter": 3,
+      "expires": 40,
+      "owner": 0
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "type": "x",
+      "expires": 10
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "type": "bp",
+      "expires": 40
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "type": "m"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "type": "o",
+      "hp": 3
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "type": "w",
+      "hp": 1
+    }
+]
