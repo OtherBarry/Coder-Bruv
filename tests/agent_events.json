@@ -1,0 +1,46 @@
+[
+  {
+    "type": "agent",
+    "data": [0, {
+      "type": "move",
+      "move": "up"
+    }]
+  },
+  {
+    "type": "agent",
+    "data": [1, {
+      "type": "move",
+      "move": "down"
+    }]
+  },
+  {
+    "type": "agent",
+    "data": [0, {
+      "type": "move",
+      "move": "left"
+    }]
+  },
+  {
+    "type": "agent",
+    "data": [1, {
+      "type": "move",
+      "move": "right"
+    }]
+  },
+  {
+    "type": "agent",
+    "data": [0, {
+      "type": "bomb"
+    }]
+  },
+  {
+    "type": "agent",
+    "data": [1, {
+      "type": "bomb",
+      "coordinates": [
+        0,
+        0
+      ]
+    }]
+  }
+]
