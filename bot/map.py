@@ -14,7 +14,7 @@ class Map:
         "Future Blast Zone": 100,
     }
 
-    def __init__(self, world, entities, agents):
+    def __init__(self, world, entities):
         self._width = world["width"]
         self._height = world["height"]
         self.graph = nx.grid_2d_graph(self._width, self._height)
@@ -22,7 +22,7 @@ class Map:
         for node in self.graph.nodes:
             self.graph.nodes[node]["weight"] = 0
         for entity in entities:
-            self.add_entity(entity, agents)
+            self.add_entity(entity)
 
     def _is_in_bounds(self, coords):
         return 0 <= coords[0] < self._width and 0 <= coords[1] < self._height
@@ -40,13 +40,13 @@ class Map:
                 if coords in self.graph:
                     yield coords
 
-    def add_entity(self, entity, agents):
+    def add_entity(self, entity):
         """Adds the given entity to the map"""
         coords = (entity["x"], entity["y"])
         entity_type = entity["type"]
         if entity_type in Map.IMPASSABLE_ENTITIES:
             if entity_type == Entity.BOMB:
-                self._bombs[coords] = agents[str(entity["owner"])].blast_diameter
+                self._bombs[coords] = entity["blast_diameter"]
                 for impacted_coords in self._get_bomb_impacted_coords(coords):
                     self.graph.nodes[impacted_coords]["weight"] += Map.WEIGHT_MAP[
                         "Future Blast Zone"

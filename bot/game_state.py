@@ -13,7 +13,7 @@ class GameState:
         self.us = Player(state["agent_state"][us_agent])
         self.them = Player(state["agent_state"][them_agent])
         self.agents = {us_agent: self.us, them_agent: self.them}
-        self.map = Map(state["world"], state["entities"], self.agents)
+        self.map = Map(state["world"], state["entities"])
         self.desynced = False
 
     def update_tick(self, tick):
@@ -37,7 +37,7 @@ class GameState:
             data = event["data"]
             self.agents[str(data["number"])].update_state(data)
         elif event_type == "entity_spawned":
-            self.map.add_entity(event["data"], self.agents)
+            self.map.add_entity(event["data"])
         elif event_type == "entity_expired":
             self.map.remove_entity(tuple(event["data"]))
         else:
