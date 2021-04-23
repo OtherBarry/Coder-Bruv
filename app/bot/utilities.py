@@ -6,8 +6,9 @@ class Entity(str, Enum):
 
     AMMO = "a"
     BOMB = "b"
-    BLAST = "x"
     POWERUP = "bp"
     METAL = "m"
     ORE = "o"
+    FIRE = "t"  # Unclear?
     WOOD = "w"
+    BLAST = "x"
