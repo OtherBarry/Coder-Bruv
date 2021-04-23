@@ -1,6 +1,6 @@
 import networkx as nx
 
-from utilities import Entity
+from bot.utilities import Entity
 
 
 class Map:

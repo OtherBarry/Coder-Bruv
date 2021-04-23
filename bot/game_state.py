@@ -1,5 +1,5 @@
-from map import Map
-from player import Player
+from bot.map import Map
+from bot.player import Player
 
 
 class GameState:

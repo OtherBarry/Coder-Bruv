@@ -1,7 +1,7 @@
 import asyncio
 import os
 
-from server_connection import ServerConnection
+from bot.server_connection import ServerConnection
 
 uri = (
     os.environ.get("GAME_CONNECTION_STRING")
