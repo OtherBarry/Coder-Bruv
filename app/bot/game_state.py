@@ -1,5 +1,5 @@
-from bot.map import Map
-from bot.player import Player
+from .map import Map
+from .player import Player
 
 
 class GameState:
@@ -40,5 +40,5 @@ class GameState:
             self.map.add_entity(event["data"])
         elif event_type == "entity_expired":
             self.map.remove_entity(tuple(event["data"]))
-        else:
+        elif event_type != "entity_state":
             print("Invalid event type received:", event_type)

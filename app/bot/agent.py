@@ -1,7 +1,9 @@
 import asyncio
 import os
 
-from bot.server_connection import ServerConnection
+print(os.listdir("."))
+
+from .server_connection import ServerConnection
 
 uri = (
     os.environ.get("GAME_CONNECTION_STRING")
@@ -30,7 +32,3 @@ class Agent:
         #    Farm: (If no ammo, or disconnected from enemy) Get all ammo and powerups
         #    Kill: Place bombs at articulation points if enemy on other side
         pass
-
-
-if __name__ == "__main__":
-    Agent()
