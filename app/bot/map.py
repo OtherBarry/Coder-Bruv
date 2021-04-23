@@ -46,7 +46,7 @@ class Map:
         entity_type = entity["type"]
         if entity_type in Map.IMPASSABLE_ENTITIES:
             if entity_type == Entity.BOMB:
-                self._bombs[coords] = entity["blast_diameter"]
+                self._bombs[coords] = entity["blast_diameter"] // 2
                 for impacted_coords in self._get_bomb_impacted_coords(coords):
                     self.graph.nodes[impacted_coords]["weight"] += Map.WEIGHT_MAP[
                         "Future Blast Zone"
