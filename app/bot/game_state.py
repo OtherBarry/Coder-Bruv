@@ -40,5 +40,3 @@ class GameState:
             self.map.add_entity(event["data"])
         elif event_type == "entity_expired":
             self.map.remove_entity(tuple(event["data"]))
-        elif event_type != "entity_state":
-            print("Invalid event type received:", event_type)

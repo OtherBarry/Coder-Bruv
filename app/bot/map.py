@@ -24,9 +24,6 @@ class Map:
         for entity in entities:
             self.add_entity(entity)
 
-    def _is_in_bounds(self, coords):
-        return 0 <= coords[0] < self._width and 0 <= coords[1] < self._height
-
     def _generate_edges(self, coords):
         x, y = coords
         for to in (x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1):
