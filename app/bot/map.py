@@ -61,6 +61,7 @@ class Map:
             self.graph.nodes[coords]["weight"] -= Map.WEIGHT_MAP[
                 self.graph.nodes[coords]["entity"]
             ]
+            del self.graph.nodes[coords]["entity"]
         else:
             if coords in self._bombs:
                 for impacted_coords in self._get_bomb_impacted_coords(coords):
