@@ -70,6 +70,6 @@ class Map:
                     self.graph.nodes[impacted_coords]["weight"] -= Map.WEIGHT_MAP[
                         "Future Blast Zone"
                     ]
-                del self._bombs["coords"]
+                del self._bombs[coords]
             self.graph.add_node(coords, weight=0)
             self.graph.add_edges_from(self._generate_edges(coords))

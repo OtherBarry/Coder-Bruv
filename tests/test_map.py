@@ -106,25 +106,56 @@ class TestMap(TestCase):
         self.assertEqual(Map.WEIGHT_MAP["x"], map.graph.nodes[(2, 2)]["weight"])
 
     def test_remove_entity_ammo(self):
-        pass
+        map = generate_empty_map()
+        map.add_entity({"x": 0, "y": 0, "type": "a", "expires": 40})
+        map.remove_entity((0, 0))
+        self.assertEqual(0, map.graph.nodes[(0, 0)]["weight"])
 
     def test_remove_entity_bomb(self):
-        pass
+        map = generate_empty_map()
+        map.add_entity(
+            {
+                "x": 2,
+                "y": 2,
+                "type": "b",
+                "blast_diameter": 5,
+                "expires": 40,
+                "owner": 0,
+            }
+        )
+        map.remove_entity((2, 2))
+        for node in map.graph.nodes:
+            self.assertEqual(0, map.graph.nodes[node]["weight"])
 
     def test_remove_entity_powerup(self):
-        pass
+        map = generate_empty_map()
+        map.add_entity({"x": 3, "y": 3, "type": "bp", "expires": 40})
+        map.remove_entity((3, 3))
+        self.assertEqual(0, map.graph.nodes[(3, 3)]["weight"])
 
     def test_remove_entity_metal(self):
-        pass
+        map = generate_empty_map()
+        map.add_entity({"x": 4, "y": 4, "type": "m"})
+        map.remove_entity((4, 4))
+        self.assertEqual(0, map.graph.nodes[(4, 4)]["weight"])
 
     def test_remove_entity_ore(self):
-        pass
+        map = generate_empty_map()
+        map.add_entity({"x": 5, "y": 5, "type": "o", "hp": 3})
+        map.remove_entity((5, 5))
+        self.assertEqual(0, map.graph.nodes[(5, 5)]["weight"])
 
     def test_remove_entity_fire(self):
         pass
 
     def test_remove_entity_wood(self):
-        pass
+        map = generate_empty_map()
+        map.add_entity({"x": 6, "y": 6, "type": "w", "hp": 1})
+        map.remove_entity((6, 6))
+        self.assertEqual(0, map.graph.nodes[(6, 6)]["weight"])
 
     def test_remove_entity_blast(self):
-        pass
+        map = generate_empty_map()
+        map.add_entity({"x": 2, "y": 2, "type": "x", "expires": 10})
+        map.remove_entity((2, 2))
+        self.assertEqual(0, map.graph.nodes[(2, 2)]["weight"])
