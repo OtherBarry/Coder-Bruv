@@ -1,46 +1,52 @@
 [
   {
     "type": "agent",
-    "data": [0, {
+    "agent_number": 0,
+    "data": {
       "type": "move",
       "move": "up"
-    }]
+    }
   },
   {
     "type": "agent",
-    "data": [1, {
+    "agent_number": 1,
+    "data": {
       "type": "move",
       "move": "down"
-    }]
+    }
   },
   {
     "type": "agent",
-    "data": [0, {
+    "agent_number": 0,
+    "data": {
       "type": "move",
       "move": "left"
-    }]
+    }
   },
   {
     "type": "agent",
-    "data": [1, {
+    "agent_number": 1,
+    "data": {
       "type": "move",
       "move": "right"
-    }]
+    }
   },
   {
     "type": "agent",
-    "data": [0, {
+    "agent_number": 0,
+    "data": {
       "type": "bomb"
-    }]
+    }
   },
   {
     "type": "agent",
-    "data": [1, {
+    "agent_number": 1,
+    "data": {
       "type": "bomb",
       "coordinates": [
         0,
         0
       ]
-    }]
+    }
   }
 ]

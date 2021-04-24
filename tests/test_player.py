@@ -34,7 +34,7 @@ class TestPlayer(TestCase):
         state = get_default_state()
         player = Player(state)
         for event in events:
-            event = event["data"][1]
+            event = event["data"]
             if event["type"] != "move":
                 with self.subTest(event=event):
                     player.handle_action(event)

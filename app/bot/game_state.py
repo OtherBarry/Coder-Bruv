@@ -31,8 +31,7 @@ class GameState:
         """Handles an incoming event from the server"""
         event_type = event["type"]
         if event_type == "agent":
-            agent_id, action = event["data"]
-            self.agents[str(agent_id)].handle_action(action)
+            self.agents[str(event["agent_number"])].handle_action(event["data"])
         elif event_type == "agent_state":
             data = event["data"]
             self.agents[str(data["number"])].update_state(data)

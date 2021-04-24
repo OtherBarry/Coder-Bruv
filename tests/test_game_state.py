@@ -72,9 +72,8 @@ class TestGameState(TestCase):
         for event in events:
             with self.subTest(event=event):
                 self.gs.update_from_event(event)
-                agent, data = event["data"]
-                self.gs.agents[str(agent)].handle_action.assert_called_once_with(data)
-                self.gs.agents[str(agent)].reset_mock()
+                self.gs.agents[str(event["agent_number"])].handle_action.assert_called_once_with(event["data"])
+                self.gs.agents[str(event["agent_number"])].reset_mock()
 
     def test_update_from_event_agent_state(self, player_mock, map_mock):
         default_state = generate_default_state()
