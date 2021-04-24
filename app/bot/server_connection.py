@@ -2,7 +2,7 @@ import json
 
 import websockets
 
-from .game_state import GameState
+from app.state.game_state import GameState
 
 
 class ServerConnection:

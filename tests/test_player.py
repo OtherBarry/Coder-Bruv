@@ -1,8 +1,8 @@
 import json
 from unittest import TestCase
-from unittest.mock import call, patch
+from unittest.mock import patch
 
-from app.bot.game_state import Player
+from app.state.game_state import Player
 
 
 def get_default_state(agent_id="0"):

@@ -2,7 +2,7 @@ import json
 from unittest import TestCase
 from unittest.mock import call, patch
 
-from app.bot.game_state import GameState
+from app.state.game_state import GameState
 
 
 def generate_default_state():
