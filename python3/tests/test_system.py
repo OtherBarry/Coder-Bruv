@@ -36,7 +36,7 @@ class TestGameState(IsolatedAsyncioTestCase):
         await self.client._on_data(self.get_server_packet("tick_entity_spawned"))
         await self.client._on_data(self.get_server_packet("tick_entity_expired"))
         self.assertIn((5, 4), self.client._state.map.graph)
-        self.assertEqual(0, self.client._state.map.graph.nodes[(5, 4)]["weight"])
+        self.assertEqual(100, self.client._state.map.graph.nodes[(5, 4)]["weight"])
         self.assertIsNone(self.client._state.map.graph.nodes[(5, 4)].get("entity"))
 
     async def test_on_agent_state_packet(self):

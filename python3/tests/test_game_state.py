@@ -69,18 +69,16 @@ class TestGameState(TestCase):
         self.gs.set_state(generate_default_state())
         with open("tests/data/agent_events.json") as f:
             events = json.load(f)
+        self.gs.receive_events(events)
         for event in events:
-            with self.subTest(event=event):
-                self.gs.update_from_event(event)
-                self.gs.agents[str(event["agent_number"])].handle_action.assert_called_once_with(event["data"])
-                self.gs.agents[str(event["agent_number"])].reset_mock()
+            self.gs.agents[str(event["agent_number"])].handle_action.assert_called_with(event["data"])
 
     def test_update_from_event_agent_state(self, player_mock, map_mock):
         default_state = generate_default_state()
         self.gs.set_state(default_state)
         for state in default_state["agent_state"].values():
             with self.subTest(state=state):
-                self.gs.update_from_event({"type": "agent_state", "data": state})
+                self.gs.receive_events([{"type": "agent_state", "data": state}])
                 self.gs.agents[
                     str(state["number"])
                 ].update_state.assert_called_once_with(state)
@@ -92,7 +90,7 @@ class TestGameState(TestCase):
             entities = json.load(f)
         for entity in entities:
             with self.subTest(entity=entity):
-                self.gs.update_from_event({"type": "entity_spawned", "data": entity})
+                self.gs.receive_events([{"type": "entity_spawned", "data": entity}])
                 self.gs.map.add_entity.assert_called_once_with(entity)
                 self.gs.map.reset_mock()
 
@@ -103,7 +101,7 @@ class TestGameState(TestCase):
         for entity in entities:
             with self.subTest(entity=entity):
                 coords = [entity["x"], entity["y"]]
-                self.gs.update_from_event({"type": "entity_expired", "data": coords})
+                self.gs.receive_events([{"type": "entity_expired", "data": coords}])
                 self.gs.map.remove_entity.assert_called_once_with(
                     (entity["x"], entity["y"])
                 )
