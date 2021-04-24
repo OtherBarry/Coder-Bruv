@@ -1,6 +1,6 @@
 import asyncio
 import os
-import math
+import bisect
 import networkx as nx
 
 from ..server_connection import ServerConnection
@@ -23,6 +23,27 @@ def _get_direction_from_coords(start, end):
     else:
         raise ValueError
 
+def spiral_from_coords(coords):
+    moves = [(1, 1), (0, 1), (1, -1), (0, -1)]
+    yield coords
+    coords = list(coords)
+    visited = [coords]
+    i = 0
+    while True:
+        d, m = moves[i]
+        new_coords = coords[:]
+        new_coords[d] += m
+        coords = new_coords
+        if not (0 <= coords[0] <= 9 and 0 <= coords[1] <= 9):
+            break
+        if coords in visited:
+            i = (i - 1) % len(moves)
+            continue
+        yield tuple(coords)
+        visited.append(coords)
+        i = (i + 1) % len(moves)
+
+
 
 class Agent:
     def __init__(self):
@@ -40,6 +61,35 @@ class Agent:
     def _get_weight(self, start, end, properties):
         return self.map.graph.nodes[start]["weight"] + self.map.graph.nodes[end]["weight"]
 
+    def _get_path_to_best(self):
+        best = None
+        for node, data in self.map.graph.nodes(data=True):
+            if node in self.map.graph and data["weight"] < self.map.graph.nodes[self.us.coords]["weight"]:
+                try:
+                    path = nx.shortest_path(self.map.graph, self.us.coords, node, self._get_weight)
+                except nx.NetworkXNoPath:
+                    continue
+                if path:
+                    mean_weight = sum(self.map.graph.nodes[x]["weight"] for x in path) / len(path)
+                    if best is None:
+                        best = (mean_weight, path)
+                    elif mean_weight < best[0]:
+                        best = (mean_weight, path)
+
+        if best is not None:
+            return best[1]
+
+    def _get_path_to_centre(self):
+        for target in spiral_from_coords((4, 4)):
+            print(target)
+            if target in self.map.graph:
+                try:
+                    path = nx.shortest_path(self.map.graph, self.us.coords, target, self._get_weight)
+                except nx.NetworkXNoPath:
+                    continue
+                if path and (sum(self.map.graph.nodes[x]["weight"] for x in path) / len(path)) <= 100:
+                    return path
+
     async def _on_game_tick(self, tick_number, game_state):
         if game_state is not self.state:
             self.state = game_state
@@ -47,13 +97,9 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
-        best = sorted(self.map.graph.nodes(data=True), key=lambda x: x[1]["weight"])
-        for target, data in best:
-            if target != self.us.coords and data["weight"] < self.map.graph.nodes[self.us.coords]["weight"] and nx.has_path(self.map.graph, self.us.coords, target):
-                print(target)
-                path = nx.shortest_path(self.map.graph, self.us.coords, target, self._get_weight)
-                await self._server.send_move(_get_direction_from_coords(self.us.coords, path[1]))
-                return
-
-        destination = min(nx.neighbors(self.map.graph, self.us.coords), key=lambda x: self.map.graph.nodes[x]["weight"], default=self.map.graph.nodes[self.us.coords]["weight"])
-        await self._server.send_move(_get_direction_from_coords(self.us.coords, destination))
+        path = self._get_path_to_best()
+        if path is None:
+            path = self._get_path_to_centre()
+        if len(path) > 1:
+            move = _get_direction_from_coords(self.us.coords, path[1])
+            await self._server.send_move(move)
