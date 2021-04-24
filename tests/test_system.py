@@ -1,4 +1,4 @@
-from app.bot.server_connection import ServerConnection
+from app.server_connection import ServerConnection
 from unittest import IsolatedAsyncioTestCase
 from jsonschema import validate
 import json
