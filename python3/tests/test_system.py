@@ -1,8 +1,9 @@
-from app.server_connection import ServerConnection
-from unittest import IsolatedAsyncioTestCase
-from jsonschema import validate
 import json
+from unittest import IsolatedAsyncioTestCase
 
+from jsonschema import validate
+
+from ..app.server_connection import ServerConnection
 
 
 class TestGameState(IsolatedAsyncioTestCase):

@@ -8,12 +8,12 @@ services:
     python3-agent:
         build:
             context: python3/app
-            dockerfile: Dockerfile
+            dockerfile: python3/Dockerfile
 
     python3-agent-dev:
         build:
             context: python3/app
-            dockerfile: Dockerfile
+            dockerfile: python3/Dockerfile
         volumes:
             - ./app:/app
 

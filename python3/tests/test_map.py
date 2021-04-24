@@ -2,7 +2,7 @@ import json
 from unittest import TestCase
 from unittest.mock import call, patch
 
-from app.state.game_state import Map
+from ..app.state.game_state import Map
 
 
 def generate_empty_map():
