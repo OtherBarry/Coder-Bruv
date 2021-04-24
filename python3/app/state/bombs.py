@@ -1,32 +1,50 @@
 class Bomb:
-    def __init__(self, coords, owner, radius):
-        self.position = coords
-        self.radius = radius
-        self.owner = owner
-        self.our_control = False
-        self.enemy_control = False
-        self.assign_control(owner)
+    def __init__(self, entity):
+        self.position = (entity["x"], entity["y"])
+        self.radius = entity["bomb_diameter"] // 2
+        self.owner = str(entity["owner"])
+        self.detonated_by = []
+        self.detonates = []
 
-        BombLibrary.add_bomb(self)
+        self.potential_impact_coords = list(self._get_potential_impact())
 
-    def assign_control(self, owner):
-        if owner == 0:
-            self.our_control = True
-        else:
-            self.enemy_control = True
+    def _get_potential_impact(self):
+        for r in range(1, self.radius + 1):
+            for i, m in ((1, 1), (0, 1), (1, -1), (0, -1)):
+                new = list(self.position)
+                new[i] += r * m
+                yield tuple(new)
 
-    def get_impacts:
+    def get_impacts(self):
+        pass
         # Get coords where explosion effects
 
 class BombLibrary:
     def __init__(self):
         self.bombs = []
+        self.coords = {}
         self.our_coords = []
         self.enemy_coords = []
 
-    def add_bomb(self, bomb):
+    def add_bomb(self, entity):
+        bomb = Bomb(entity)
         self.bombs.append(bomb)
         self.add_coords(bomb)
+
+
+    def remove_bomb(self, coords):
+        for bomb in self.bombs:
+            if coords == bomb.position:
+                self.bombs.remove(bomb)
+            for coords in bomb.radius:
+                for bombs in self.bombs:
+                    if coords == bombs.position:
+                        self.remove_bomb(coords)
+
+    def update(self, map):
+        # calculate actual impact
+        # remake coords dict
+        pass
 
     def add_coords(self, bomb):
         for coords in bomb.radius:
@@ -57,18 +75,7 @@ class BombLibrary:
         return us, them
 
     def is_there_bomb(self, coords):
-        answer = False
         for bomb in self.bombs:
-            if coords == bomb.position:
-                answer = True
-                break
-        return answer
-
-    def remove_bomb(self, coords):
-        for bomb in self.bombs:
-            if coords == bomb.position:
-                self.bombs.remove(bomb)
-            for coords in bomb.radius:
-                for bombs in self.bombs:
-                    if coords == bombs.position:
-                        self.remove_bomb(coords)
+            if bomb.position == coords:
+                return True
+        return False
