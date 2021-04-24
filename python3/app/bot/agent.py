@@ -79,13 +79,14 @@ class Agent:
             return best[1]
 
     def _get_path_to_centre(self):
+        # TODO: Stop from infinite loop problems
         for target in spiral_from_coords((4, 4)):
             if target in self.map.graph:
                 try:
                     path = nx.shortest_path(self.map.graph, self.us.coords, target, self._get_weight)
                 except nx.NetworkXNoPath:
                     continue
-                if path and (sum(self.map.graph.nodes[x]["weight"] for x in path) / len(path)) <= 100:
+                if path and (sum(self.map.graph.nodes[x]["weight"] for x in path) / len(path)) < max(101, self.map.graph.nodes[self.us.coords]["weight"]):
                     return path
 
     async def _on_game_tick(self, tick_number, game_state):
@@ -96,8 +97,10 @@ class Agent:
             self.them = game_state.them
 
         path = self._get_path_to_best()
-        if path is None:
-            path = self._get_path_to_centre()
-        if len(path) > 1:
+        # if :
+        #     path = self._get_path_to_centre()
+        if path is not None and len(path) > 1:
             move = _get_direction_from_coords(self.us.coords, path[1])
             await self._server.send_move(move)
+            return
+        # print("No Move Returned")
