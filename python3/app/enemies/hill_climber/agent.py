@@ -3,8 +3,6 @@ import os
 
 import networkx as nx
 
-print(os.listdir())
-
 from app.server_connection import ServerConnection
 
 uri = (
