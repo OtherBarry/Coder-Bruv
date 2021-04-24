@@ -1,5 +1,5 @@
 import json
-
+import time
 import websockets
 
 from .state.game_state import GameState
@@ -63,9 +63,12 @@ class ServerConnection:
         self._state.set_state(game_state)
 
     async def _on_game_tick(self, game_tick):
+        start = time.time()
         events = game_tick.get("events")
         for event in events:
             self._state.update_from_event(event)
         if self._tick_callback is not None:
             tick_number = game_tick.get("tick")
             await self._tick_callback(tick_number, self._state)
+        end = time.time()
+        print("Percentage of tick time taken: {:.2f}%".format(100 * (end - start) / 0.1))
