@@ -3,18 +3,18 @@ from unittest import IsolatedAsyncioTestCase
 
 from jsonschema import validate
 
-from ..app.server_connection import ServerConnection
+from app.server_connection import ServerConnection
 
 
 class TestGameState(IsolatedAsyncioTestCase):
     def setUp(self):
         self.client = ServerConnection("")
         self.maxDiff = None
-        with open('data/validation.schema.json') as f:
+        with open('tests/data/validation.schema.json') as f:
             self.schema = json.load(f)
 
     def get_server_packet(self, name):
-        with open("data/server_packets/" + name + ".json") as f:
+        with open("tests/data/server_packets/" + name + ".json") as f:
             packet = json.load(f)
             print(packet)
         validate(packet, self.schema["definitions"]["ValidServerPacket"])

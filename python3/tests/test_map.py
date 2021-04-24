@@ -2,7 +2,7 @@ import json
 from unittest import TestCase
 from unittest.mock import call, patch
 
-from ..app.state.game_state import Map
+from app.state.game_state import Map
 
 
 def generate_empty_map():
@@ -19,9 +19,9 @@ class TestMap(TestCase):
         for node in map.graph.nodes:
             self.assertEqual(0, map.graph.nodes[node]["weight"])
 
-    @patch("app.bot.map.Map.add_entity", autospec=True)
+    @patch("app.state.map.Map.add_entity", autospec=True)
     def test_init_default_map_entities(self, mocked):
-        with open("data/default_state.json") as f:
+        with open("tests/data/default_state.json") as f:
             state = json.load(f)
         map = Map(state["world"], state["entities"])
         mocked.assert_has_calls(

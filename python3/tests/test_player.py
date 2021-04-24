@@ -2,11 +2,11 @@ import json
 from unittest import TestCase
 from unittest.mock import patch
 
-from ..app.state.game_state import Player
+from app.state.game_state import Player
 
 
 def get_default_state(agent_id="0"):
-    with open("data/default_state.json") as f:
+    with open("tests/data/default_state.json") as f:
         state = json.load(f)
     return state["agent_state"][agent_id]
 
@@ -22,14 +22,14 @@ class TestPlayer(TestCase):
             and player.is_invulnerable == bool(state["invulnerability"])
         )
 
-    @patch("app.bot.player.Player.update_state", autospec=True)
+    @patch("app.state.player.Player.update_state", autospec=True)
     def test_constructor_calls_update_state(self, mocked):
         state = get_default_state()
         player = Player(state)
         mocked.assert_called_once_with(player, state)
 
     def test_handle_action_non_move(self):
-        with open("data/agent_events.json") as f:
+        with open("tests/data/agent_events.json") as f:
             events = json.load(f)
         state = get_default_state()
         player = Player(state)

@@ -2,16 +2,16 @@ import json
 from unittest import TestCase
 from unittest.mock import call, patch
 
-from ..app.state.game_state import GameState
+from app.state.game_state import GameState
 
 
 def generate_default_state():
-    with open("data/default_state.json") as f:
+    with open("tests/data/default_state.json") as f:
         return json.load(f)
 
 
-@patch("app.bot.game_state.Map", autospec=True)
-@patch("app.bot.game_state.Player", autospec=True)  # Note applied bottom up
+@patch("app.state.game_state.Map", autospec=True)
+@patch("app.state.game_state.Player", autospec=True)  # Note applied bottom up
 class TestGameState(TestCase):
     def setUp(self):
         self.gs = GameState()
@@ -67,7 +67,7 @@ class TestGameState(TestCase):
 
     def test_update_from_event_agent(self, player_mock, map_mock):
         self.gs.set_state(generate_default_state())
-        with open("data/agent_events.json") as f:
+        with open("tests/data/agent_events.json") as f:
             events = json.load(f)
         for event in events:
             with self.subTest(event=event):
@@ -88,7 +88,7 @@ class TestGameState(TestCase):
 
     def test_update_from_event_entity_spawned(self, player_mock, map_mock):
         self.gs.set_state(generate_default_state())
-        with open("data/entities.json") as f:
+        with open("tests/data/entities.json") as f:
             entities = json.load(f)
         for entity in entities:
             with self.subTest(entity=entity):
@@ -98,7 +98,7 @@ class TestGameState(TestCase):
 
     def test_update_from_event_entity_expired(self, player_mock, map_mock):
         self.gs.set_state(generate_default_state())
-        with open("data/entities.json") as f:
+        with open("tests/data/entities.json") as f:
             entities = json.load(f)
         for entity in entities:
             with self.subTest(entity=entity):

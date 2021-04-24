@@ -3,7 +3,7 @@ import os
 
 import networkx as nx
 
-from python3.app.server_connection import ServerConnection
+from ...server_connection import ServerConnection
 
 uri = (
     os.environ.get("GAME_CONNECTION_STRING")
