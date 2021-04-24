@@ -1,6 +1,6 @@
 import asyncio
 import os
-import bisect
+import time
 import networkx as nx
 
 from ..server_connection import ServerConnection
@@ -81,7 +81,6 @@ class Agent:
 
     def _get_path_to_centre(self):
         for target in spiral_from_coords((4, 4)):
-            print(target)
             if target in self.map.graph:
                 try:
                     path = nx.shortest_path(self.map.graph, self.us.coords, target, self._get_weight)
