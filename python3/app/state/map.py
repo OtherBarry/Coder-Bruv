@@ -8,10 +8,10 @@ class Map:
 
     IMPASSABLE_ENTITIES = [Entity.BOMB, Entity.METAL, Entity.ORE, Entity.WOOD]
     WEIGHT_MAP = {
-        Entity.AMMO: -1,
-        Entity.POWERUP: -10,
-        Entity.BLAST: 1000,
-        "Future Blast Zone": 100,
+        Entity.AMMO: -10,
+        Entity.POWERUP: -100,
+        Entity.BLAST: 10000,
+        "Future Blast Zone": 1000,
     }
 
     def __init__(self, world, entities):
@@ -20,7 +20,7 @@ class Map:
         self.graph = nx.grid_2d_graph(self._width, self._height)
         self._bombs = dict()
         for node in self.graph.nodes:
-            self.graph.nodes[node]["weight"] = 0
+            self.graph.nodes[node]["weight"] = 100
         for entity in entities:
             self.add_entity(entity)
 

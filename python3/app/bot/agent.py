@@ -1,6 +1,6 @@
 import asyncio
 import os
-
+import math
 import networkx as nx
 
 from ..server_connection import ServerConnection
@@ -37,6 +37,9 @@ class Agent:
         ]
         loop.run_until_complete(asyncio.wait(tasks))
 
+    def _get_weight(self, start, end, properties):
+        return self.map.graph.nodes[start]["weight"] + self.map.graph.nodes[end]["weight"]
+
     async def _on_game_tick(self, tick_number, game_state):
         if game_state is not self.state:
             self.state = game_state
@@ -44,5 +47,13 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
-        destination = min(nx.neighbors(self.map.graph, self.us.coords), key=lambda x: self.map.graph.nodes[x]["weight"])
+        best = sorted(self.map.graph.nodes(data=True), key=lambda x: x[1]["weight"])
+        for target, data in best:
+            if target != self.us.coords and data["weight"] < self.map.graph.nodes[self.us.coords]["weight"] and nx.has_path(self.map.graph, self.us.coords, target):
+                print(target)
+                path = nx.shortest_path(self.map.graph, self.us.coords, target, self._get_weight)
+                await self._server.send_move(_get_direction_from_coords(self.us.coords, path[1]))
+                return
+
+        destination = min(nx.neighbors(self.map.graph, self.us.coords), key=lambda x: self.map.graph.nodes[x]["weight"], default=self.map.graph.nodes[self.us.coords]["weight"])
         await self._server.send_move(_get_direction_from_coords(self.us.coords, destination))
