@@ -20,4 +20,4 @@ services:
     python3-hill_climber:
         build:
             context: python3/
-            dockerfile: python3/app/enemies/hill_climber/Dockerfile
+            dockerfile: app/enemies/hill_climber/Dockerfile
