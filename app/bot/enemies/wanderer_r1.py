@@ -4,7 +4,7 @@ import random
 
 import networkx as nx
 
-from .server_connection import ServerConnection
+from ..server_connection import ServerConnection
 
 uri = (
     os.environ.get("GAME_CONNECTION_STRING")
