@@ -1,0 +1,9 @@
+{
+  "type": "tick",
+  "payload": {
+    "tick": 1,
+    "events": [
+      {"type": "agent", "agent_number": 1, "data": {"type": "move", "move": "left"}}
+    ]
+  }
+}

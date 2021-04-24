@@ -1,0 +1,17 @@
+{
+  "type": "tick",
+  "payload": {
+    "tick": 1,
+    "events": [
+      {
+        "type": "entity_spawned",
+        "data": {
+          "x": 5,
+          "y": 4,
+          "type": "a",
+          "expires": 73
+        }
+      }
+    ]
+  }
+}

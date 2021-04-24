@@ -1,0 +1,24 @@
+{
+  "type": "tick",
+  "payload": {
+    "tick": 1,
+    "events": [
+      {
+        "type": "agent_state",
+        "data": {
+          "coordinates": [
+            6,
+            7
+          ],
+          "hp": 3,
+          "inventory": {
+            "bombs": 2
+          },
+          "blast_diameter": 3,
+          "number": 0,
+          "invulnerability": 0
+        }
+      }
+    ]
+  }
+}

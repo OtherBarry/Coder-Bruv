@@ -1,0 +1,15 @@
+{
+  "type": "tick",
+  "payload": {
+    "tick": 1,
+    "events": [
+      {
+        "type": "entity_expired",
+        "data": [
+          5,
+          4
+        ]
+      }
+    ]
+  }
+}
