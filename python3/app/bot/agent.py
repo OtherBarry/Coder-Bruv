@@ -1,6 +1,5 @@
 import asyncio
 import os
-import time
 import networkx as nx
 
 from ..server_connection import ServerConnection

@@ -114,3 +114,6 @@ dmypy.json
 .pyre/
 
 .idea/
+
+docker-compose.yml
+base-compose.yml
