@@ -27,15 +27,20 @@ class GameState:
             self.desynced = True
         self.tick = tick
 
-    def update_from_event(self, event):
-        """Handles an incoming event from the server"""
-        event_type = event["type"]
-        if event_type == "agent":
-            self.agents[str(event["agent_number"])].handle_action(event["data"])
-        elif event_type == "agent_state":
-            data = event["data"]
-            self.agents[str(data["number"])].update_state(data)
-        elif event_type == "entity_spawned":
-            self.map.add_entity(event["data"])
-        elif event_type == "entity_expired":
-            self.map.remove_entity(tuple(event["data"]))
+    def receive_events(self, events):
+        entities_changed = False
+        for event in events:
+            event_type = event["type"]
+            if event_type == "agent":
+                self.agents[str(event["agent_number"])].handle_action(event["data"])
+            elif event_type == "agent_state":
+                data = event["data"]
+                self.agents[str(data["number"])].update_state(data)
+            elif event_type == "entity_spawned":
+                entities_changed = True
+                self.map.add_entity(event["data"])
+            elif event_type == "entity_expired":
+                entities_changed = True
+                self.map.remove_entity(tuple(event["data"]))
+        if entities_changed:
+            self.map.bomb_library.update(self.map)
