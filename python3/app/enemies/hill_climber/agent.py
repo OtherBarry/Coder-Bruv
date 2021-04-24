@@ -3,7 +3,9 @@ import os
 
 import networkx as nx
 
-from ...server_connection import ServerConnection
+print(os.listdir())
+
+from app.server_connection import ServerConnection
 
 uri = (
     os.environ.get("GAME_CONNECTION_STRING")
@@ -46,3 +48,7 @@ class Agent:
 
         destination = min(nx.neighbors(self.map.graph, self.us.coords), key=lambda x: self.map.graph.nodes[x]["weight"])
         await self._server.send_move(_get_direction_from_coords(self.us.coords, destination))
+
+
+if __name__ == "__main__":
+    Agent()

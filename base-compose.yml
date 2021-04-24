@@ -7,36 +7,17 @@ services:
 
     python3-agent:
         build:
-            context: python3/app
-            dockerfile: python3/Dockerfile
+            context: python3
+            dockerfile: Dockerfile
 
     python3-agent-dev:
         build:
-            context: python3/app
-            dockerfile: python3/Dockerfile
-        volumes:
-            - ./app:/app
-
-    python3-fwd:
-        build:
-            context: python3/app
-            dockerfile: Dockerfile.fwd
-
-    python3-fwd-dev:
-        build:
-            context: python3/app
-            dockerfile: Dockerfile.fwd.dev
-        volumes:
-            - ./app:/app
-
-    typescript-agent:
-        build:
-            context: typescript
+            context: python3
             dockerfile: Dockerfile
-
-    typescript-agent-dev:
-        build:
-            context: typescript
-            dockerfile: Dockerfile.dev
         volumes:
-            - ./typescript:/app
+            - ./python3:/app
+
+    python3-hill_climber:
+        build:
+            context: python3/
+            dockerfile: python3/app/enemies/hill_climber/Dockerfile
