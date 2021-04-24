@@ -1,6 +1,6 @@
 import networkx as nx
 
-from app.utilities import Entity
+from python3.app import Entity
 
 
 class Map:

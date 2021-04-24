@@ -7,24 +7,24 @@ services:
 
     python3-agent:
         build:
-            context: app
+            context: python3/app
             dockerfile: Dockerfile
 
     python3-agent-dev:
         build:
-            context: app
+            context: python3/app
             dockerfile: Dockerfile
         volumes:
             - ./app:/app
 
     python3-fwd:
         build:
-            context: app
+            context: python3/app
             dockerfile: Dockerfile.fwd
 
     python3-fwd-dev:
         build:
-            context: app
+            context: python3/app
             dockerfile: Dockerfile.fwd.dev
         volumes:
             - ./app:/app
