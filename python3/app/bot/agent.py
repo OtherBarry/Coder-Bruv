@@ -46,6 +46,8 @@ class Agent:
 
     def _get_node_weight(self, node):
         weight = self.map.graph.nodes[node]["weight"]
+        if self.us.is_invulnerable:
+            weight = min(100, weight)
         if node in self.danger_nodes:
             weight += 0.1
         return weight
@@ -69,20 +71,33 @@ class Agent:
             if (worst_node < travel_threshold):
                 return current_best_path
 
-    def _find_danger_nodes(self):
-        to_visit = list(nx.articulation_points(self.map.graph))
-        danger_nodes = set()
+    def _find_tunnel_nodes(self, coords):
+        visited = [coords]
+        to_visit = list(self.map.graph[coords])
         while to_visit:
             current = to_visit.pop()
-            if current in danger_nodes:
-                continue
-            children = self.map.graph[current]
-            if len(children) <= 2:
-                danger_nodes.add(current)
-                to_visit.extend(children)
+            visited.append(current)
+            neighbours = self.map.graph[current]
+            if len(neighbours) <= 2:
+                yield current
+                to_visit.extend([n for n in neighbours if n not in visited])
+
+    def _find_danger_nodes(self):
+        # to_visit = list(nx.articulation_points(self.map.graph))
+        danger_nodes = set()
+        # while to_visit:
+        #     current = to_visit.pop()
+        #     if current in danger_nodes:
+        #         continue
+        #     children = self.map.graph[current]
+        #     if len(children) <= 2:
+        #         danger_nodes.add(current)
+        #         to_visit.extend(children)
         for node in self.map.graph.nodes:
-            if len(self.map.graph[node]) == 1:
+            if node not in danger_nodes and len(self.map.graph[node]) == 1:
                 danger_nodes.add(node)
+                for n in self._find_tunnel_nodes(node):
+                    danger_nodes.add(n)
         return danger_nodes
 
     def _find_danger_entrance(self, coord):
@@ -151,6 +166,9 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
+        if self.us.is_invulnerable:
+            print("Invincible!", end=" | ")
+
         # TODO: Improve bomb dismount logic
         # TODO: Don't avoid our own bombs until close to det
         # TODO: Improve trapping logic to account for blast radius and both inside
@@ -172,7 +190,6 @@ class Agent:
         # print(self.danger_nodes, end=" | ")
 
         path, guaranteed = self._is_enemy_trapped()
-        print(path, guaranteed, end=" | ")
         if path is not None and len(path) <= 1:
             await self._server.send_bomb()
             return
