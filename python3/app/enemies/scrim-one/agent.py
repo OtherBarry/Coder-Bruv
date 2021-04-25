@@ -138,7 +138,6 @@ class Agent:
         )
 
         path, guaranteed = self.is_enemy_trapped()
-        print(path, guaranteed, end=" | ")
         if path is not None and len(path) <= 1:
             await self._server.send_bomb()
             return
