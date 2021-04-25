@@ -17,10 +17,10 @@ class Bomb:
                 new = list(self.position)
                 new[i] += r * m
                 new = tuple(new)
-                if new in map.graph:
-                    if map.graph.nodes[new].get("entity") is None:
-                        self.impacts.append(tuple(new))
-                else:
+                if new not in map.graph:
+                    break
+                self.impacts.append(tuple(new))
+                if map.graph.nodes[new].get("entity") is not None:
                     break
 
     def __hash__(self):
@@ -47,9 +47,7 @@ class BombLibrary:
                 if bombs is not None:
                     if len(bombs) == 1:
                         del self._coords[coord]
-                        map.graph.nodes[coord]["weight"] -= map.WEIGHT_MAP[
-                            "Future Blast Zone"
-                        ]
+                        map.graph.nodes[coord]["weight"] = 100
                     else:
                         bombs.remove(bomb)
             for b in bomb.detonates:
@@ -76,9 +74,11 @@ class BombLibrary:
                 if bombs is not None:
                     bomb.detonates.extend([b for b in bombs if b is not bomb])  # O(b.d)
         for coords in self._coords:
-                map.graph.nodes[coords]["weight"] += map.WEIGHT_MAP[
+                map.graph.nodes[coords]["weight"] = map.WEIGHT_MAP[
                     "Future Blast Zone"
                 ]
+
+        print("Bombs: {} | Bomb Coords: {}".format(len(self._bombs), len(self._coords)), end=" | ")
 
     def get_bomb_at(self, coords):
         return self._bombs.get(coords)
@@ -99,6 +99,6 @@ class BombLibrary:
 
     def get_bomb_impact_owners(self, coords):
         owners = set()
-        for bomb in self.get_bombs_at(coords):
+        for bomb in self.get_bombs_impacting(coords):
             owners.add(bomb.owner)
         return list(owners)
