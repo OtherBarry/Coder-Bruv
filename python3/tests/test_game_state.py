@@ -10,8 +10,8 @@ def generate_default_state():
         return json.load(f)
 
 
-@patch("app.state.game_state.Map", autospec=True)
-@patch("app.state.game_state.Player", autospec=True)  # Note applied bottom up
+@patch("app.state.game_state.Map")
+@patch("app.state.game_state.Player")  # Note applied bottom up
 class TestGameState(TestCase):
     def setUp(self):
         self.gs = GameState()
@@ -34,8 +34,6 @@ class TestGameState(TestCase):
         self.assertCountEqual(
             default_state["agent_state"].keys(), self.gs.agents.keys()
         )
-        for agent in self.gs.agents.values():
-            self.assertIsInstance(agent, player_mock.__class__)
 
     def test_set_state_map_correct(self, player_mock, map_mock):
         default_state = generate_default_state()
@@ -71,7 +69,7 @@ class TestGameState(TestCase):
             events = json.load(f)
         self.gs.receive_events(events)
         for event in events:
-            self.gs.agents[str(event["agent_number"])].handle_action.assert_called_with(event["data"])
+            self.gs.agents[str(event["agent_number"])].handle_action.assert_any_call(event["data"])
 
     def test_update_from_event_agent_state(self, player_mock, map_mock):
         default_state = generate_default_state()

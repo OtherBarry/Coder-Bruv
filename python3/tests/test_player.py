@@ -2,7 +2,7 @@ import json
 from unittest import TestCase
 from unittest.mock import patch
 
-from app.state.game_state import Player
+from app.state.player import Player
 
 
 def get_default_state(agent_id="0"):
