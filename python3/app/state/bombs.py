@@ -52,9 +52,15 @@ class BombLibrary:
                     else:
                         bombs.remove(bomb)
             for b in bomb.detonates:
-                b.detonated_by.remove(bomb)
+                try:
+                    b.detonated_by.remove(bomb)
+                except ValueError:
+                    pass
             for b in bomb.detonated_by:
-                b.detonates.remove(bomb)
+                try:
+                    b.detonates.remove(bomb)
+                except ValueError:
+                    pass
             del self._bombs[bomb.position]
 
     def update(self, map):
