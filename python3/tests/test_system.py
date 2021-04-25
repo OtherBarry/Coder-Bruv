@@ -10,7 +10,7 @@ class TestGameState(IsolatedAsyncioTestCase):
     def setUp(self):
         self.client = ServerConnection("")
         self.maxDiff = None
-        with open('tests/data/validation.schema.json') as f:
+        with open("tests/data/validation.schema.json") as f:
             self.schema = json.load(f)
 
     def get_server_packet(self, name):

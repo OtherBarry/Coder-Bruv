@@ -69,7 +69,9 @@ class TestGameState(TestCase):
             events = json.load(f)
         self.gs.receive_events(events)
         for event in events:
-            self.gs.agents[str(event["agent_number"])].handle_action.assert_any_call(event["data"])
+            self.gs.agents[str(event["agent_number"])].handle_action.assert_any_call(
+                event["data"]
+            )
 
     def test_update_from_event_agent_state(self, player_mock, map_mock):
         default_state = generate_default_state()

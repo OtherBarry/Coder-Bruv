@@ -52,7 +52,8 @@ class TestMap(TestCase):
         for node in map.graph.nodes:
             if node in impacted_nodes:
                 self.assertEqual(
-                    100 + Map.WEIGHT_MAP["Future Blast Zone"], map.graph.nodes[node]["weight"]
+                    100 + Map.WEIGHT_MAP["Future Blast Zone"],
+                    map.graph.nodes[node]["weight"],
                 )
             else:
                 self.assertEqual(100, map.graph.nodes[node]["weight"])
@@ -84,7 +85,8 @@ class TestMap(TestCase):
         for node in map.graph.nodes:
             if node in impacted_nodes:
                 self.assertEqual(
-                    100 + Map.WEIGHT_MAP["Future Blast Zone"], map.graph.nodes[node]["weight"]
+                    100 + Map.WEIGHT_MAP["Future Blast Zone"],
+                    map.graph.nodes[node]["weight"],
                 )
             else:
                 self.assertEqual(100, map.graph.nodes[node]["weight"])
