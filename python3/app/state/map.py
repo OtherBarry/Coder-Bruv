@@ -13,6 +13,7 @@ class Map:
         Entity.POWERUP: -100,
         Entity.BLAST: 10000,
         "Future Blast Zone": 1000,
+        "Default": 100,
     }
 
     def __init__(self, world, entities):
@@ -21,7 +22,7 @@ class Map:
         self.graph = nx.grid_2d_graph(self._width, self._height)
         self.bomb_library = BombLibrary()
         for node in self.graph.nodes:
-            self.graph.nodes[node]["weight"] = 100
+            self.graph.nodes[node]["weight"] = Map.WEIGHT_MAP["Default"]
         for entity in entities:
             self.add_entity(entity)
 
@@ -54,5 +55,5 @@ class Map:
         else:
             if self.bomb_library.get_bomb_at(coords) is not None:
                 self.bomb_library.remove_bomb(coords, self)
-            self.graph.add_node(coords, weight=100)
+            self.graph.add_node(coords, weight=Map.WEIGHT_MAP["Default"])
             self.graph.add_edges_from(self._generate_edges(coords))
