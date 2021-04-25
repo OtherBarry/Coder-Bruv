@@ -34,6 +34,7 @@ class BombLibrary:
     def __init__(self):
         self._bombs = {}
         self._coords = {}
+        self._expanded_coords_cache = {}
 
     def add_bomb(self, entity):
         bomb = Bomb(entity)
@@ -47,7 +48,7 @@ class BombLibrary:
                 if bombs is not None:
                     if len(bombs) == 1:
                         del self._coords[coord]
-                        map.graph.nodes[coord]["weight"] = 100
+                        map.graph.nodes[coord]["weight"] = map.WEIGHT_MAP["Default"]
                     else:
                         bombs.remove(bomb)
             for b in bomb.detonates:
@@ -84,6 +85,9 @@ class BombLibrary:
         return self._bombs.get(coords)
 
     def get_bombs_impacting(self, coords):
+        value = self._expanded_coords_cache.get(coords)
+        if value is not None:
+            return value
         bombs = set()
         to_visit = Queue()
         for bomb in self._coords.get(coords, []):
@@ -95,7 +99,9 @@ class BombLibrary:
             bombs.add(current)
             for bomb in current.detonated_by:
                 to_visit.put(bomb)
-        return list(bombs)
+        value = list(bombs)
+        self._expanded_coords_cache[coords] = value
+        return value
 
     def get_bomb_impact_owners(self, coords):
         owners = set()
