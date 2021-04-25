@@ -21,3 +21,8 @@ services:
         build:
             context: python3/
             dockerfile: app/enemies/hill_climber/Dockerfile
+
+    python3-scrim-one:
+        build:
+            context: python3/
+            dockerfile: app/enemies/scrim-one/Dockerfile
