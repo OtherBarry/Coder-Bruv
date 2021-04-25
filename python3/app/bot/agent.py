@@ -63,30 +63,18 @@ class Agent:
 
     def _get_path_to_best(self):
         best_path = None
-        _, paths = nx.single_source_dijkstra(self.map.graph, self.us.coords, weight=self._get_weight) # Get best paths to all nodes
+        distances, paths = nx.single_source_dijkstra(self.map.graph, self.us.coords, weight=self._get_weight) # Get best paths to all nodes
         best_nodes = PriorityQueue()
         for node, data in self.map.graph.nodes(data=True): # Get priority queue of lowest weight nodes
-            if node in self.map.graph and data["weight"] < self.map.graph.nodes[self.us.coords]["weight"]:
-                best_nodes.push((data["weight"], node))
+            if data["weight"] < self.map.graph.nodes[self.us.coords]["weight"] and node in paths:
+                best_nodes.push((data["weight"], distances[node], node))
 
         while not best_nodes.is_empty():
-            # try:
-            #     path = nx.single_source_dijkstra(self.map.graph, self.us.coords, best_nodes.pop(), self._get_weight)
-            # except nx.NetworkXNoPath:
-            #     continue
-            current_best = best_nodes.pop()[node] # For the lowest weight node
+            current_best = best_nodes.pop()[2] # For the lowest weight node
             current_best_path = paths[current_best] # Get the best path to this node
-
-            # mean_weight = sum(self.map.graph.nodes[x]["weight"] for x in current_best_path) / len(current_best_path)
-            # if mean_weight < self.map.graph.nodes[self.us.coords]["weight"]:
             worst_node = max(self.map.graph.nodes[x]["weight"] for x in current_best_path) # Get the highest weight node in path
             if worst_node < 10000: # If not literally explosion, then this is best path to the best node
                 return current_best_path
-
-                # if best_path is None:
-                #     best_path = (mean_weight, path)
-                # elif mean_weight < best_path[0]:
-                #     best_path = (mean_weight, path)
 
         if best_path is None:
             print("No paths found")
