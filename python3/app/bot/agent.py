@@ -1,12 +1,13 @@
 import asyncio
 import os
 import networkx as nx
+import heapq
 
 from ..server_connection import ServerConnection
 
 uri = (
-    os.environ.get("GAME_CONNECTION_STRING")
-    or "ws://127.0.0.1:3000/?role=agent&agentId=agentId&name=defaultName"
+        os.environ.get("GAME_CONNECTION_STRING")
+        or "ws://127.0.0.1:3000/?role=agent&agentId=agentId&name=defaultName"
 )
 
 
@@ -21,6 +22,7 @@ def _get_direction_from_coords(start, end):
         return "up"
     else:
         raise ValueError
+
 
 def spiral_from_coords(coords):
     moves = [(1, 1), (0, 1), (1, -1), (0, -1)]
@@ -43,7 +45,6 @@ def spiral_from_coords(coords):
         i = (i + 1) % len(moves)
 
 
-
 class Agent:
     def __init__(self):
         self._server = ServerConnection(uri)
@@ -61,22 +62,34 @@ class Agent:
         return self.map.graph.nodes[start]["weight"] + self.map.graph.nodes[end]["weight"]
 
     def _get_path_to_best(self):
-        best = None
-        for node, data in self.map.graph.nodes(data=True):
+        best_path = None
+        _, paths = nx.single_source_dijkstra(self.map.graph, self.us.coords, weight=self._get_weight) # Get best paths to all nodes
+        best_nodes = PriorityQueue()
+        for node, data in self.map.graph.nodes(data=True): # Get priority queue of lowest weight nodes
             if node in self.map.graph and data["weight"] < self.map.graph.nodes[self.us.coords]["weight"]:
-                try:
-                    path = nx.shortest_path(self.map.graph, self.us.coords, node, self._get_weight)
-                except nx.NetworkXNoPath:
-                    continue
-                if path:
-                    mean_weight = sum(self.map.graph.nodes[x]["weight"] for x in path) / len(path)
-                    if best is None:
-                        best = (mean_weight, path)
-                    elif mean_weight < best[0]:
-                        best = (mean_weight, path)
+                best_nodes.push((data["weight"], node))
 
-        if best is not None:
-            return best[1]
+        while not best_nodes.is_empty():
+            # try:
+            #     path = nx.single_source_dijkstra(self.map.graph, self.us.coords, best_nodes.pop(), self._get_weight)
+            # except nx.NetworkXNoPath:
+            #     continue
+            current_best = best_nodes.pop()[node] # For the lowest weight node
+            current_best_path = paths[current_best] # Get the best path to this node
+
+            # mean_weight = sum(self.map.graph.nodes[x]["weight"] for x in current_best_path) / len(current_best_path)
+            # if mean_weight < self.map.graph.nodes[self.us.coords]["weight"]:
+            worst_node = max(self.map.graph.nodes[x]["weight"] for x in current_best_path) # Get the highest weight node in path
+            if worst_node < 10000: # If not literally explosion, then this is best path to the best node
+                return current_best_path
+
+                # if best_path is None:
+                #     best_path = (mean_weight, path)
+                # elif mean_weight < best_path[0]:
+                #     best_path = (mean_weight, path)
+
+        if best_path is None:
+            print("No paths found")
 
     def _get_path_to_centre(self):
         # TODO: Stop from infinite loop problems
@@ -86,7 +99,10 @@ class Agent:
                     path = nx.shortest_path(self.map.graph, self.us.coords, target, self._get_weight)
                 except nx.NetworkXNoPath:
                     continue
-                if path and (sum(self.map.graph.nodes[x]["weight"] for x in path) / len(path)) < max(101, self.map.graph.nodes[self.us.coords]["weight"]):
+                if path and (sum(self.map.graph.nodes[x]["weight"] for x in path) / len(path)) < max(101,
+                                                                                                     self.map.graph.nodes[
+                                                                                                         self.us.coords][
+                                                                                                         "weight"]):
                     return path
 
     async def _on_game_tick(self, tick_number, game_state):
@@ -104,3 +120,31 @@ class Agent:
             await self._server.send_move(move)
             return
         # print("No Move Returned")
+
+
+class PriorityQueue:
+    """Implementation of a priority queue using a heap."""
+
+    def __init__(self, values=None):
+        if values is None:
+            self.size = 0
+            self.heap = []
+        else:
+            self.size = len(values)
+            self.heap = values
+        heapq.heapify(self.heap)
+
+    def is_empty(self):
+        """Returns whether the queue is empty in O(1)"""
+        return self.size == 0
+
+    def push(self, item):
+        """Adds an item to the queue in O(log n)"""
+        heapq.heappush(self.heap, item)
+        self.size += 1
+
+    def pop(self):
+        """Retrieves the min item from the queue in O(log n)"""
+        val = heapq.heappop(self.heap)
+        self.size -= 1
+        return val
