@@ -63,35 +63,61 @@ class Agent:
 
     def _get_path_to_best(self):
         best_path = None
-        distances, paths = nx.single_source_dijkstra(self.map.graph, self.us.coords, weight=self._get_weight) # Get best paths to all nodes
+        distances, paths = nx.single_source_dijkstra(self.map.graph, self.us.coords,
+                                                     weight=self._get_weight)  # Get best paths to all nodes
         best_nodes = PriorityQueue()
-        for node, data in self.map.graph.nodes(data=True): # Get priority queue of lowest weight nodes
+        for node, data in self.map.graph.nodes(data=True):  # Get priority queue of lowest weight nodes
             if data["weight"] < self.map.graph.nodes[self.us.coords]["weight"] and node in paths:
                 best_nodes.push((data["weight"], distances[node], node))
 
         while not best_nodes.is_empty():
-            current_best = best_nodes.pop()[2] # For the lowest weight node
-            current_best_path = paths[current_best] # Get the best path to this node
-            worst_node = max(self.map.graph.nodes[x]["weight"] for x in current_best_path) # Get the highest weight node in path
-            if worst_node < 10000: # If not literally explosion, then this is best path to the best node
+            current_best = best_nodes.pop()[2]  # For the lowest weight node
+            current_best_path = paths[current_best]  # Get the best path to this node
+            worst_node = max(
+                self.map.graph.nodes[x]["weight"] for x in current_best_path)  # Get the highest weight node in path
+            if worst_node < 10000:  # If not literally explosion, then this is best path to the best node
                 return current_best_path
 
         if best_path is None:
             print("No paths found")
 
     def _get_path_to_centre(self):
-        # TODO: Stop from infinite loop problems
-        for target in spiral_from_coords((4, 4)):
-            if target in self.map.graph:
-                try:
-                    path = nx.shortest_path(self.map.graph, self.us.coords, target, self._get_weight)
-                except nx.NetworkXNoPath:
-                    continue
-                if path and (sum(self.map.graph.nodes[x]["weight"] for x in path) / len(path)) < max(101,
-                                                                                                     self.map.graph.nodes[
-                                                                                                         self.us.coords][
-                                                                                                         "weight"]):
-                    return path
+        best_path = None
+        distances, paths = nx.single_source_dijkstra(self.map.graph, self.us.coords,
+                                                     weight=self._get_weight)  # Get best paths to all nodes
+        best_centres = PriorityQueue()
+        for node in self.map.graph.nodes(data=True):  # Get priority queue of lowest weight nodes
+            if self.manhattan_to_centre(node) < 2 and node in paths:
+                best_centres.push((self.manhattan_to_centre(node), node))
+
+        while not best_centres.is_empty():
+            current_best = best_centres.pop()[1]  # For the most central node
+            current_best_path = paths[current_best]  # Get the best path to this node
+            worst_node = max(
+                self.map.graph.nodes[x]["weight"] for x in current_best_path)  # Get the highest weight node in path
+            if worst_node < 10000:  # If not literally explosion, then this is best path to the best node
+                return current_best_path
+
+        if best_path is None:
+            print("No good centre nodes")
+
+    # def _get_path_to_centre(self, distances, paths):
+    #     # TODO: Stop from infinite loop problems
+    #     for target in spiral_from_coords((4, 4)):
+    #         if target in self.map.graph:
+    #             try:
+    #                 path = nx.shortest_path(self.map.graph, self.us.coords, target, self._get_weight)
+    #             except nx.NetworkXNoPath:
+    #                 continue
+    #             if path and (sum(self.map.graph.nodes[x]["weight"] for x in path) / len(path)) < max(101,
+    #                                                                                                  self.map.graph.nodes[
+    #                                                                                                      self.us.coords][
+    #                                                                                                      "weight"]):
+    #                 return path
+
+    def manhattan_to_centre(self, start_node):
+        manhattan = abs(4 - start_node[0]) + abs(4 - start_node[1])
+        return manhattan
 
     async def _on_game_tick(self, tick_number, game_state):
         if game_state is not self.state:
