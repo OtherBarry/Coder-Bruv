@@ -68,7 +68,7 @@ class Agent:
                 current_best
             ]
             worst_node = max(self._get_node_weight(x) for x in current_best_path)
-            if (worst_node < travel_threshold):
+            if worst_node < travel_threshold:
                 return current_best_path
 
     def _find_tunnel_nodes(self, coords):
@@ -83,16 +83,7 @@ class Agent:
                 to_visit.extend([n for n in neighbours if n not in visited])
 
     def _find_danger_nodes(self):
-        # to_visit = list(nx.articulation_points(self.map.graph))
         danger_nodes = set()
-        # while to_visit:
-        #     current = to_visit.pop()
-        #     if current in danger_nodes:
-        #         continue
-        #     children = self.map.graph[current]
-        #     if len(children) <= 2:
-        #         danger_nodes.add(current)
-        #         to_visit.extend(children)
         for node in self.map.graph.nodes:
             if node not in danger_nodes and len(self.map.graph[node]) == 1:
                 danger_nodes.add(node)
@@ -119,12 +110,12 @@ class Agent:
         if self.us.ammo > 0 and self.them.coords in self.danger_nodes:
             entrance = self._find_danger_entrance(self.them.coords)
             path = self.paths.get(self.them.coords)
-            if path is None or entrance not in path:
+            if path is None:
                 return None, False
             worst = max(self._get_node_weight(x) for x in path)
             if worst < cutoff:
-                guaranteed_roast = path.index(entrance) >= len(path) // 2
-                return self.paths[entrance], guaranteed_roast
+                guaranteed_roast = len(self.paths[entrance]) <= len(nx.dijkstra_path(self.map.graph, self.them.coords, entrance, self._get_edge_weight))
+                return path, guaranteed_roast
         return None, False
 
     def _generate_neighbouring_tiles(self, coords):
@@ -166,10 +157,7 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
-        if self.us.is_invulnerable:
-            print("Invincible!", end=" | ")
-
-        # TODO: Improve bomb dismount logic
+        # TODO: Avoid Traps
         # TODO: Don't avoid our own bombs until close to det
         # TODO: Improve trapping logic to account for blast radius and both inside
         # TODO: Logic in regards to current ammo/hp
@@ -187,13 +175,12 @@ class Agent:
         self.distances, self.paths = nx.single_source_dijkstra(
             self.map.graph, self.us.coords, weight=self._get_edge_weight
         )  # Get best paths to all nodes
-        # print(self.danger_nodes, end=" | ")
 
         path, guaranteed = self._is_enemy_trapped()
-        if path is not None and len(path) <= 1:
+        if path is not None and len(path) - 1 <= self.us.blast_diameter // 2:
             await self._server.send_bomb()
             return
-        elif path is None or not guaranteed:
+        elif not guaranteed:
             best_path = self._get_path_to_best(self._get_node_weight)
             if best_path is not None:
                 path = best_path
