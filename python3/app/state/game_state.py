@@ -26,6 +26,8 @@ class GameState:
             )
             self.desynced = True
         self.tick = tick
+        self.us.update_tick(tick)
+        self.them.update_tick(tick)
 
     def receive_events(self, events):
         entities_changed = False
@@ -35,7 +37,7 @@ class GameState:
                 self.agents[str(event["agent_number"])].handle_action(event["data"])
             elif event_type == "agent_state":
                 data = event["data"]
-                self.agents[str(data["number"])].update_state(data)
+                self.agents[str(data["number"])].update_state(data, self.tick)
             elif event_type == "entity_spawned":
                 entities_changed = True
                 self.map.add_entity(event["data"])

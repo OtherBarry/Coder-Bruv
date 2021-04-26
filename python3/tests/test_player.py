@@ -19,14 +19,14 @@ class TestPlayer(TestCase):
             and player.hp == state["hp"]
             and player.ammo == state["inventory"]["bombs"]
             and player.blast_diameter == state["blast_diameter"]
-            and player.is_invulnerable == bool(state["invulnerability"])
+            and player._invulnerable_until == state["invulnerability"]
         )
 
     @patch("app.state.player.Player.update_state", autospec=True)
     def test_constructor_calls_update_state(self, mocked):
         state = get_default_state()
         player = Player(state)
-        mocked.assert_called_once_with(player, state)
+        mocked.assert_called_once_with(player, state, 0)
 
     def test_handle_action_non_move(self):
         with open("tests/data/agent_events.json") as f:
