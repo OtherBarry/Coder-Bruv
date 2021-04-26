@@ -105,7 +105,8 @@ class TestBombLibrary(TestCase):
         entity = {"example": "entity"}
         bomb = bomb_mock.return_value
         bomb.position = (1, 1)
-        self.bl.add_bomb(entity)
+        map = map_mock.return_value
+        self.bl.add_bomb(entity, map)
         bomb_mock.assert_called_once_with(entity)
         self.assertIs(bomb, self.bl.get_bomb_at((1, 1)))
 
@@ -114,7 +115,8 @@ class TestBombLibrary(TestCase):
         self.assertIsNone(self.bl.get_bomb_at((2, 2)))
         bomb = bomb_mock.return_value
         bomb.position = (1, 1)
-        self.bl.add_bomb({})
+        map = map_mock.return_value
+        self.bl.add_bomb({}, map)
         self.assertIs(bomb, self.bl.get_bomb_at((1, 1)))
         self.assertIsNone(self.bl.get_bomb_at((2, 2)))
 
@@ -124,12 +126,12 @@ class TestBombLibrary(TestCase):
         bomb.impacts = [(0, 1), (2, 1), (1, 0), (1, 2)]
         bomb.detonates = []
         bomb.detonated_by = []
-        self.bl.add_bomb({})
 
         map = map_mock.return_value
-
+        self.bl.add_bomb({}, map)
+        bomb.calculate_impacts.assert_called_with(map)
         self.bl.update(map)
-        bomb.calculate_impacts.assert_called_once_with(map)
+        bomb.calculate_impacts.assert_called_with(map)
         map.graph.nodes.__getitem__.assert_has_calls(
             [call(c) for c in bomb.impacts], any_order=True
         )
@@ -145,8 +147,8 @@ class TestBombLibrary(TestCase):
         bomb = bomb_mock.return_value
         bomb.position = (1, 1)
         bomb.impacts = [(0, 1), (2, 1), (1, 0), (1, 2)]
-        self.bl.add_bomb({})
         map = map_mock.return_value
+        self.bl.add_bomb({}, map)
         self.bl.update(map)
         map_mock.reset_mock()
         map = map_mock.return_value

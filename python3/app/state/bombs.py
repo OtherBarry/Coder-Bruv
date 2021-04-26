@@ -11,7 +11,7 @@ class Bomb:
         self.impacts = None
 
     def calculate_impacts(self, map):
-        self.impacts = []
+        impacts = []
         for i, m in [(1, 1), (0, 1), (1, -1), (0, -1)]:
             for r in range(1, self.radius + 1):
                 new = list(self.position)
@@ -19,9 +19,10 @@ class Bomb:
                 new = tuple(new)
                 if new not in map.graph:
                     break
-                self.impacts.append(tuple(new))
+                impacts.append(tuple(new))
                 if map.graph.nodes[new].get("entity") is not None:
                     break
+        self.impacts = impacts
 
     def __hash__(self):
         return hash(self.position)
@@ -36,8 +37,9 @@ class BombLibrary:
         self._coords = {}
         self._expanded_coords_cache = {}
 
-    def add_bomb(self, entity):
+    def add_bomb(self, entity, map):
         bomb = Bomb(entity)
+        bomb.calculate_impacts(map)
         self._bombs[bomb.position] = bomb
 
     def remove_bomb(self, coords, map):
@@ -52,38 +54,29 @@ class BombLibrary:
                     else:
                         bombs.remove(bomb)
             for b in bomb.detonates:
-                try:
-                    b.detonated_by.remove(bomb)
-                except ValueError:
-                    pass
+                b.detonated_by.remove(bomb)
             for b in bomb.detonated_by:
-                try:
-                    b.detonates.remove(bomb)
-                except ValueError:
-                    pass
+                b.detonates.remove(bomb)
             del self._bombs[bomb.position]
 
     def update(self, map):
         self._coords = {}
         for bomb in self._bombs.values():  # O(b)
             bomb.calculate_impacts(map)
-            for coord in bomb.impacts:  # O(b.i)
-                if coord in self._coords:
-                    self._coords[coord].append(bomb)
+            for coords in bomb.impacts:  # O(b.i)S
+                if coords in self._coords:
+                    self._coords[coords].append(bomb)
                 else:
-                    self._coords[coord] = [bomb]
+                    self._coords[coords] = [bomb]
+                    map.graph.nodes[coords]["weight"] = map.WEIGHT_MAP[
+                        "Future Blast Zone"
+                    ]
         for bomb in self._bombs.values():  # O(b)
-            bombs = self._coords.get(bomb.position)
-            if bombs is not None:
-                bomb.detonated_by.extend([b for b in bombs if b is not bomb])  # O(b.db)
-            for coord in bomb.impacts:  # O(b.i)
-                bombs = self._coords.get(coord)
-                if bombs is not None:
-                    bomb.detonates.extend([b for b in bombs if b is not bomb])  # O(b.d)
-        for coords in self._coords:
-                map.graph.nodes[coords]["weight"] = map.WEIGHT_MAP[
-                    "Future Blast Zone"
-                ]
+            for coords in bomb.impacts:
+                detonatee = self._bombs.get(coords)
+                if detonatee is not None:
+                    bomb.detonates.append(detonatee)
+                    detonatee.detonated_by.append(bomb)
 
         print("Bombs: {} | Bomb Coords: {}".format(len(self._bombs), len(self._coords)), end=" | ")
 

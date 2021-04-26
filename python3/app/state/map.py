@@ -39,7 +39,7 @@ class Map:
         entity_type = entity["type"]
         if entity_type in Map.IMPASSABLE_ENTITIES:
             if entity_type == Entity.BOMB:
-                self.bomb_library.add_bomb(entity)
+                self.bomb_library.add_bomb(entity, self)
             self.graph.remove_node(coords)
         else:
             self.graph.nodes[coords]["entity"] = entity_type

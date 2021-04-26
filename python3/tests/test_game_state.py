@@ -81,7 +81,7 @@ class TestGameState(TestCase):
                 self.gs.receive_events([{"type": "agent_state", "data": state}])
                 self.gs.agents[
                     str(state["number"])
-                ].update_state.assert_called_once_with(state)
+                ].update_state.assert_called_once_with(state, 0)
                 self.gs.agents[str(state["number"])].reset_mock()
 
     def test_update_from_event_entity_spawned(self, player_mock, map_mock):
