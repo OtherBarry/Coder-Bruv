@@ -1,0 +1,61 @@
+[36magent-a_1       |[0m [(1, 4), (2, 4), (3, 4), (4, 4)] True | Percentage of tick time taken: 0.91%
+[36magent-a_1       |[0m Bombs: 1 | Bomb Coords: 2 | None False | Percentage of tick time taken: 1.02%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.75%
+[36magent-a_1       |[0m [(4, 4)] False | Percentage of tick time taken: 0.65%
+[36magent-a_1       |[0m Bombs: 2 | Bomb Coords: 6 | Percentage of tick time taken: 0.57%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.69%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.64%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.55%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.67%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.65%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.72%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.62%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.69%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.70%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.75%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.55%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.60%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.68%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.65%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.73%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.75%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.64%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.65%
+[36magent-a_1       |[0m Bombs: 2 | Bomb Coords: 6 | None False | Percentage of tick time taken: 0.86%
+[36magent-a_1       |[0m Bombs: 2 | Bomb Coords: 6 | None False | Percentage of tick time taken: 0.76%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.61%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.75%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.60%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.57%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.61%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.62%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.75%
+[36magent-a_1       |[0m Bombs: 2 | Bomb Coords: 6 | None False | Percentage of tick time taken: 0.77%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.68%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.70%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.72%
+[36magent-a_1       |[0m Bombs: 1 | Bomb Coords: 4 | None False | Percentage of tick time taken: 0.72%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.86%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.63%
+[36magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 1.06%
+[36magent-a_1       |[0m Task exception was never retrieved
+[36magent-a_1       |[0m future: <Task finished name='Task-5' coro=<ServerConnection.handle_messages() done, defined at /app/app/server_connection.py:40> exception=TypeError("'NoneType' object is not iterable")>
+[36magent-a_1       |[0m Traceback (most recent call last):
+[36magent-a_1       |[0m   File "/app/app/server_connection.py", line 45, in handle_messages
+[36magent-a_1       |[0m     await self._on_data(data)
+[36magent-a_1       |[0m   File "/app/app/server_connection.py", line 58, in _on_data
+[36magent-a_1       |[0m     await self._on_game_tick(payload)
+[36magent-a_1       |[0m   File "/app/app/server_connection.py", line 67, in _on_game_tick
+[36magent-a_1       |[0m     self._state.receive_events(game_tick.get("events"))
+[36magent-a_1       |[0m   File "/app/app/state/game_state.py", line 44, in receive_events
+[36magent-a_1       |[0m     self.map.remove_entity(tuple(event["data"]))
+[36magent-a_1       |[0m   File "/app/app/state/map.py", line 57, in remove_entity
+[36magent-a_1       |[0m     self.bomb_library.remove_bomb(coords, self)
+[36magent-a_1       |[0m   File "/app/app/state/bombs.py", line 46, in remove_bomb
+[36magent-a_1       |[0m     for coord in bomb.impacts:
+[36magent-a_1       |[0m TypeError: 'NoneType' object is not iterable

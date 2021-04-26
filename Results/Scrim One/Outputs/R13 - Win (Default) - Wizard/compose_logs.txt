@@ -1,0 +1,30 @@
+Attaching to 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_fwd-server-b_1, 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_game-server_1, 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_fwd-server-a_1, 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_agent-b_1, 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_agent-a_1
+[36;1magent-b_1       |[0m Task exception was never retrieved
+[36;1magent-b_1       |[0m future: <Task finished name='Task-5' coro=<GameState._handle_messages() done, defined at /app/game_state.py:38> exception=KeyError('type')>
+[36;1magent-b_1       |[0m Traceback (most recent call last):
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 43, in _handle_messages
+[36;1magent-b_1       |[0m     await self._on_data(data)
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 59, in _on_data
+[36;1magent-b_1       |[0m     await self._on_game_tick(payload)
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 76, in _on_game_tick
+[36;1magent-b_1       |[0m     self._on_agent_action(agent_action)
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 119, in _on_agent_action
+[36;1magent-b_1       |[0m     agent = self._state["agent_state"][str(agent_number)]
+[36;1magent-b_1       |[0m KeyError: 'type'
+[33m1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_agent-b_1 exited with code 0
+[0mAborting on container exit...
+Attaching to 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_fwd-server-a_1, 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_fwd-server-b_1, 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_game-server_1, 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_agent-b_1, 1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_agent-a_1
+[36;1magent-b_1       |[0m Task exception was never retrieved
+[36;1magent-b_1       |[0m future: <Task finished name='Task-5' coro=<GameState._handle_messages() done, defined at /app/game_state.py:38> exception=KeyError('type')>
+[36;1magent-b_1       |[0m Traceback (most recent call last):
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 43, in _handle_messages
+[36;1magent-b_1       |[0m     await self._on_data(data)
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 59, in _on_data
+[36;1magent-b_1       |[0m     await self._on_game_tick(payload)
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 76, in _on_game_tick
+[36;1magent-b_1       |[0m     self._on_agent_action(agent_action)
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 119, in _on_agent_action
+[36;1magent-b_1       |[0m     agent = self._state["agent_state"][str(agent_number)]
+[36;1magent-b_1       |[0m KeyError: 'type'
+[33m1619373769752605606fbd4eb6822e5c6fb6ae8cv608189defe369382b2f2f853_agent-b_1 exited with code 0
+[0mAborting on container exit...

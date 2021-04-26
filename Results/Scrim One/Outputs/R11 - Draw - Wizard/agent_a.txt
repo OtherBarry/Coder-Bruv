@@ -1,0 +1,54 @@
+[36magent-a_1       |[0m [(1, 4), (2, 4), (3, 4), (4, 4)] True | Percentage of tick time taken: 0.71%
+[36magent-a_1       |[0m Bombs: 1 | Bomb Coords: 2 | None False | Percentage of tick time taken: 0.99%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 1.00%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.65%
+[36magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 0.74%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.62%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.91%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.86%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.75%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.74%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.62%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.70%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.83%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.63%
+[36magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 0.96%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.65%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.79%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.86%
+[36magent-a_1       |[0m Bombs: 1 | Bomb Coords: 2 | None False | Percentage of tick time taken: 0.67%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.67%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.64%
+[36magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 0.96%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.87%
+[36magent-a_1       |[0m Bombs: 1 | Bomb Coords: 3 | None False | Percentage of tick time taken: 0.80%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.63%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.67%
+[36magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 1.04%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.94%
+[36magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 0.89%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 1.04%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 1.11%
+[36magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 0.91%
+[36magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 1.12%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.86%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.91%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.79%
+[36magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | Task exception was never retrieved
+[36magent-a_1       |[0m future: <Task finished name='Task-5' coro=<ServerConnection.handle_messages() done, defined at /app/app/server_connection.py:40> exception=ValueError('Contradictory paths found:', 'negative weights?')>
+[36magent-a_1       |[0m Traceback (most recent call last):
+[36magent-a_1       |[0m   File "/app/app/server_connection.py", line 45, in handle_messages
+[36magent-a_1       |[0m     await self._on_data(data)
+[36magent-a_1       |[0m   File "/app/app/server_connection.py", line 58, in _on_data
+[36magent-a_1       |[0m     await self._on_game_tick(payload)
+[36magent-a_1       |[0m   File "/app/app/server_connection.py", line 70, in _on_game_tick
+[36magent-a_1       |[0m     await self._tick_callback(tick_number, self._state)
+[36magent-a_1       |[0m   File "/app/app/bot/agent.py", line 148, in _on_game_tick
+[36magent-a_1       |[0m     self.distances, self.paths = nx.single_source_dijkstra(
+[36magent-a_1       |[0m   File "/usr/local/lib/python3.9/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 464, in single_source_dijkstra
+[36magent-a_1       |[0m     return multi_source_dijkstra(
+[36magent-a_1       |[0m   File "/usr/local/lib/python3.9/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 722, in multi_source_dijkstra
+[36magent-a_1       |[0m     dist = _dijkstra_multisource(
+[36magent-a_1       |[0m   File "/usr/local/lib/python3.9/site-packages/networkx/algorithms/shortest_paths/weighted.py", line 831, in _dijkstra_multisource
+[36magent-a_1       |[0m     raise ValueError("Contradictory paths found:", "negative weights?")
+[36magent-a_1       |[0m ValueError: ('Contradictory paths found:', 'negative weights?')

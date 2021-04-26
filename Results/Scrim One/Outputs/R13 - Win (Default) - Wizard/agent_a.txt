@@ -1,0 +1,30 @@
+[36magent-a_1       |[0m [(1, 4), (2, 4), (3, 4), (4, 4)] True | Percentage of tick time taken: 0.67%
+[36magent-a_1       |[0m Bombs: 1 | Bomb Coords: 2 | None False | Percentage of tick time taken: 0.98%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.91%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.78%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.79%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.61%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.77%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.80%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.54%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.75%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.60%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.74%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.79%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.81%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.68%
+[36magent-a_1       |[0m [(1, 4), (2, 4), (3, 4), (4, 4)] True | Percentage of tick time taken: 0.90%
+[36magent-a_1       |[0m Bombs: 1 | Bomb Coords: 2 | None False | Percentage of tick time taken: 0.81%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.68%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.56%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.74%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.75%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.74%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.58%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.78%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.66%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.80%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.63%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.59%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.60%
+[36magent-a_1       |[0m None False | Percentage of tick time taken: 0.61%

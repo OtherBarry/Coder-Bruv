@@ -1,0 +1,208 @@
+Attaching to 1619373769752464606fbd4eb6822e5c6fb6ae8cv607bed54fe369382b2dbc6a3_fwd-server-b_1, 1619373769752464606fbd4eb6822e5c6fb6ae8cv607bed54fe369382b2dbc6a3_fwd-server-a_1, 1619373769752464606fbd4eb6822e5c6fb6ae8cv607bed54fe369382b2dbc6a3_game-server_1, 1619373769752464606fbd4eb6822e5c6fb6ae8cv607bed54fe369382b2dbc6a3_agent-a_1, 1619373769752464606fbd4eb6822e5c6fb6ae8cv607bed54fe369382b2dbc6a3_agent-b_1
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.73%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.76%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.72%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.94%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.97%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.78%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.92%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.95%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.70%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.88%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.91%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.92%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.68%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.94%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.73%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.70%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.86%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.77%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.74%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.91%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.87%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.72%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.77%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.94%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.73%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.70%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.72%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.86%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.82%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.91%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.72%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.85%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.73%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.82%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.84%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.72%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.76%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.99%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.87%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.79%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.80%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.94%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.89%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.01%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.67%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.84%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.84%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.78%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.73%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.76%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.88%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.73%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.74%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.91%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.91%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.88%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.72%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.70%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.78%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.84%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.73%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.67%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.90%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.76%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.81%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.74%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.92%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.76%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.72%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.89%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.81%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.70%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.78%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.78%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.94%
+[36;1magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 0.86%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.03%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.91%
+[36;1magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.87%
+[36;1magent-a_1       |[0m [(4, 2), (4, 3), (4, 4)] True | Percentage of tick time taken: 0.78%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.88%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.77%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.93%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.92%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.75%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.70%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.71%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.86%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.92%
+[36;1magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 1.08%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.04%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.87%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.02%
+[36;1magent-a_1       |[0m [(4, 8)] False | Percentage of tick time taken: 0.83%
+[36;1magent-a_1       |[0m Bombs: 1 | Bomb Coords: 4 | Percentage of tick time taken: 0.61%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.57%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.42%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.44%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.57%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.45%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.51%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.51%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.42%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.44%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.42%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.42%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.59%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.42%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.41%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.47%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.41%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.45%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.45%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.50%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.47%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.60%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.55%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.47%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.56%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.57%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.50%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.61%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.60%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.59%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.61%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.62%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.42%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.43%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.58%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.41%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.56%
+[36;1magent-a_1       |[0m Bombs: 1 | Bomb Coords: 4 | None False | Percentage of tick time taken: 0.53%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.49%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.59%
+[36;1magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 1.45%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.44%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.70%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.42%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.41%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.30%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.82%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.35%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.37%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.89%
+[36;1magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | [(5, 8), (4, 8)] True | Percentage of tick time taken: 0.88%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.86%
+[36;1magent-a_1       |[0m [(4, 8)] False | Percentage of tick time taken: 0.74%
+[36;1magent-a_1       |[0m Bombs: 1 | Bomb Coords: 6 | Percentage of tick time taken: 0.49%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.51%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.47%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.61%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.59%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.65%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.49%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.57%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.52%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.45%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.60%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.48%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.60%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.61%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.59%
+[36;1magent-a_1       |[0m Bombs: 1 | Bomb Coords: 6 | None False | Percentage of tick time taken: 0.54%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.49%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.62%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.47%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.46%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.45%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.50%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.46%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.62%
+[36;1magent-a_1       |[0m Bombs: 1 | Bomb Coords: 6 | None False | Percentage of tick time taken: 0.73%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.61%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.51%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.66%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.63%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.50%
+[36;1magent-a_1       |[0m Bombs: 1 | Bomb Coords: 6 | None False | Percentage of tick time taken: 0.70%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.50%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.51%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.47%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.59%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.62%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.47%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.55%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.55%
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 0.64%
+[36;1magent-a_1       |[0m Bombs: 0 | Bomb Coords: 0 | None False | Percentage of tick time taken: 1.94%
+[36;1magent-a_1       |[0m unknown packet "endgame_state": {'type': 'endgame_state', 'payload': {'initial_state': {'agent_state': {'0': {'coordinates': [1, 4], 'hp': 3, 'inventory': {'bombs': 3}, 'blast_diameter': 3, 'number': 0, 'invulnerability': 0}, '1': {'coordinates': [7, 4], 'hp': 3, 'inventory': {'bombs': 3}, 'blast_diameter': 3, 'number': 1, 'invulnerability': 0}}, 'entities': [{'x': 3, 'y': 7, 'type': 'm'}, {'x': 5, 'y': 7, 'type': 'm'}, {'x': 8, 'y': 5, 'type': 'm'}, {'x': 0, 'y': 5, 'type': 'm'}, {'x': 0, 'y': 7, 'type': 'm'}, {'x': 8, 'y': 7, 'type': 'm'}, {'x': 3, 'y': 5, 'type': 'm'}, {'x': 5, 'y': 5, 'type': 'm'}, {'x': 1, 'y': 7, 'type': 'm'}, {'x': 7, 'y': 7, 'type': 'm'}, {'x': 6, 'y': 0, 'type': 'm'}, {'x': 2, 'y': 0, 'type': 'm'}, {'x': 1, 'y': 0, 'type': 'm'}, {'x': 7, 'y': 0, 'type': 'm'}, {'x': 7, 'y': 1, 'type': 'm'}, {'x': 1, 'y': 1, 'type': 'm'}, {'x': 1, 'y': 5, 'type': 'm'}, {'x': 7, 'y': 5, 'type': 'm'}, {'x': 2, 'y': 7, 'type': 'w', 'hp': 1}, {'x': 6, 'y': 7, 'type': 'w', 'hp': 1}, {'x': 7, 'y': 2, 'type': 'w', 'hp': 1}, {'x': 1, 'y': 2, 'type': 'w', 'hp': 1}, {'x': 8, 'y': 4, 'type': 'w', 'hp': 1}, {'x': 0, 'y': 4, 'type': 'w', 'hp': 1}, {'x': 6, 'y': 3, 'type': 'w', 'hp': 1}, {'x': 2, 'y': 3, 'type': 'w', 'hp': 1}, {'x': 0, 'y': 8, 'type': 'w', 'hp': 1}, {'x': 8, 'y': 8, 'type': 'w', 'hp': 1}, {'x': 6, 'y': 5, 'type': 'w', 'hp': 1}, {'x': 2, 'y': 5, 'type': 'w', 'hp': 1}, {'x': 6, 'y': 8, 'type': 'w', 'hp': 1}, {'x': 2, 'y': 8, 'type': 'w', 'hp': 1}, {'x': 5, 'y': 3, 'type': 'w', 'hp': 1}, {'x': 3, 'y': 3, 'type': 'w', 'hp': 1}, {'x': 3, 'y': 6, 'type': 'w', 'hp': 1}, {'x': 5, 'y': 6, 'type': 'w', 'hp': 1}, {'x': 6, 'y': 1, 'type': 'w', 'hp': 1}, {'x': 2, 'y': 1, 'type': 'w', 'hp': 1}, {'x': 7, 'y': 8, 'type': 'o', 'hp': 3}, {'x': 1, 'y': 8, 'type': 'o', 'hp': 3}, {'x': 2, 'y': 2, 'type': 'o', 'hp': 3}, {'x': 6, 'y': 2, 'type': 'o', 'hp': 3}, {'x': 5, 'y': 2, 'type': 'o', 'hp': 3}, {'x': 3, 'y': 2, 'type': 'o', 'hp': 3}], 'world': {'width': 9, 'height': 9}, 'tick': 0, 'config': {'tick_rate_hz': 10, 'game_duration_ticks': 1800, 'fire_spawn_interval_ticks': 5}}, 'history': [{'tick': 2, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'bomb'}}, {'type': 'entity_spawned', 'data': {'x': 7, 'y': 4, 'type': 'b', 'owner': 1, 'expires': 42, 'hp': 1, 'blast_diameter': 3}}, {'type': 'agent_state', 'data': {'coordinates': [7, 4], 'hp': 3, 'inventory': {'bombs': 2}, 'blast_diameter': 3, 'number': 1, 'invulnerability': 0}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 3, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'down'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 4, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 5, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'detonate', 'coordinates': [7, 4]}}, {'type': 'entity_expired', 'data': [7, 4]}, {'type': 'entity_spawned', 'data': {'x': 7, 'y': 4, 'type': 'x', 'owner': 1, 'expires': 15}}, {'type': 'entity_spawned', 'data': {'x': 7, 'y': 3, 'type': 'x', 'owner': 1, 'expires': 15}}, {'type': 'entity_spawned', 'data': {'x': 6, 'y': 4, 'type': 'x', 'owner': 1, 'expires': 15}}, {'type': 'entity_state', 'coordinates': [8, 4], 'updated_entity': {'x': 8, 'y': 4, 'type': 'w', 'hp': 0}}, {'type': 'entity_expired', 'data': [8, 4]}]}, {'tick': 15, 'events': [{'type': 'entity_expired', 'data': [7, 4]}, {'type': 'entity_expired', 'data': [7, 3]}, {'type': 'entity_expired', 'data': [6, 4]}]}, {'tick': 16, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 17, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 18, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 19, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'bomb'}}, {'type': 'entity_spawned', 'data': {'x': 6, 'y': 4, 'type': 'b', 'owner': 1, 'expires': 59, 'hp': 1, 'blast_diameter': 3}}, {'type': 'agent_state', 'data': {'coordinates': [6, 4], 'hp': 3, 'inventory': {'bombs': 1}, 'blast_diameter': 3, 'number': 1, 'invulnerability': 0}}]}, {'tick': 20, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 21, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'down'}}]}, {'tick': 22, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'detonate', 'coordinates': [6, 4]}}, {'type': 'entity_expired', 'data': [6, 4]}, {'type': 'entity_spawned', 'data': {'x': 6, 'y': 4, 'type': 'x', 'owner': 1, 'expires': 32}}, {'type': 'entity_state', 'coordinates': [6, 5], 'updated_entity': {'x': 6, 'y': 5, 'type': 'w', 'hp': 0}}, {'type': 'entity_expired', 'data': [6, 5]}, {'type': 'entity_state', 'coordinates': [6, 3], 'updated_entity': {'x': 6, 'y': 3, 'type': 'w', 'hp': 0}}, {'type': 'entity_expired', 'data': [6, 3]}, {'type': 'entity_spawned', 'data': {'x': 5, 'y': 4, 'type': 'x', 'owner': 1, 'expires': 32}}, {'type': 'entity_spawned', 'data': {'x': 7, 'y': 4, 'type': 'x', 'owner': 1, 'expires': 32}}]}, {'tick': 23, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'detonate', 'coordinates': [6, 4]}}]}, {'tick': 24, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'bomb'}}, {'type': 'entity_spawned', 'data': {'x': 7, 'y': 3, 'type': 'b', 'owner': 1, 'expires': 64, 'hp': 1, 'blast_diameter': 3}}, {'type': 'agent_state', 'data': {'coordinates': [7, 3], 'hp': 3, 'inventory': {'bombs': 0}, 'blast_diameter': 3, 'number': 1, 'invulnerability': 0}}]}, {'tick': 25, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 26, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'down'}}]}, {'tick': 27, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'detonate', 'coordinates': [7, 3]}}, {'type': 'entity_expired', 'data': [7, 3]}, {'type': 'entity_spawned', 'data': {'x': 7, 'y': 3, 'type': 'x', 'owner': 1, 'expires': 37}}, {'type': 'entity_expired', 'data': [7, 4]}, {'type': 'entity_spawned', 'data': {'x': 7, 'y': 4, 'type': 'x', 'owner': 1, 'expires': 37}}, {'type': 'entity_state', 'coordinates': [7, 2], 'updated_entity': {'x': 7, 'y': 2, 'type': 'w', 'hp': 0}}, {'type': 'entity_expired', 'data': [7, 2]}, {'type': 'entity_spawned', 'data': {'x': 6, 'y': 3, 'type': 'x', 'owner': 1, 'expires': 37}}, {'type': 'entity_spawned', 'data': {'x': 8, 'y': 3, 'type': 'x', 'owner': 1, 'expires': 37}}]}, {'tick': 28, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 29, 'events': [{'type': 'entity_spawned', 'data': {'x': 4, 'y': 7, 'type': 'bp', 'expires': 69, 'hp': 1}}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 30, 'events': [{'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 31, 'events': [{'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 32, 'events': [{'type': 'entity_expired', 'data': [6, 4]}, {'type': 'entity_expired', 'data': [5, 4]}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 33, 'events': [{'type': 'agent_state', 'data': {'coordinates': [4, 7], 'hp': 3, 'inventory': {'bombs': 3}, 'blast_diameter': 5, 'number': 0, 'invulnerability': 0}}, {'type': 'entity_expired', 'data': [4, 7]}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'down'}}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 34, 'events': [{'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'down'}}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 35, 'events': [{'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'down'}}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 36, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 37, 'events': [{'type': 'entity_expired', 'data': [7, 3]}, {'type': 'entity_expired', 'data': [7, 4]}, {'type': 'entity_expired', 'data': [6, 3]}, {'type': 'entity_expired', 'data': [8, 3]}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 38, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 39, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 40, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 41, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 42, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 134, 'events': [{'type': 'entity_spawned', 'data': {'x': 4, 'y': 2, 'type': 'a', 'expires': 174, 'hp': 1}}]}, {'tick': 135, 'events': [{'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'down'}}]}, {'tick': 136, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'down'}}]}, {'tick': 137, 'events': [{'type': 'agent_state', 'data': {'coordinates': [4, 2], 'hp': 3, 'inventory': {'bombs': 4}, 'blast_diameter': 5, 'number': 0, 'invulnerability': 0}}, {'type': 'entity_expired', 'data': [4, 2]}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'down'}}]}, {'tick': 138, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'up'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'down'}}]}, {'tick': 139, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 140, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 141, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'up'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 149, 'events': [{'type': 'entity_spawned', 'data': {'x': 3, 'y': 8, 'type': 'a', 'expires': 189, 'hp': 1}}]}, {'tick': 150, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'up'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 151, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'up'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 152, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'up'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 153, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'left'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'up'}}]}, {'tick': 154, 'events': [{'type': 'agent_state', 'data': {'coordinates': [3, 8], 'hp': 3, 'inventory': {'bombs': 1}, 'blast_diameter': 3, 'number': 1, 'invulnerability': 0}}, {'type': 'entity_expired', 'data': [3, 8]}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'bomb'}}, {'type': 'entity_spawned', 'data': {'x': 4, 'y': 8, 'type': 'b', 'owner': 0, 'expires': 194, 'hp': 1, 'blast_diameter': 5}}, {'type': 'agent_state', 'data': {'coordinates': [4, 8], 'hp': 3, 'inventory': {'bombs': 3}, 'blast_diameter': 5, 'number': 0, 'invulnerability': 0}}]}, {'tick': 155, 'events': [{'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 191, 'events': [{'type': 'entity_spawned', 'data': {'x': 4, 'y': 4, 'type': 'a', 'expires': 231, 'hp': 1}}]}, {'tick': 194, 'events': [{'type': 'entity_expired', 'data': [4, 8]}, {'type': 'entity_spawned', 'data': {'x': 4, 'y': 8, 'type': 'x', 'owner': 0, 'expires': 204}}, {'type': 'entity_spawned', 'data': {'x': 4, 'y': 7, 'type': 'x', 'owner': 0, 'expires': 204}}, {'type': 'entity_spawned', 'data': {'x': 4, 'y': 6, 'type': 'x', 'owner': 0, 'expires': 204}}, {'type': 'agent_state', 'data': {'coordinates': [3, 8], 'hp': 2, 'inventory': {'bombs': 1}, 'blast_diameter': 3, 'number': 1, 'invulnerability': 199}}, {'type': 'entity_spawned', 'data': {'x': 3, 'y': 8, 'type': 'x', 'owner': 0, 'expires': 204}}, {'type': 'entity_state', 'coordinates': [2, 8], 'updated_entity': {'x': 2, 'y': 8, 'type': 'w', 'hp': 0}}, {'type': 'entity_expired', 'data': [2, 8]}, {'type': 'agent_state', 'data': {'coordinates': [5, 8], 'hp': 2, 'inventory': {'bombs': 3}, 'blast_diameter': 5, 'number': 0, 'invulnerability': 199}}, {'type': 'entity_spawned', 'data': {'x': 5, 'y': 8, 'type': 'x', 'owner': 0, 'expires': 204}}, {'type': 'entity_state', 'coordinates': [6, 8], 'updated_entity': {'x': 6, 'y': 8, 'type': 'w', 'hp': 0}}, {'type': 'entity_expired', 'data': [6, 8]}]}, {'tick': 200, 'events': [{'type': 'agent_state', 'data': {'coordinates': [3, 8], 'hp': 1, 'inventory': {'bombs': 1}, 'blast_diameter': 3, 'number': 1, 'invulnerability': 205}}, {'type': 'agent_state', 'data': {'coordinates': [5, 8], 'hp': 1, 'inventory': {'bombs': 3}, 'blast_diameter': 5, 'number': 0, 'invulnerability': 205}}]}, {'tick': 204, 'events': [{'type': 'entity_expired', 'data': [4, 8]}, {'type': 'entity_expired', 'data': [4, 7]}, {'type': 'entity_expired', 'data': [4, 6]}, {'type': 'entity_expired', 'data': [3, 8]}, {'type': 'entity_expired', 'data': [5, 8]}]}, {'tick': 205, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 206, 'events': [{'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'down'}}, {'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'left'}}]}, {'tick': 207, 'events': [{'type': 'agent', 'agent_number': 0, 'data': {'type': 'bomb'}}, {'type': 'entity_spawned', 'data': {'x': 4, 'y': 8, 'type': 'b', 'owner': 0, 'expires': 247, 'hp': 1, 'blast_diameter': 5}}, {'type': 'agent_state', 'data': {'coordinates': [4, 8], 'hp': 1, 'inventory': {'bombs': 2}, 'blast_diameter': 5, 'number': 0, 'invulnerability': 205}}, {'type': 'agent', 'agent_number': 1, 'data': {'type': 'move', 'move': 'down'}}]}, {'tick': 208, 'events': [{'type': 'agent', 'agent_number': 0, 'data': {'type': 'move', 'move': 'right'}}]}, {'tick': 222, 'events': [{'type': 'entity_spawned', 'data': {'x': 4, 'y': 5, 'type': 'bp', 'expires': 262, 'hp': 1}}]}, {'tick': 231, 'events': [{'type': 'entity_expired', 'data': [4, 4]}]}, {'tick': 237, 'events': [{'type': 'entity_spawned', 'data': {'x': 4, 'y': 0, 'type': 'a', 'expires': 277, 'hp': 1}}]}, {'tick': 247, 'events': [{'type': 'entity_expired', 'data': [4, 8]}, {'type': 'entity_spawned', 'data': {'x': 4, 'y': 8, 'type': 'x', 'owner': 0, 'expires': 257}}, {'type': 'entity_spawned', 'data': {'x': 4, 'y': 7, 'type': 'x', 'owner': 0, 'expires': 257}}, {'type': 'agent_state', 'data': {'coordinates': [4, 6], 'hp': 0, 'inventory': {'bombs': 1}, 'blast_diameter': 3, 'number': 1, 'invulnerability': 252}}, {'type': 'entity_spawned', 'data': {'x': 4, 'y': 6, 'type': 'x', 'owner': 0, 'expires': 257}}, {'type': 'entity_spawned', 'data': {'x': 3, 'y': 8, 'type': 'x', 'owner': 0, 'expires': 257}}, {'type': 'entity_spawned', 'data': {'x': 2, 'y': 8, 'type': 'x', 'owner': 0, 'expires': 257}}, {'type': 'agent_state', 'data': {'coordinates': [5, 8], 'hp': 0, 'inventory': {'bombs': 2}, 'blast_diameter': 5, 'number': 0, 'invulnerability': 252}}, {'type': 'entity_spawned', 'data': {'x': 5, 'y': 8, 'type': 'x', 'owner': 0, 'expires': 257}}, {'type': 'entity_spawned', 'data': {'x': 6, 'y': 8, 'type': 'x', 'owner': 0, 'expires': 257}}]}], 'winning_agent_number': None}}
+[36;1magent-a_1       |[0m None False | Percentage of tick time taken: 1.43%
+[36;1magent-a_1       |[0m Connection with server closed
+[34m1619373769752464606fbd4eb6822e5c6fb6ae8cv607bed54fe369382b2dbc6a3_game-server_1 exited with code 0
+[0mAborting on container exit...
