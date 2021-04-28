@@ -69,4 +69,4 @@ class ServerConnection:
             tick_number = game_tick.get("tick")
             await self._tick_callback(tick_number, self._state)
         end = time.time()
-        print("Percentage of tick time taken: {:.2f}%".format(100 * (end - start) / 0.1))
+        print("TIME: {:.2f}%".format(100 * (end - start) / 0.1))

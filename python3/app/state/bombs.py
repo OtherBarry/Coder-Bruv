@@ -1,14 +1,16 @@
-from queue import Queue
-
-
 class Bomb:
     def __init__(self, entity):
         self.position = (entity["x"], entity["y"])
         self.radius = entity["blast_diameter"] // 2
         self.owner = str(entity["owner"])
+        self.detonates_at = entity["expires"]
         self.detonated_by = []
         self.detonates = []
         self.impacts = None
+
+    def update_tick(self, tick):
+        if self.detonates_at - (self.radius + 1) <= tick:
+            self.owner = None
 
     def calculate_impacts(self, map):
         impacts = []
@@ -17,10 +19,11 @@ class Bomb:
                 new = list(self.position)
                 new[i] += r * m
                 new = tuple(new)
-                if new not in map.graph:
-                    break
                 impacts.append(tuple(new))
-                if map.graph.nodes[new].get("entity") is not None:
+                if (
+                    new not in map.graph
+                    or map.graph.nodes[new].get("entity") is not None
+                ):
                     break
         self.impacts = impacts
 
@@ -35,7 +38,6 @@ class BombLibrary:
     def __init__(self):
         self._bombs = {}
         self._coords = {}
-        self._expanded_coords_cache = {}
 
     def add_bomb(self, entity, map):
         bomb = Bomb(entity)
@@ -45,14 +47,6 @@ class BombLibrary:
     def remove_bomb(self, coords, map):
         bomb = self._bombs.get(coords)
         if bomb is not None:
-            for coord in bomb.impacts:
-                bombs = self._coords.get(coord)
-                if bombs is not None:
-                    if len(bombs) == 1:
-                        del self._coords[coord]
-                        map.graph.nodes[coord]["weight"] = map.WEIGHT_MAP["Default"]
-                    else:
-                        bombs.remove(bomb)
             for b in bomb.detonates:
                 b.detonated_by.remove(bomb)
             for b in bomb.detonated_by:
@@ -61,49 +55,42 @@ class BombLibrary:
 
     def update(self, map):
         self._coords = {}
-        for bomb in self._bombs.values():  # O(b)
+        for bomb in self._bombs.values():
             bomb.calculate_impacts(map)
-            for coords in bomb.impacts:  # O(b.i)S
-                if coords in self._coords:
-                    self._coords[coords].append(bomb)
-                else:
-                    self._coords[coords] = [bomb]
-                    map.graph.nodes[coords]["weight"] = map.WEIGHT_MAP[
-                        "Future Blast Zone"
-                    ]
-        for bomb in self._bombs.values():  # O(b)
             for coords in bomb.impacts:
                 detonatee = self._bombs.get(coords)
                 if detonatee is not None:
                     bomb.detonates.append(detonatee)
                     detonatee.detonated_by.append(bomb)
+        for bomb in self._bombs.values():
+            can_detonate = {
+                bomb,
+            }
+            to_visit = bomb.detonated_by[:]
+            while to_visit:
+                current = to_visit.pop()
+                can_detonate.add(current)
+                to_visit.extend(
+                    [b for b in current.detonated_by if b not in can_detonate]
+                )
+            for coords in bomb.impacts:
+                if coords in self._coords:
+                    self._coords[coords].update(can_detonate)
+                else:
+                    self._coords[coords] = set(can_detonate)
 
-        print("Bombs: {} | Bomb Coords: {}".format(len(self._bombs), len(self._coords)), end=" | ")
+    def update_tick(self, tick):
+        for bomb in self._bombs.values():
+            bomb.update_tick(tick)
 
     def get_bomb_at(self, coords):
         return self._bombs.get(coords)
 
     def get_bombs_impacting(self, coords):
-        value = self._expanded_coords_cache.get(coords)
-        if value is not None:
-            return value
-        bombs = set()
-        to_visit = Queue()
-        for bomb in self._coords.get(coords, []):
-            to_visit.put(bomb)
-        while not to_visit.empty():
-            current = to_visit.get()
-            if current in bombs:
-                continue
-            bombs.add(current)
-            for bomb in current.detonated_by:
-                to_visit.put(bomb)
-        value = list(bombs)
-        self._expanded_coords_cache[coords] = value
-        return value
+        return self._coords.get(coords, set())
 
     def get_bomb_impact_owners(self, coords):
         owners = set()
         for bomb in self.get_bombs_impacting(coords):
             owners.add(bomb.owner)
-        return list(owners)
+        return owners

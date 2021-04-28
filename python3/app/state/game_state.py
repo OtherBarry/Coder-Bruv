@@ -22,12 +22,14 @@ class GameState:
             self.desynced = False
         else:
             print(
-                "ERROR: Desynced. Expected {} | Actual {}".format(self.tick + 1, tick)
+                "ERROR: Desynced. Expected {} | Actual {}".format(self.tick + 1, tick),
+                end=" | ",
             )
             self.desynced = True
         self.tick = tick
         self.us.update_tick(tick)
         self.them.update_tick(tick)
+        self.map.bomb_library.update_tick(tick)
 
     def receive_events(self, events):
         entities_changed = False

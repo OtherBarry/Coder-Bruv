@@ -7,7 +7,7 @@ class Player:
     def update_state(self, state, tick):
         """Updates the state of the agent from JSON"""
         self.state = state
-        self.id = state["number"]
+        self.id = str(state["number"])
         self.coords = (state["coordinates"][0], state["coordinates"][1])
         self.hp = state["hp"]
         self.ammo = state["inventory"]["bombs"]

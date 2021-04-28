@@ -32,7 +32,6 @@ class Map:
             if to in self.graph:
                 yield coords, to
 
-
     def add_entity(self, entity):
         """Adds the given entity to the map"""
         coords = (entity["x"], entity["y"])

@@ -44,8 +44,13 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
-        destination = min(nx.neighbors(self.map.graph, self.us.coords), key=lambda x: self.map.graph.nodes[x]["weight"])
-        await self._server.send_move(_get_direction_from_coords(self.us.coords, destination))
+        destination = min(
+            nx.neighbors(self.map.graph, self.us.coords),
+            key=lambda x: self.map.graph.nodes[x]["weight"],
+        )
+        await self._server.send_move(
+            _get_direction_from_coords(self.us.coords, destination)
+        )
 
 
 if __name__ == "__main__":
