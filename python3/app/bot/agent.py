@@ -164,11 +164,7 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
-        # TODO: Avoid Traps
-        # TODO: Don't avoid our own bombs until close to det
-        # TODO: Improve trapping logic to account for blast radius and both inside
         # TODO: Logic in regards to current ammo/hp
-        # TODO: Handle existence of other player
         # TODO: Break out of cages
 
         self.danger_nodes = self._find_danger_nodes()
