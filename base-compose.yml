@@ -26,3 +26,8 @@ services:
         build:
             context: python3/
             dockerfile: app/enemies/scrim-one/Dockerfile
+
+    python3-scrim-two:
+        build:
+            context: python3/
+            dockerfile: app/enemies/scrim-two/Dockerfile
