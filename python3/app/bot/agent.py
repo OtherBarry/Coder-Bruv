@@ -164,8 +164,10 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
-        # TODO: Logic in regards to current ammo/hp
         # TODO: Break out of cages
+        # TODO: Treat fire with same weight as bombs
+        # TODO: Handle fire spawning better - We should be able to predict when/where it will spawn
+        # TODO: Logic in regards to current ammo/hp
 
         self.danger_nodes = self._find_danger_nodes()
         self.next_to_enemy = _manhattan_distance(self.us.coords, self.them.coords) == 1
