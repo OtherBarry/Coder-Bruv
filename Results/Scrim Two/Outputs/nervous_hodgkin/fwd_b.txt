@@ -1,0 +1,258 @@
+[35mfwd-server-b_1  |[0m ADMIN_ROLE_ENABLED=1 (default: 1)
+[35mfwd-server-b_1  |[0m AGENT_ID_MAPPING=agentA,agentB (default: agentA,agentB)
+[35mfwd-server-b_1  |[0m AMMO_DURATION_TICKS=40 (default: 40)
+[35mfwd-server-b_1  |[0m AMMO_SPAWN_WEIGHTING=0.9 (default: 0.9)
+[35mfwd-server-b_1  |[0m BLAST_DURATION_TICKS=10 (default: 10)
+[35mfwd-server-b_1  |[0m BLAST_POWERUP_DURATION_TICKS=40 (default: 40)
+[35mfwd-server-b_1  |[0m BLAST_POWERUP_SPAWN_WEIGHTING=0.1 (default: 0.1)
+[35mfwd-server-b_1  |[0m BOMB_DURATION_TICKS=40 (default: 40)
+[35mfwd-server-b_1  |[0m ENTITY_SPAWN_PROBABILITY_PER_TICK=0.025 (default: 0.025)
+[35mfwd-server-b_1  |[0m FIRE_SPAWN_INTERVAL_TICKS=5 (default: 5)
+[35mfwd-server-b_1  |[0m GAME_DURATION_TICKS=1800 (default: 1800)
+[35mfwd-server-b_1  |[0m GAME_START_DELAY_MS=2000 (default: 2000)
+[35mfwd-server-b_1  |[0m INITIAL_AMMUNITION=3 (default: 3)
+[35mfwd-server-b_1  |[0m INITIAL_BLAST_DIAMETER=3 (default: 3)
+[35mfwd-server-b_1  |[0m INITIAL_HP=3 (default: 3)
+[35mfwd-server-b_1  |[0m INVULNERABILITY_TICKS=5 (default: 5)
+[35mfwd-server-b_1  |[0m TELEMETRY_ENABLED=1 (default: 1)
+[35mfwd-server-b_1  |[0m TRAINING_MODE_ENABLED=0 (default: 0)
+[35mfwd-server-b_1  |[0m SYMMETRICAL_MAP_ENABLED=1 (default: 1)
+[35mfwd-server-b_1  |[0m MAP_HEIGHT=9 (default: 9)
+[35mfwd-server-b_1  |[0m MAP_WIDTH=9 (default: 9)
+[35mfwd-server-b_1  |[0m ORE_BLOCK_FREQUENCY=0.0617283950617284 (default: 0.0617283950617284)
+[35mfwd-server-b_1  |[0m PORT=6969 (default: 3000)
+[35mfwd-server-b_1  |[0m PRNG_SEED=3525527829200410 (default: Random)
+[35mfwd-server-b_1  |[0m SAVE_REPLAY_ENABLED=1 (default: 1)
+[35mfwd-server-b_1  |[0m SHUTDOWN_ON_GAME_END_ENABLED=0 (default: 0)
+[35mfwd-server-b_1  |[0m STEEL_BLOCK_FREQUENCY=0.2222222222222222 (default: 0.2222222222222222)
+[35mfwd-server-b_1  |[0m TICK_RATE_HZ=10 (default: 10)
+[35mfwd-server-b_1  |[0m TOTAL_AGENTS=2 (default: 2)
+[35mfwd-server-b_1  |[0m TOURNAMENT_AGENT_CONNECTION_GRACE_PERIOD_MS=null (default: null)
+[35mfwd-server-b_1  |[0m WOOD_BLOCK_FREQUENCY=0.2469135802469136 (default: 0.2469135802469136)
+[35mfwd-server-b_1  |[0m WORLD_SEED=99999999999 (default: Random)
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:39.743Z - {"agents":[{"coordinates":[1,5],"hp":3,"inventory":{"bombs":3},"blast_diameter":3,"number":0,"invulnerability":0},{"coordinates":[7,5],"hp":3,"inventory":{"bombs":3},"blast_diameter":3,"number":1,"invulnerability":0}],"entities":[{"x":5,"y":1,"type":"m"},{"x":3,"y":1,"type":"m"},{"x":0,"y":2,"type":"m"},{"x":8,"y":2,"type":"m"},{"x":8,"y":7,"type":"m"},{"x":0,"y":7,"type":"m"},{"x":6,"y":1,"type":"m"},{"x":2,"y":1,"type":"m"},{"x":2,"y":7,"type":"m"},{"x":6,"y":7,"type":"m"},{"x":6,"y":0,"type":"m"},{"x":2,"y":0,"type":"m"},{"x":5,"y":0,"type":"m"},{"x":3,"y":0,"type":"m"},{"x":0,"y":8,"type":"m"},{"x":8,"y":8,"type":"m"},{"x":6,"y":5,"type":"m"},{"x":2,"y":5,"type":"m"},{"x":1,"y":7,"type":"w","hp":1},{"x":7,"y":7,"type":"w","hp":1},{"x":3,"y":3,"type":"w","hp":1},{"x":5,"y":3,"type":"w","hp":1},{"x":8,"y":5,"type":"w","hp":1},{"x":0,"y":5,"type":"w","hp":1},{"x":1,"y":6,"type":"w","hp":1},{"x":7,"y":6,"type":"w","hp":1},{"x":0,"y":1,"type":"w","hp":1},{"x":8,"y":1,"type":"w","hp":1},{"x":1,"y":1,"type":"w","hp":1},{"x":7,"y":1,"type":"w","hp":1},{"x":5,"y":8,"type":"w","hp":1},{"x":3,"y":8,"type":"w","hp":1},{"x":3,"y":2,"type":"w","hp":1},{"x":5,"y":2,"type":"w","hp":1},{"x":0,"y":6,"type":"w","hp":1},{"x":8,"y":6,"type":"w","hp":1},{"x":6,"y":6,"type":"w","hp":1},{"x":2,"y":6,"type":"w","hp":1},{"x":3,"y":4,"type":"o","hp":3},{"x":5,"y":4,"type":"o","hp":3},{"x":0,"y":0,"type":"o","hp":3},{"x":8,"y":0,"type":"o","hp":3},{"x":5,"y":6,"type":"o","hp":3},{"x":3,"y":6,"type":"o","hp":3}]}
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:39.749Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:40.750Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:41.752Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:42.753Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:43.754Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:44.755Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:45.757Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:46.758Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:47.759Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:48.760Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:49.761Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:50.762Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:51.763Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:52.765Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:53.766Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:54.767Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:55.769Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:56.769Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:57.771Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:58.772Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:29:59.773Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:00.775Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:01.776Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:02.777Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:03.778Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:04.779Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:05.780Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:06.782Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:07.783Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:08.784Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:09.786Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:10.787Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:11.788Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:12.789Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:13.791Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:14.792Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:15.793Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:16.794Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:17.795Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:18.797Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:19.798Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:20.799Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:21.801Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:22.802Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:23.803Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:24.804Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:25.806Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:26.806Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:27.807Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:28.809Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:29.810Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:30.811Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:31.812Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:32.814Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:33.815Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:34.817Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:35.818Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:36.819Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:37.820Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:38.822Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:39.823Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:40.824Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:41.826Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:42.826Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:43.828Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:44.829Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:45.830Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:46.832Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:47.833Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:48.834Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:49.835Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:50.836Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:51.837Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:52.838Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:53.839Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:54.841Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:55.842Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:56.843Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:57.844Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:58.845Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:30:59.847Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:00.848Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:01.849Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:02.850Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:03.851Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:04.852Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:05.853Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:06.854Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:07.856Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:08.857Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:09.858Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:10.859Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:11.861Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:12.862Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:13.863Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:14.864Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:15.866Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:16.867Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:17.868Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:18.869Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:19.870Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:20.871Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:21.872Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:22.873Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:23.874Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:24.876Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:25.877Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:26.878Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:27.879Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:28.880Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:29.881Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:30.883Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:31.884Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:32.885Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:33.887Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:34.888Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:35.889Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:36.890Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:37.892Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:38.893Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:39.894Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:40.895Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:41.897Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:42.898Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:43.899Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:44.900Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:45.902Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:46.903Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:47.904Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:48.905Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:49.907Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:50.908Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:51.909Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:52.910Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:53.912Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:54.913Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:55.914Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:56.915Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:57.917Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:58.918Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:31:59.919Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:00.921Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:01.922Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:02.923Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:03.924Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:04.925Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:05.927Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:06.928Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:07.929Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:08.930Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:09.932Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:10.933Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:11.934Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:12.936Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:13.936Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:14.936Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:15.937Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:16.938Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:17.938Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:18.939Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:19.940Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:20.941Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:21.943Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:22.944Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:23.945Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:24.947Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:25.948Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:26.949Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:27.951Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:28.952Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:29.953Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:30.954Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:31.955Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:32.956Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:33.958Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:34.959Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:35.960Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:36.962Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:37.963Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:38.964Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:39.965Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:40.967Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:41.968Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:42.969Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:43.971Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:44.972Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:45.973Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:46.974Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:47.976Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:48.976Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:49.978Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:50.979Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:51.980Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:52.981Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:53.982Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:54.983Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:55.984Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:56.986Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:57.986Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:58.987Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:32:59.989Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:00.990Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:01.991Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:02.992Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:03.993Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:04.994Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:05.995Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:06.997Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:07.998Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:08.999Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:10.000Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:11.002Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:12.003Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:13.004Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:14.005Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:15.007Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:16.008Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:17.009Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:18.011Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:19.011Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:20.012Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:21.013Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:22.015Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:23.016Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-04-28T09:33:24.017Z - Waiting for agents to connect 0 of 2

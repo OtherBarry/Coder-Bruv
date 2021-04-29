@@ -1,0 +1,17 @@
+Attaching to 1619597041529959606fbd4eb6822e5c6fb6ae8cv607733aefe369382b2c87c35_fwd-server-b_1, 1619597041529959606fbd4eb6822e5c6fb6ae8cv607733aefe369382b2c87c35_fwd-server-a_1, 1619597041529959606fbd4eb6822e5c6fb6ae8cv607733aefe369382b2c87c35_game-server_1, 1619597041529959606fbd4eb6822e5c6fb6ae8cv607733aefe369382b2c87c35_agent-a_1, 1619597041529959606fbd4eb6822e5c6fb6ae8cv607733aefe369382b2c87c35_agent-b_1
+[36;1magent-b_1       |[0m Task exception was never retrieved
+[36;1magent-b_1       |[0m future: <Task finished name='Task-5' coro=<GameState._handle_messages() done, defined at /app/game_state.py:38> exception=KeyError('owner')>
+[36;1magent-b_1       |[0m Traceback (most recent call last):
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 43, in _handle_messages
+[36;1magent-b_1       |[0m     await self._on_data(data)
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 59, in _on_data
+[36;1magent-b_1       |[0m     await self._on_game_tick(payload)
+[36;1magent-b_1       |[0m   File "/app/game_state.py", line 89, in _on_game_tick
+[36;1magent-b_1       |[0m     await self._tick_callback(tick_number, self._state)
+[36;1magent-b_1       |[0m   File "/app/agent.py", line 38, in _on_game_tick
+[36;1magent-b_1       |[0m     random_action = get_action(tick_number, game_state)
+[36;1magent-b_1       |[0m   File "/app/ai.py", line 248, in get_action
+[36;1magent-b_1       |[0m     grid[ents[i]['x']][ents[i]['y']].owner = ents[i]['owner']
+[36;1magent-b_1       |[0m KeyError: 'owner'
+[33m1619597041529959606fbd4eb6822e5c6fb6ae8cv607733aefe369382b2c87c35_agent-b_1 exited with code 0
+[0mAborting on container exit...

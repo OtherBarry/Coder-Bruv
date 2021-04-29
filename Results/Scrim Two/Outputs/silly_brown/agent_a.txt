@@ -1,0 +1,13 @@
+[36magent-a_1       |[0m CENTERING   | TIME: 1.08%
+[36magent-a_1       |[0m CENTERING   | TIME: 0.72%
+[36magent-a_1       |[0m WAITING     | TIME: 0.60%
+[36magent-a_1       |[0m WAITING     | TIME: 0.84%
+[36magent-a_1       |[0m WAITING     | TIME: 0.63%
+[36magent-a_1       |[0m WAITING     | TIME: 0.56%
+[36magent-a_1       |[0m WAITING     | TIME: 0.61%
+[36magent-a_1       |[0m WAITING     | TIME: 0.77%
+[36magent-a_1       |[0m WAITING     | TIME: 0.59%
+[36magent-a_1       |[0m WAITING     | TIME: 0.81%
+[36magent-a_1       |[0m WAITING     | TIME: 0.84%
+[36magent-a_1       |[0m WAITING     | TIME: 0.60%
+[36magent-a_1       |[0m WAITING     | TIME: 0.85%
