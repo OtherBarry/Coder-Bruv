@@ -322,7 +322,7 @@ class Agent:
         print("WAITING    ", end=" | ")
 
     def prison_break(self):
-        if self.them.coords not in self.map.graph or self.them.coords not in self.paths[self.us.coords]:
+        if self.them.coords not in self.map.graph or self.them.coords in self.paths[self.us.coords]:
             return None
         connected_nodes = nx.node_connected_component(self.map.graph, self.us.coords)  # Get nodes connected to us
         if len(connected_nodes) > len(nx.node_connected_component(self.map.graph, self.them.coords)):
