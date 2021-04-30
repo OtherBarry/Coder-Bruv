@@ -71,5 +71,7 @@ class Map:
         else:
             if self.bomb_library.get_bomb_at(coords) is not None:
                 self.bomb_library.remove_bomb(coords, self)
+            elif self.block_library.get(coords) is not None:
+                del self.block_library[coords]
             self.graph.add_node(coords, weight=Map.WEIGHT_MAP["Default"])
             self.graph.add_edges_from(self._generate_edges(coords))

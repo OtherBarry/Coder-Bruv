@@ -94,3 +94,11 @@ class BombLibrary:
         for bomb in self.get_bombs_impacting(coords):
             owners.add(bomb.owner)
         return owners
+
+    def get_bombs_owned_by(self, owner):
+        bombs = []
+        for bomb in self._bombs.values():
+            print(bomb.owner, owner)
+            if bomb.owner == owner:
+                bombs.append(bomb)
+        return bombs

@@ -49,6 +49,8 @@ class Agent:
         loop.run_until_complete(asyncio.wait(tasks))
 
     def _get_node_weight(self, node):
+        if node not in self.map.graph:
+            return 0
         weight = self.map.graph.nodes[node]["weight"]
         bomb_owners = self.map.bomb_library.get_bomb_impact_owners(node)
         if self.them.id in bomb_owners or None in bomb_owners:
@@ -182,7 +184,7 @@ class Agent:
 
         # Dismount or chadonate bomb if just planted
         if self.us.coords not in self.map.graph:
-            if self.us.hp >= 2 > self.them.hp:
+            if self.us.hp >= 2 > self.them.hp and not self.them.is_invulnerable:
                 for bomb in detonatable_bombs:
                     if bomb.position == self.us.coords:
                         await self._server.send_detonate(*bomb.position)
@@ -212,8 +214,9 @@ class Agent:
         # Detonate bomb if bad for enemy
         for bomb in detonatable_bombs:
             if (
-                self.us.hp >= 2 > self.them.hp
-                or bomb not in self.map.bomb_library.get_bombs_impacting(self.us.coords)
+                (self.us.hp >= 2 > self.them.hp
+                or bomb not in self.map.bomb_library.get_bombs_impacting(self.us.coords))
+                and not self.them.is_invulnerable
             ):
                 await self._server.send_detonate(*bomb.position)
                 print("DETONATING ", end=" | ")
@@ -224,6 +227,7 @@ class Agent:
             self.us.coords not in self.danger_nodes
             and self.next_to_enemy
             and self.us.ammo > self.them.hp
+            and len(self.map.graph[self.us.coords]) >= 4
         ):
             print("AREA DENIAL", end=" | ")
             await self._server.send_bomb()
@@ -255,9 +259,14 @@ class Agent:
                 }
         if self.us.ammo:
             escape = self.prison_break()
+            bomb = self.map.bomb_library.get_bomb_at(escape)
+            if bomb is not None:
+                print("ESCAPING   ", end=" | ")
+                await self._server.send_detonate(*bomb.position)
+                return
             if escape is not None:
                 if escape == self.us.coords:
-                    print("DEMOLITION ", end=" | ")
+                    print("DEMOLISHING", end=" | ")
                     await self._server.send_bomb()
                     return
                 else:
@@ -265,8 +274,9 @@ class Agent:
                     worst_node = max(self._get_node_weight(n) for n in path)
                     if worst_node <= self.map.WEIGHT_MAP["Default"]:
                         move = _get_direction_from_coords(self.us.coords, path[1])
-                        print("ESCAPING   ", end=" | ")
+                        print("PLANNING   ", end=" | ")
                         await self._server.send_move(move)
+                        return
 
         attack_path, kill_confirmed = self._is_enemy_trapped()
         if attack_path is not None:
@@ -289,22 +299,27 @@ class Agent:
         paths = [attack_path, farm_path, chill_path]
         best_path = None
         for index, path in enumerate(paths):
-            if path is not None and len(path) > 1:
-                attack = index > 0
-                entrance = self.danger_nodes.get(path[1])
-                if not attack and entrance is not None:
-                    us_to_entrance = self.paths[self.us.coords].get(entrance)
-                    them_to_entrance = self.paths[self.them.coords].get(entrance)
-                    if (
-                        us_to_entrance
-                        and them_to_entrance
-                        and len(us_to_entrance) <= len(them_to_entrance)
-                    ):
-                        continue
-                path.pop(0)
-                worst_node = max(self._get_node_weight(node) for node in path)
-                if best_path is None or worst_node < best_path[0]:
-                    best_path = (worst_node, index)
+            if path is not None:
+                if len(path) > 1:
+                    attack = index > 0
+                    entrance = self.danger_nodes.get(path[1])
+                    if not attack and entrance is not None:
+                        us_to_entrance = self.paths[self.us.coords].get(entrance)
+                        them_to_entrance = self.paths[self.them.coords].get(entrance)
+                        if (
+                            us_to_entrance
+                            and them_to_entrance
+                            and len(us_to_entrance) <= len(them_to_entrance)
+                        ):
+                            continue
+                    path.pop(0)
+                    worst_node = max(self._get_node_weight(node) for node in path)
+                    if best_path is None or worst_node < best_path[0]:
+                        best_path = (worst_node, index)
+                else:
+                    worst_node = self._get_node_weight(path[0])
+                    if best_path is None or worst_node < best_path[0]:
+                        best_path = (worst_node, index)
 
         if best_path is not None:
             worst_node, index = best_path
@@ -324,6 +339,13 @@ class Agent:
     def prison_break(self):
         if self.them.coords not in self.map.graph or self.them.coords in self.paths[self.us.coords]:
             return None
+        bombs = self.map.bomb_library.get_bombs_owned_by(self.us.id)
+        if bombs:
+            bad_bombs = self.map.bomb_library.get_bombs_impacting(self.us.coords)
+            for bomb in bombs:
+                if bomb not in bad_bombs:
+                    return bomb.position
+            return None
         connected_nodes = nx.node_connected_component(self.map.graph, self.us.coords)  # Get nodes connected to us
         if len(connected_nodes) > len(nx.node_connected_component(self.map.graph, self.them.coords)):
             return None
@@ -339,10 +361,12 @@ class Agent:
                         block_neighbours = self.get_actual_neighbours(neighbour)  # Get neighbours of block
                         for i in block_neighbours:
                             if i not in connected_nodes and i in self.map.graph:  # If node in new area
-                                destruction_value += len(nx.node_connected_component(self.map.graph, i))  # Run the connected nodes
-                        best_nodes.push((hp, -destruction_value, node))
+                                destruction_value += len(nx.node_connected_component(self.map.graph, i)) / hp# Run the connected nodes
+                if destruction_value > 0:
+                    print(node, destruction_value)
+                    best_nodes.push((-destruction_value, node))
         while not best_nodes.is_empty():
-            x, y = best_nodes.pop()[2]
+            x, y = best_nodes.pop()[1]
             bomb = Bomb({
                 "x": x,
                 "y": y,
@@ -352,8 +376,10 @@ class Agent:
             })
             bomb.calculate_impacts(self.map)
             for node in connected_nodes:
-                if node not in bomb.impacts:
-                    return node
+                if node != (x, y) and node not in bomb.impacts:
+                    return (x, y)
+            print("Skipping node at ", (x ,y))
+
         return None
 
 
