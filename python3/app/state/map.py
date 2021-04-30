@@ -35,9 +35,15 @@ class Map:
 
     def update_tick(self, tick):
         self.bomb_library.update_tick(tick)
-        fire_coord = FIRE_SPAWN_MAP.get(tick + 1)
-        if fire_coord is not None:
-            self.graph.nodes[fire_coord]["weight"] = Map.WEIGHT_MAP[Entity.BLAST]
+        fire_coord = FIRE_SPAWN_MAP.get(tick + 2)
+        if fire_coord in self.graph:
+            self.graph.nodes[fire_coord]["entity"] = Entity.BLAST
+            self.graph.nodes[fire_coord]["weight"] = self.WEIGHT_MAP[Entity.BLAST]
+        else:
+            fire_coord = FIRE_SPAWN_MAP.get(tick)
+            if fire_coord in self.graph:
+                self.graph.nodes[fire_coord]["weight"] = self.WEIGHT_MAP["Default"]
+
 
     def add_entity(self, entity):
         """Adds the given entity to the map"""
