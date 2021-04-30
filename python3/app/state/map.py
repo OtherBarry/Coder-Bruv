@@ -1,7 +1,7 @@
 import networkx as nx
 
 from .bombs import BombLibrary
-from ..utilities import Entity
+from ..utilities import Entity, FIRE_SPAWN_MAP
 
 
 class Map:
@@ -31,6 +31,12 @@ class Map:
         for to in (x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1):
             if to in self.graph:
                 yield coords, to
+
+    def update_tick(self, tick):
+        self.bomb_library.update_tick(tick)
+        fire_coord = FIRE_SPAWN_MAP.get(tick + 1)
+        if fire_coord is not None:
+            self.graph.nodes[fire_coord]["weight"] = Map.WEIGHT_MAP[Entity.BLAST]
 
     def add_entity(self, entity):
         """Adds the given entity to the map"""

@@ -29,7 +29,7 @@ class GameState:
         self.tick = tick
         self.us.update_tick(tick)
         self.them.update_tick(tick)
-        self.map.bomb_library.update_tick(tick)
+        self.map.update_tick(tick)
 
     def receive_events(self, events):
         entities_changed = False
