@@ -304,3 +304,27 @@ class Agent:
                 await self._server.send_move(move)
                 return
         print("WAITING    ", end=" | ")
+
+    def prison_break(self, threshold):
+        connected_nodes = nx.node_connected_component(self.us.coords)  # Get nodes connected to us
+        if len(connected_nodes) < threshold: # Threshold for being stuck in cage
+            max_count = 0
+            for node in connected_nodes:
+                if len(self.map.graph.neighbours(node)) <= 3:  # If node has block neighbour
+                    actual_neighbours = self.get_actual_neighbours(node)  # Get coords of neighbours regardless of graph
+                    for neighbour in actual_neighbours:
+                        if neighbour in self.map.block_library:
+                            block_neighbours = self.get_actual_neighbours(neighbour)  # Get neighbours of block
+                            for i in block_neighbours:
+                                if i not in connected_nodes and i not in self.map.block_library:  # If node in new area
+                                    count = len(nx.node_connected_component(i))  # Run the connected nodes
+                                    if count > max_count:  # Calculate best node as one providing largest new area
+                                        max_count = count
+                                        best_node = node
+        return best_node
+
+
+    def get_actual_neighbours(self, node):
+        x, y = node
+        actual_neighbours = [((x+1), y), ((x-1), y), (x, (y+1)), (x, (y-1))]
+        return actual_neighbours

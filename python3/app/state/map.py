@@ -21,6 +21,7 @@ class Map:
         self._height = world["height"]
         self.graph = nx.grid_2d_graph(self._width, self._height)
         self.bomb_library = BombLibrary()
+        self.block_library = {}
         for node in self.graph.nodes:
             self.graph.nodes[node]["weight"] = Map.WEIGHT_MAP["Default"]
         for entity in entities:
@@ -45,6 +46,12 @@ class Map:
         if entity_type in Map.IMPASSABLE_ENTITIES:
             if entity_type == Entity.BOMB:
                 self.bomb_library.add_bomb(entity, self)
+            else:
+                if entity_type == Entity.ORE:
+                    hp = 3
+                elif entity_type == Entity.WOOD:
+                    hp = 1
+                self.block_library = {coords, hp}
             self.graph.remove_node(coords)
         else:
             self.graph.nodes[coords]["entity"] = entity_type
