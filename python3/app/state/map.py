@@ -52,12 +52,10 @@ class Map:
         if entity_type in Map.IMPASSABLE_ENTITIES:
             if entity_type == Entity.BOMB:
                 self.bomb_library.add_bomb(entity, self)
-            else:
-                if entity_type == Entity.ORE:
-                    hp = 3
-                elif entity_type == Entity.WOOD:
-                    hp = 1
-                self.block_library = {coords, hp}
+            elif entity_type == Entity.ORE:
+                self.block_library[coords] = 3
+            elif entity_type == Entity.WOOD:
+                self.block_library[coords] = 1
             self.graph.remove_node(coords)
         else:
             self.graph.nodes[coords]["entity"] = entity_type

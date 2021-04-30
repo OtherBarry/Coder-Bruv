@@ -5,6 +5,7 @@ import math
 
 from ..utilities import Entity, PriorityQueue
 from ..server_connection import ServerConnection
+from ..state.bombs import Bomb
 
 uri = (
     os.environ.get("GAME_CONNECTION_STRING")
@@ -178,6 +179,7 @@ class Agent:
             if b.owner == self.us.id
         ]
 
+
         # Dismount or chadonate bomb if just planted
         if self.us.coords not in self.map.graph:
             if self.us.hp >= 2 > self.them.hp:
@@ -251,6 +253,20 @@ class Agent:
                 self.paths[player] = {
                     n: [player, n] for n in self._generate_neighbouring_tiles(player)
                 }
+        if self.us.ammo:
+            escape = self.prison_break()
+            if escape is not None:
+                if escape == self.us.coords:
+                    print("DEMOLITION ", end=" | ")
+                    await self._server.send_bomb()
+                    return
+                else:
+                    path = self.paths[self.us.coords][escape]
+                    worst_node = max(self._get_node_weight(n) for n in path)
+                    if worst_node <= self.map.WEIGHT_MAP["Default"]:
+                        move = _get_direction_from_coords(self.us.coords, path[1])
+                        print("ESCAPING   ", end=" | ")
+                        await self._server.send_move(move)
 
         attack_path, kill_confirmed = self._is_enemy_trapped()
         if attack_path is not None:
@@ -305,23 +321,40 @@ class Agent:
                 return
         print("WAITING    ", end=" | ")
 
-    def prison_break(self, threshold):
-        connected_nodes = nx.node_connected_component(self.us.coords)  # Get nodes connected to us
-        if len(connected_nodes) < threshold: # Threshold for being stuck in cage
-            max_count = 0
+    def prison_break(self):
+        if self.them.coords not in self.map.graph or self.them.coords not in self.paths[self.us.coords]:
+            return None
+        connected_nodes = nx.node_connected_component(self.map.graph, self.us.coords)  # Get nodes connected to us
+        if len(connected_nodes) > len(nx.node_connected_component(self.map.graph, self.them.coords)):
+            return None
+        best_nodes = PriorityQueue()
+        for node in connected_nodes:
+            if len(self.map.graph[node]) < 4:  # If node has block neighbour
+                destruction_value = 0
+                actual_neighbours = self.get_actual_neighbours(node) # Get coords of neighbours regardless of graph
+                for neighbour in actual_neighbours:
+                    hp = self.map.block_library.get(neighbour)
+                    if hp is not None:
+                        destruction_value += 1 if hp > 1 else 2
+                        block_neighbours = self.get_actual_neighbours(neighbour)  # Get neighbours of block
+                        for i in block_neighbours:
+                            if i not in connected_nodes and i in self.map.graph:  # If node in new area
+                                destruction_value += len(nx.node_connected_component(self.map.graph, i))  # Run the connected nodes
+                        best_nodes.push((hp, -destruction_value, node))
+        while not best_nodes.is_empty():
+            x, y = best_nodes.pop()[2]
+            bomb = Bomb({
+                "x": x,
+                "y": y,
+                "blast_diameter": self.us.blast_diameter,
+                "owner": self.us.id,
+                "expires": self.state.tick + 40
+            })
+            bomb.calculate_impacts(self.map)
             for node in connected_nodes:
-                if len(self.map.graph.neighbours(node)) <= 3:  # If node has block neighbour
-                    actual_neighbours = self.get_actual_neighbours(node)  # Get coords of neighbours regardless of graph
-                    for neighbour in actual_neighbours:
-                        if neighbour in self.map.block_library:
-                            block_neighbours = self.get_actual_neighbours(neighbour)  # Get neighbours of block
-                            for i in block_neighbours:
-                                if i not in connected_nodes and i not in self.map.block_library:  # If node in new area
-                                    count = len(nx.node_connected_component(i))  # Run the connected nodes
-                                    if count > max_count:  # Calculate best node as one providing largest new area
-                                        max_count = count
-                                        best_node = node
-        return best_node
+                if node not in bomb.impacts:
+                    return node
+        return None
 
 
     def get_actual_neighbours(self, node):
