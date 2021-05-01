@@ -41,6 +41,7 @@ class PriorityQueue:
         self.size -= 1
         return val
 
+
 FIRE_SPAWN_MAP = {
     1800: (0, 8),
     1805: (8, 0),

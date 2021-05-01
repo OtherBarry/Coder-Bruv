@@ -44,7 +44,6 @@ class Map:
             if fire_coord in self.graph:
                 self.graph.nodes[fire_coord]["weight"] = self.WEIGHT_MAP["Default"]
 
-
     def add_entity(self, entity):
         """Adds the given entity to the map"""
         coords = (entity["x"], entity["y"])

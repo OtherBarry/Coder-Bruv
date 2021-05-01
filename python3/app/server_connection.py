@@ -56,7 +56,7 @@ class ServerConnection:
             payload = data.get("payload")
             self._state.update_tick(payload.get("tick"))
             await self._on_game_tick(payload)
-        elif data_type != "info":
+        elif data_type != "info" and data_type != "endgame_state":
             print(f'unknown packet "{data_type}": {data}')
 
     def _on_game_state(self, game_state):
