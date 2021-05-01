@@ -63,8 +63,12 @@ class Agent:
         if node == self.them.coords:
             if self.next_to_enemy:
                 weight += math.inf
-            elif self.state.tick < 1800:
-                weight -= 1
+            else:
+                us_weight = self._get_node_weight(self.us.coords)
+                if us_weight > self.map.WEIGHT_MAP["Default"]:
+                    weight += 1
+                elif self.state.tick < 1800:
+                    weight -= 1
         if entrance is not None:
             us_to_entrance = _manhattan_distance(self.us.coords, entrance)
             them_to_entrance = _manhattan_distance(self.them.coords, entrance)
