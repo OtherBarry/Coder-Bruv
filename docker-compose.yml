@@ -16,7 +16,7 @@ services:
             - TELEMETRY_ENABLED=0
             - TICK_RATE_HZ=10
             - TRAINING_MODE_ENABLED=0
-            - WORLD_SEED=960969
+#            - WORLD_SEED=270494
         networks:
             - coderone-tournament
     agent-a:
@@ -31,17 +31,17 @@ services:
         networks:
             - coderone-tournament
 
-#    agent-b:
-#     extends:
-#         file: base-compose.yml
-#         service: python3-scrim-one
-#     environment:
-#         - GAME_CONNECTION_STRING=ws://game-server:3000/?role=agent&agentId=agentB&name=other
-#         - FWD_MODEL_CONNECTION_STRING=ws://fwd-server-b:6969/?role=admin
-#     depends_on:
-#         - game-server
-#     networks:
-#         - coderone-tournament
+    agent-b:
+     extends:
+         file: base-compose.yml
+         service: python3-agent
+     environment:
+         - GAME_CONNECTION_STRING=ws://game-server:3000/?role=agent&agentId=agentB&name=other
+         - FWD_MODEL_CONNECTION_STRING=ws://fwd-server-b:6969/?role=admin
+     depends_on:
+         - game-server
+     networks:
+         - coderone-tournament
 
 networks:
     coderone-tournament:
