@@ -187,7 +187,7 @@ class Agent:
                 (
                     neigbour_weight >= self.map.WEIGHT_MAP[Entity.BLAST],
                     _manhattan_distance(neighbour, self.them.coords)
-                    > current_enemy_distance,
+                    < current_enemy_distance,
                     -len(connected_nodes),
                     neigbour_weight,
                     neighbour,
@@ -400,7 +400,13 @@ class Agent:
             )
             bomb.calculate_impacts(self.map)
             for node in connected_nodes:
-                if node != (x, y) and node not in bomb.impacts:
+                node_weight = self._get_node_weight(node)
+                if (
+                    node != (x, y)
+                    and node not in bomb.impacts
+                    and node_weight < self.map.WEIGHT_MAP[Entity.BLAST]
+                    and not self.map.bomb_library.get_bombs_impacting(node)
+                ):
                     return x, y
         return None
 

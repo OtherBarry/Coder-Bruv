@@ -1,3 +1,6 @@
+from ..utilities import Entity
+
+
 class Bomb:
     def __init__(self, entity):
         self.position = (entity["x"], entity["y"])
@@ -9,7 +12,7 @@ class Bomb:
         self.impacts = None
 
     def update_tick(self, tick):
-        if self.detonates_at - (self.radius + 1) <= tick:
+        if self.detonates_at - (self.radius + 2) <= tick:
             self.owner = None
 
     def calculate_impacts(self, map):
@@ -20,9 +23,9 @@ class Bomb:
                 new[i] += r * m
                 new = tuple(new)
                 impacts.append(tuple(new))
-                if (
-                    new not in map.graph
-                    or map.graph.nodes[new].get("entity") is not None
+                if new not in map.graph or not map.graph.nodes[new].get("entity") in (
+                    None,
+                    Entity.BLAST,
                 ):
                     break
         self.impacts = impacts

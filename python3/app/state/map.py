@@ -9,8 +9,8 @@ class Map:
 
     IMPASSABLE_ENTITIES = [Entity.BOMB, Entity.METAL, Entity.ORE, Entity.WOOD]
     WEIGHT_MAP = {
-        Entity.AMMO: -10,
-        Entity.POWERUP: -100,
+        Entity.AMMO: 90,
+        Entity.POWERUP: 5,
         Entity.BLAST: 10000,
         "Future Blast Zone": 1000,
         "Default": 100,
@@ -39,10 +39,6 @@ class Map:
         if fire_coord in self.graph:
             self.graph.nodes[fire_coord]["entity"] = Entity.BLAST
             self.graph.nodes[fire_coord]["weight"] = self.WEIGHT_MAP[Entity.BLAST]
-        else:
-            fire_coord = FIRE_SPAWN_MAP.get(tick)
-            if fire_coord in self.graph:
-                self.graph.nodes[fire_coord]["weight"] = self.WEIGHT_MAP["Default"]
 
     def add_entity(self, entity):
         """Adds the given entity to the map"""
@@ -58,14 +54,12 @@ class Map:
             self.graph.remove_node(coords)
         else:
             self.graph.nodes[coords]["entity"] = entity_type
-            self.graph.nodes[coords]["weight"] += Map.WEIGHT_MAP[entity_type]
+            self.graph.nodes[coords]["weight"] = Map.WEIGHT_MAP[entity_type]
 
     def remove_entity(self, coords):
         """Removes an entity from the map at the given coordinates"""
         if coords in self.graph:
-            self.graph.nodes[coords]["weight"] -= Map.WEIGHT_MAP[
-                self.graph.nodes[coords]["entity"]
-            ]
+            self.graph.nodes[coords]["weight"] = Map.WEIGHT_MAP["Default"]
             del self.graph.nodes[coords]["entity"]
         else:
             if self.bomb_library.get_bomb_at(coords) is not None:

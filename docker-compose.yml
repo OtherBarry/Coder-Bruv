@@ -22,7 +22,7 @@ services:
     agent-a:
         extends:
             file: base-compose.yml
-            service: python3-agent-dev
+            service: python3-agent
         environment:
             - GAME_CONNECTION_STRING=ws://game-server:3000/?role=agent&agentId=agentA&name=bruvbot
             - FWD_MODEL_CONNECTION_STRING=ws://fwd-server-a:6969/?role=admin
@@ -30,6 +30,11 @@ services:
             - game-server
         networks:
             - coderone-tournament
+        deploy:
+            resources:
+                limits:
+                    cpus: 2
+                    memory: 1024m
 
     agent-b:
      extends:
@@ -42,6 +47,11 @@ services:
          - game-server
      networks:
          - coderone-tournament
+    deploy:
+        resources:
+            limits:
+                cpus: 2
+                memory: 1024m
 
 networks:
     coderone-tournament:
