@@ -204,10 +204,18 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
-        # TODO: Sean^2 trapping strat
-        # TODO: Double Detonation Traps
-        # TODO: Improve Bomb Placement Logic
+        # TODO: Improve Bomb Placement:
+            # TODO: Less 'useless' plants
+            # TODO: Double plant strat
+            # TODO: Don't plant where able to get cornered
+            # TODO: Plant if trapped by enemy player body and our hp >= their hp
+        # TODO: Improve bomb dismount:
+            # TODO: Don't dismount into direct traps
+            # TODO: Don't dismount into potential traps - Remember can sit on bomb for up to 40 ticks
+        # TODO: Bombs that are soon to explode should still get triggered for detonation if owned by us
         # TODO: Suicide if trapped
+        # TODO: Improve weighting - fire > existing blast > their potential blast > our potential blast
+        # TODO: Trapping player with body (Sean^2 strat)
 
         self.node_weights = {}
 
