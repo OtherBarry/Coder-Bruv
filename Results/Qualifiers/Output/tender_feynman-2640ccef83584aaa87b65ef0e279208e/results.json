@@ -1,0 +1,9 @@
+{
+    "a_score": 1,
+    "b_score": 0,
+    "reason": "game played to completion",
+    "winning_agent_letter": "a",
+    "agent_number_mapping": "{\"0\": \"a\", \"1\": \"b\"}",
+    "agent_a": "bruh",
+    "agent_b": "\ud83e\udd14"
+}

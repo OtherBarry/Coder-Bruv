@@ -1,0 +1,1900 @@
+[34mgame-server_1   |[0m ADMIN_ROLE_ENABLED=0 (default: 1)
+[34mgame-server_1   |[0m AGENT_ID_MAPPING=7981,25075 (default: agentA,agentB)
+[34mgame-server_1   |[0m AMMO_DURATION_TICKS=40 (default: 40)
+[34mgame-server_1   |[0m AMMO_SPAWN_WEIGHTING=0.9 (default: 0.9)
+[34mgame-server_1   |[0m BLAST_DURATION_TICKS=10 (default: 10)
+[34mgame-server_1   |[0m BLAST_POWERUP_DURATION_TICKS=40 (default: 40)
+[34mgame-server_1   |[0m BLAST_POWERUP_SPAWN_WEIGHTING=0.1 (default: 0.1)
+[34mgame-server_1   |[0m BOMB_DURATION_TICKS=40 (default: 40)
+[34mgame-server_1   |[0m ENTITY_SPAWN_PROBABILITY_PER_TICK=0.025 (default: 0.025)
+[34mgame-server_1   |[0m FIRE_SPAWN_INTERVAL_TICKS=5 (default: 5)
+[34mgame-server_1   |[0m GAME_DURATION_TICKS=1800 (default: 1800)
+[34mgame-server_1   |[0m GAME_START_DELAY_MS=2000 (default: 2000)
+[34mgame-server_1   |[0m INITIAL_AMMUNITION=3 (default: 3)
+[34mgame-server_1   |[0m INITIAL_BLAST_DIAMETER=3 (default: 3)
+[34mgame-server_1   |[0m INITIAL_HP=3 (default: 3)
+[34mgame-server_1   |[0m INVULNERABILITY_TICKS=5 (default: 5)
+[34mgame-server_1   |[0m TELEMETRY_ENABLED=1 (default: 1)
+[34mgame-server_1   |[0m TRAINING_MODE_ENABLED=0 (default: 0)
+[34mgame-server_1   |[0m SYMMETRICAL_MAP_ENABLED=1 (default: 1)
+[34mgame-server_1   |[0m MAP_HEIGHT=9 (default: 9)
+[34mgame-server_1   |[0m MAP_WIDTH=9 (default: 9)
+[34mgame-server_1   |[0m ORE_BLOCK_FREQUENCY=0.0617283950617284 (default: 0.0617283950617284)
+[34mgame-server_1   |[0m PORT=3000 (default: 3000)
+[34mgame-server_1   |[0m PRNG_SEED=1970326497150779 (default: Random)
+[34mgame-server_1   |[0m SAVE_REPLAY_ENABLED=1 (default: 1)
+[34mgame-server_1   |[0m SHUTDOWN_ON_GAME_END_ENABLED=1 (default: 0)
+[34mgame-server_1   |[0m STEEL_BLOCK_FREQUENCY=0.2222222222222222 (default: 0.2222222222222222)
+[34mgame-server_1   |[0m TICK_RATE_HZ=10 (default: 10)
+[34mgame-server_1   |[0m TOTAL_AGENTS=2 (default: 2)
+[34mgame-server_1   |[0m TOURNAMENT_AGENT_CONNECTION_GRACE_PERIOD_MS=60000 (default: null)
+[34mgame-server_1   |[0m WOOD_BLOCK_FREQUENCY=0.2469135802469136 (default: 0.2469135802469136)
+[34mgame-server_1   |[0m WORLD_SEED=34 (default: Random)
+[34mgame-server_1   |[0m 2021-05-02T03:04:05.222Z - {"agents":[{"coordinates":[8,7],"hp":3,"inventory":{"bombs":3},"blast_diameter":3,"number":0,"invulnerability":0},{"coordinates":[0,7],"hp":3,"inventory":{"bombs":3},"blast_diameter":3,"number":1,"invulnerability":0}],"entities":[{"x":6,"y":2,"type":"m"},{"x":2,"y":2,"type":"m"},{"x":6,"y":8,"type":"m"},{"x":2,"y":8,"type":"m"},{"x":1,"y":8,"type":"m"},{"x":7,"y":8,"type":"m"},{"x":8,"y":0,"type":"m"},{"x":0,"y":0,"type":"m"},{"x":6,"y":0,"type":"m"},{"x":2,"y":0,"type":"m"},{"x":8,"y":3,"type":"m"},{"x":0,"y":3,"type":"m"},{"x":7,"y":3,"type":"m"},{"x":1,"y":3,"type":"m"},{"x":5,"y":2,"type":"m"},{"x":3,"y":2,"type":"m"},{"x":3,"y":7,"type":"m"},{"x":5,"y":7,"type":"m"},{"x":0,"y":4,"type":"w","hp":1},{"x":8,"y":4,"type":"w","hp":1},{"x":0,"y":2,"type":"w","hp":1},{"x":8,"y":2,"type":"w","hp":1},{"x":5,"y":1,"type":"w","hp":1},{"x":3,"y":1,"type":"w","hp":1},{"x":0,"y":1,"type":"w","hp":1},{"x":8,"y":1,"type":"w","hp":1},{"x":0,"y":6,"type":"w","hp":1},{"x":8,"y":6,"type":"w","hp":1},{"x":1,"y":1,"type":"w","hp":1},{"x":7,"y":1,"type":"w","hp":1},{"x":5,"y":6,"type":"w","hp":1},{"x":3,"y":6,"type":"w","hp":1},{"x":3,"y":4,"type":"w","hp":1},{"x":5,"y":4,"type":"w","hp":1},{"x":8,"y":5,"type":"w","hp":1},{"x":0,"y":5,"type":"w","hp":1},{"x":3,"y":3,"type":"w","hp":1},{"x":5,"y":3,"type":"w","hp":1},{"x":6,"y":3,"type":"o","hp":3},{"x":2,"y":3,"type":"o","hp":3},{"x":2,"y":5,"type":"o","hp":3},{"x":6,"y":5,"type":"o","hp":3},{"x":2,"y":1,"type":"o","hp":3},{"x":6,"y":1,"type":"o","hp":3}]}
+[34mgame-server_1   |[0m 2021-05-02T03:04:05.226Z - Grace period configured to 60000ms, game will terminate in: 60000ms
+[34mgame-server_1   |[0m 2021-05-02T03:04:05.226Z - Waiting for agents to connect 0 of 2
+[34mgame-server_1   |[0m 2021-05-02T03:04:06.050Z - Agent [agent-b](25075) connected to the server
+[34mgame-server_1   |[0m 2021-05-02T03:04:06.162Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:06.180Z - Agent [agent-a](7981) connected to the server
+[34mgame-server_1   |[0m 2021-05-02T03:04:06.227Z - Agents have connected starting game in 2000 ms
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.329Z - tick #1
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.333Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.402Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.428Z - tick #2
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.430Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.500Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.529Z - tick #3
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.533Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.601Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.629Z - tick #4
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.631Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.701Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.729Z - tick #5
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.731Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.800Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.830Z - tick #6
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.901Z - Queueing action: detonate for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.929Z - tick #7
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.930Z - {"x":2,"y":6,"type":"b","owner":1,"expires":44,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.930Z - Triggering blast from 2,6
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.930Z - o at cell number 47 has remaining health: 2
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.930Z - w at cell number 57 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:08.932Z - Queueing action: bomb for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.001Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.030Z - tick #8
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.031Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.101Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.129Z - tick #9
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.131Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.200Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.230Z - tick #10
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.231Z - Queueing action: detonate for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.330Z - tick #11
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.331Z - {"x":6,"y":4,"type":"b","owner":0,"expires":48,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.331Z - Triggering blast from 6,4
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.332Z - o at cell number 51 has remaining health: 2
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.332Z - o at cell number 33 has remaining health: 2
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.332Z - w at cell number 41 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.404Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.431Z - tick #12
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.530Z - tick #13
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.631Z - tick #14
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.732Z - tick #15
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.833Z - tick #16
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.904Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.933Z - tick #17
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.933Z - {"x":2,"y":6,"type":"x","owner":1,"expires":17} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.933Z - {"x":2,"y":7,"type":"x","owner":1,"expires":17} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:09.933Z - {"x":1,"y":6,"type":"x","owner":1,"expires":17} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.004Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.034Z - tick #18
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.105Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.134Z - tick #19
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.205Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.234Z - tick #20
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.306Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.334Z - tick #21
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.334Z - {"x":6,"y":4,"type":"x","owner":0,"expires":21} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.335Z - {"x":7,"y":4,"type":"x","owner":0,"expires":21} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.337Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.406Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.434Z - tick #22
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.436Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.505Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.534Z - tick #23
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.536Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.606Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.635Z - tick #24
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.637Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.706Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.735Z - tick #25
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.808Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.836Z - tick #26
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.836Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.907Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.935Z - tick #27
+[34mgame-server_1   |[0m 2021-05-02T03:04:10.935Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.006Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.036Z - tick #28
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.037Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.107Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.136Z - tick #29
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.136Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.138Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.207Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.236Z - tick #30
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.307Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.337Z - tick #31
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.337Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.408Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.436Z - tick #32
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.438Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.507Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.537Z - tick #33
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.544Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.610Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.637Z - tick #34
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.640Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.708Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.738Z - tick #35
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.739Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.809Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.837Z - tick #36
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.839Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.908Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.937Z - tick #37
+[34mgame-server_1   |[0m 2021-05-02T03:04:11.939Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.008Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.038Z - tick #38
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.039Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.138Z - tick #39
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.209Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.237Z - tick #40
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.239Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.308Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.337Z - tick #41
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.338Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.408Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.438Z - tick #42
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.438Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.509Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.538Z - tick #43
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.539Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.611Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.639Z - tick #44
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.639Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.710Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.738Z - tick #45
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.739Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.811Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.838Z - tick #46
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.839Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.909Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.939Z - tick #47
+[34mgame-server_1   |[0m 2021-05-02T03:04:12.939Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.010Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.038Z - tick #48
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.038Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.109Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.138Z - tick #49
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.139Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.209Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.239Z - tick #50
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.239Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.310Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.342Z - tick #51
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.343Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.443Z - tick #52
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.514Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.542Z - tick #53
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.542Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.613Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.642Z - tick #54
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.643Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.713Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.743Z - tick #55
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.743Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.814Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.842Z - tick #56
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.843Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.915Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.942Z - tick #57
+[34mgame-server_1   |[0m 2021-05-02T03:04:13.943Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.013Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.043Z - tick #58
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.043Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.114Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.142Z - tick #59
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.142Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.213Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.243Z - tick #60
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.243Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.314Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.343Z - tick #61
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.343Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.414Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.443Z - tick #62
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.443Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.514Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.544Z - tick #63
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.544Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.617Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.643Z - tick #64
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.643Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.714Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.744Z - tick #65
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.744Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.815Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.844Z - tick #66
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.844Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.915Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.944Z - tick #67
+[34mgame-server_1   |[0m 2021-05-02T03:04:14.944Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.015Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.045Z - tick #68
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.045Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.121Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.145Z - tick #69
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.145Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.216Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.244Z - tick #70
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.244Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.315Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.344Z - tick #71
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.345Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.415Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.445Z - tick #72
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.445Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.516Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.544Z - tick #73
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.544Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.615Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.644Z - tick #74
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.645Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.716Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.745Z - tick #75
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.745Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.816Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.845Z - tick #76
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.845Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.916Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.945Z - tick #77
+[34mgame-server_1   |[0m 2021-05-02T03:04:15.946Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.017Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.045Z - tick #78
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.045Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.116Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.146Z - tick #79
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.146Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.219Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.246Z - tick #80
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.247Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.319Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.346Z - tick #81
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.347Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.418Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.447Z - tick #82
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.447Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.518Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.547Z - tick #83
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.547Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.618Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.648Z - tick #84
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.648Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.720Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.747Z - tick #85
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.747Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.818Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.847Z - tick #86
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.848Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.918Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.948Z - tick #87
+[34mgame-server_1   |[0m 2021-05-02T03:04:16.948Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.019Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.047Z - tick #88
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.047Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.118Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.147Z - tick #89
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.147Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.218Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.248Z - tick #90
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.248Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.321Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.347Z - tick #91
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.347Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.418Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.447Z - tick #92
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.448Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.518Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.548Z - tick #93
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.548Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.619Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.647Z - tick #94
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.647Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.718Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.748Z - tick #95
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.748Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.819Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.847Z - tick #96
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.848Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:17.948Z - tick #97
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.019Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.049Z - tick #98
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.049Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.120Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.149Z - tick #99
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.149Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.220Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.249Z - tick #100
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.249Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.320Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.349Z - tick #101
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.350Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.420Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.450Z - tick #102
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.450Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.521Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.549Z - tick #103
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.549Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.620Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.649Z - tick #104
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.650Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.720Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.750Z - tick #105
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.750Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.821Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.849Z - tick #106
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.849Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.920Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.949Z - tick #107
+[34mgame-server_1   |[0m 2021-05-02T03:04:18.949Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.020Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.050Z - tick #108
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.050Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.121Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.150Z - tick #109
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.150Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.221Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.250Z - tick #110
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.250Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.321Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.351Z - tick #111
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.351Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.422Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.451Z - tick #112
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.451Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.522Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.551Z - tick #113
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.551Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.622Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.652Z - tick #114
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.652Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.723Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.751Z - tick #115
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.751Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.822Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.851Z - tick #116
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.852Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.922Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.952Z - tick #117
+[34mgame-server_1   |[0m 2021-05-02T03:04:19.952Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.023Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.052Z - tick #118
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.052Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.123Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.153Z - tick #119
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.153Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.224Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.253Z - tick #120
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.253Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.324Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.353Z - tick #121
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.353Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.424Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.454Z - tick #122
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.454Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.525Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.554Z - tick #123
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.554Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.625Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.654Z - tick #124
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.654Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.725Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.755Z - tick #125
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.755Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.828Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.854Z - tick #126
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.854Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.925Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.954Z - tick #127
+[34mgame-server_1   |[0m 2021-05-02T03:04:20.955Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.025Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.055Z - tick #128
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.055Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.126Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.154Z - tick #129
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.154Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.225Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.254Z - tick #130
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.255Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.326Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.355Z - tick #131
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.355Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.426Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.455Z - tick #132
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.455Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.526Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.556Z - tick #133
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.556Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.627Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.655Z - tick #134
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.657Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.726Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.755Z - tick #135
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.757Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.827Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.856Z - tick #136
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.856Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.858Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.927Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.955Z - tick #137
+[34mgame-server_1   |[0m 2021-05-02T03:04:21.957Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.026Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.056Z - tick #138
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.057Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.126Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.156Z - tick #139
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.158Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.227Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.255Z - tick #140
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.326Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.356Z - tick #141
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.356Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.429Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.456Z - tick #142
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.456Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.527Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.556Z - tick #143
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.558Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.627Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.656Z - tick #144
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.657Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.658Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.728Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.757Z - tick #145
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.828Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.856Z - tick #146
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.856Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.927Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.956Z - tick #147
+[34mgame-server_1   |[0m 2021-05-02T03:04:22.958Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.027Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.056Z - tick #148
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.057Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.058Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.128Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.157Z - tick #149
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.159Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.228Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.257Z - tick #150
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.259Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.328Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.357Z - tick #151
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.429Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.458Z - tick #152
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.458Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.529Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.558Z - tick #153
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.558Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.659Z - tick #154
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.730Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.759Z - tick #155
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.759Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.860Z - tick #156
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.931Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.959Z - tick #157
+[34mgame-server_1   |[0m 2021-05-02T03:04:23.959Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.030Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.059Z - tick #158
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.060Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.132Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.160Z - tick #159
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.160Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.231Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.261Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.260Z - tick #160
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.361Z - tick #161
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.462Z - tick #162
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.533Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.562Z - tick #163
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.562Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.663Z - tick #164
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.734Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.763Z - tick #165
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.763Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.834Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.863Z - tick #166
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.863Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:24.964Z - tick #167
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.064Z - tick #168
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.135Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.165Z - tick #169
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.165Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.264Z - tick #170
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.335Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.365Z - tick #171
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.365Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.464Z - tick #172
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.565Z - tick #173
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.636Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.665Z - tick #174
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.666Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.737Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.766Z - tick #175
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.766Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.837Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.866Z - tick #176
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.866Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.937Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.967Z - tick #177
+[34mgame-server_1   |[0m 2021-05-02T03:04:25.968Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.038Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.067Z - tick #178
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.068Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.167Z - tick #179
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.238Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.267Z - tick #180
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.267Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.338Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.366Z - tick #181
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.368Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.437Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.466Z - tick #182
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.466Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.468Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.537Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.567Z - tick #183
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.638Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.666Z - tick #184
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.666Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.737Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.766Z - tick #185
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.767Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.838Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.867Z - tick #186
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.867Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:26.966Z - tick #187
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.037Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.066Z - tick #188
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.067Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.138Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.167Z - tick #189
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.168Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.238Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.267Z - tick #190
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.267Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.269Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.338Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.367Z - tick #191
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.438Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.468Z - tick #192
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.469Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.538Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.568Z - tick #193
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.568Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.570Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.639Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.668Z - tick #194
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.739Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.769Z - tick #195
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.770Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.840Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.869Z - tick #196
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.869Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.870Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.940Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:27.968Z - tick #197
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.039Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.068Z - tick #198
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.069Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.169Z - tick #199
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.240Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.269Z - tick #200
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.269Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.340Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.369Z - tick #201
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.371Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.440Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.470Z - tick #202
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.470Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.472Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.541Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.569Z - tick #203
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.640Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.669Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.669Z - tick #204
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.740Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.770Z - tick #205
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.770Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.841Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.870Z - tick #206
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.872Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.941Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.970Z - tick #207
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.972Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:28.980Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.045Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.070Z - tick #208
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.141Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.170Z - tick #209
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.170Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.241Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.271Z - tick #210
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.271Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.342Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.371Z - tick #211
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.372Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.444Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.472Z - tick #212
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.474Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.543Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.571Z - tick #213
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.573Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.642Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.671Z - tick #214
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.672Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.673Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.771Z - tick #215
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.773Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.842Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.872Z - tick #216
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.872Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.873Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.943Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.971Z - tick #217
+[34mgame-server_1   |[0m 2021-05-02T03:04:29.973Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.042Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.071Z - tick #218
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.142Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.172Z - tick #219
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.174Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.243Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.272Z - tick #220
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.272Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.274Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.343Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.372Z - tick #221
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.443Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.473Z - tick #222
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.474Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.546Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.574Z - tick #223
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.576Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.645Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.673Z - tick #224
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.674Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.675Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.744Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.774Z - tick #225
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.845Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.873Z - tick #226
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.873Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:30.974Z - tick #227
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.045Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.074Z - tick #228
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.076Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.145Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.174Z - tick #229
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.174Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.176Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.245Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.275Z - tick #230
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.375Z - tick #231
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.474Z - tick #232
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.546Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.574Z - tick #233
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.576Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.645Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.674Z - tick #234
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.675Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.676Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.745Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.775Z - tick #235
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.846Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.874Z - tick #236
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.876Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.945Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.974Z - tick #237
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.975Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:31.976Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.045Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.075Z - tick #238
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.146Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.175Z - tick #239
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.177Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.246Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.275Z - tick #240
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.276Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.277Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.347Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.376Z - tick #241
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.447Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.476Z - tick #242
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.476Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.547Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.577Z - tick #243
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.583Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.649Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.677Z - tick #244
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.677Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.679Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.748Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.776Z - tick #245
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.849Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.876Z - tick #246
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.876Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.947Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.977Z - tick #247
+[34mgame-server_1   |[0m 2021-05-02T03:04:32.977Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.048Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.077Z - tick #248
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.078Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.148Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.176Z - tick #249
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.184Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.249Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.276Z - tick #250
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.276Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.278Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.347Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.377Z - tick #251
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.383Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.450Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.477Z - tick #252
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.578Z - tick #253
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.648Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.678Z - tick #254
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.678Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.777Z - tick #255
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.848Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.878Z - tick #256
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.878Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.949Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.978Z - tick #257
+[34mgame-server_1   |[0m 2021-05-02T03:04:33.980Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.049Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.078Z - tick #258
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.080Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.149Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.179Z - tick #259
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.187Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.251Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.279Z - tick #260
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.279Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.280Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.350Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.379Z - tick #261
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.479Z - tick #262
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.550Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.580Z - tick #263
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.580Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.651Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.679Z - tick #264
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.679Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.750Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.779Z - tick #265
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.780Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.851Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.880Z - tick #266
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.880Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.882Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.951Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.979Z - tick #267
+[34mgame-server_1   |[0m 2021-05-02T03:04:34.981Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.050Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.079Z - tick #268
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.081Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.150Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.180Z - tick #269
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.182Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.251Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.279Z - tick #270
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.350Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.379Z - tick #271
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.381Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.450Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.480Z - tick #272
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.489Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.552Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.580Z - tick #273
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.580Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.581Z - Queueing action: bomb for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.679Z - tick #274
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.680Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.780Z - tick #275
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.781Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.851Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.880Z - tick #276
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.886Z - Queueing action: detonate for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.953Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.980Z - tick #277
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.980Z - {"x":4,"y":2,"type":"b","owner":0,"expires":314,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:35.980Z - Triggering blast from 4,2
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.051Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.081Z - tick #278
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.180Z - tick #279
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.251Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.281Z - tick #280
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.352Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.381Z - tick #281
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.480Z - tick #282
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.581Z - tick #283
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.681Z - tick #284
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.782Z - tick #285
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.853Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.882Z - tick #286
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.953Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.983Z - tick #287
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.983Z - {"x":4,"y":2,"type":"x","owner":0,"expires":287} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.983Z - {"x":4,"y":3,"type":"x","owner":0,"expires":287} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.984Z - {"x":4,"y":1,"type":"x","owner":0,"expires":287} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:36.991Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.083Z - tick #288
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.085Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.154Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.183Z - tick #289
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.284Z - tick #290
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.384Z - tick #291
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.455Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.485Z - tick #292
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.485Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.584Z - tick #293
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.655Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.685Z - tick #294
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.685Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.784Z - tick #295
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.855Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.885Z - tick #296
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.892Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.957Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.985Z - tick #297
+[34mgame-server_1   |[0m 2021-05-02T03:04:37.985Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.084Z - tick #298
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.155Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.184Z - tick #299
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.185Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.256Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.285Z - tick #300
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.285Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.356Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.384Z - tick #301
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.384Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.455Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.484Z - tick #302
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.485Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.555Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.585Z - tick #303
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.586Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.658Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.685Z - tick #304
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.685Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.756Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.784Z - tick #305
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.784Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.855Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.884Z - tick #306
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.885Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.955Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.985Z - tick #307
+[34mgame-server_1   |[0m 2021-05-02T03:04:38.985Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.056Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.085Z - tick #308
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.085Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.156Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.185Z - tick #309
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.185Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.256Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.286Z - tick #310
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.286Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.357Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.385Z - tick #311
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.385Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.456Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.485Z - tick #312
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.485Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.557Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.586Z - tick #313
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.586Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.657Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.686Z - tick #314
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.686Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.757Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.787Z - tick #315
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.787Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.887Z - tick #316
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.958Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.987Z - tick #317
+[34mgame-server_1   |[0m 2021-05-02T03:04:39.987Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.058Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.086Z - tick #318
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.087Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.157Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.187Z - tick #319
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.187Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.258Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.286Z - tick #320
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.286Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.357Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.386Z - tick #321
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.387Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.459Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.486Z - tick #322
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.487Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.559Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.587Z - tick #323
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.587Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.658Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.686Z - tick #324
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.686Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.757Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.786Z - tick #325
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.786Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.857Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.887Z - tick #326
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.887Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.958Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.987Z - tick #327
+[34mgame-server_1   |[0m 2021-05-02T03:04:40.987Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.058Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.086Z - tick #328
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.086Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.157Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.186Z - tick #329
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.187Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.259Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.286Z - tick #330
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.287Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.357Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.387Z - tick #331
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.387Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.458Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.486Z - tick #332
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.486Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.587Z - tick #333
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.686Z - tick #334
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.787Z - tick #335
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.858Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.887Z - tick #336
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.887Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.958Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.987Z - tick #337
+[34mgame-server_1   |[0m 2021-05-02T03:04:41.988Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.058Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.088Z - tick #338
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.088Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.159Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.188Z - tick #339
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.188Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.259Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.288Z - tick #340
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.288Z - {"x":7,"y":7,"type":"a","expires":340,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.288Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.359Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.389Z - tick #341
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.389Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.460Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.489Z - tick #342
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.489Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.560Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.589Z - tick #343
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.589Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.660Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.690Z - tick #344
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.690Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.789Z - tick #345
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.860Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.890Z - tick #346
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.890Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.961Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.990Z - tick #347
+[34mgame-server_1   |[0m 2021-05-02T03:04:42.990Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.061Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.090Z - tick #348
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.090Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.161Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.190Z - tick #349
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.191Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.290Z - tick #350
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.361Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.391Z - tick #351
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.391Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.462Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.491Z - tick #352
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.491Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.562Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.591Z - tick #353
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.591Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.662Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.691Z - tick #354
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.692Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.762Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.792Z - tick #355
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.792Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.863Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.892Z - tick #356
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.892Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.964Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.992Z - tick #357
+[34mgame-server_1   |[0m 2021-05-02T03:04:43.992Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.063Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.092Z - tick #358
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.093Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.163Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.193Z - tick #359
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.193Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.264Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.292Z - tick #360
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.292Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.363Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.392Z - tick #361
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.393Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.464Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.493Z - tick #362
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.493Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.564Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.592Z - tick #363
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.592Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.663Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.692Z - tick #364
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.693Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.763Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.793Z - tick #365
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.793Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.864Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.892Z - tick #366
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.892Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.963Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.992Z - tick #367
+[34mgame-server_1   |[0m 2021-05-02T03:04:44.993Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.063Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.093Z - tick #368
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.093Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.164Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.193Z - tick #369
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.193Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.264Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.292Z - tick #370
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.292Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.363Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.392Z - tick #371
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.392Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.463Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.492Z - tick #372
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.493Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.563Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.593Z - tick #373
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.593Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.664Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.693Z - tick #374
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.693Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.764Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.793Z - tick #375
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.793Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.864Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.894Z - tick #376
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.895Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.968Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.994Z - tick #377
+[34mgame-server_1   |[0m 2021-05-02T03:04:45.994Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.065Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.093Z - tick #378
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.093Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.164Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.193Z - tick #379
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.194Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.294Z - tick #380
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.365Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.394Z - tick #381
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.394Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.465Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.494Z - tick #382
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.495Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.565Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.595Z - tick #383
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.595Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.666Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.695Z - tick #384
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.695Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.766Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.795Z - tick #385
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.795Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.866Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.896Z - tick #386
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.896Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.967Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.996Z - tick #387
+[34mgame-server_1   |[0m 2021-05-02T03:04:46.997Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.069Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.096Z - tick #388
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.096Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.167Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.196Z - tick #389
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.196Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.267Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.297Z - tick #390
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.297Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.370Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.397Z - tick #391
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.397Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.468Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.497Z - tick #392
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.498Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.569Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.598Z - tick #393
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.598Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.669Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.698Z - tick #394
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.699Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.769Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.799Z - tick #395
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.799Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.870Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.899Z - tick #396
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.899Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.970Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:47.999Z - tick #397
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.000Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.070Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.100Z - tick #398
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.100Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.171Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.200Z - tick #399
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.200Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.271Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.300Z - tick #400
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.300Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.371Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.400Z - tick #401
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.400Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.471Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.500Z - tick #402
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.501Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.572Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.601Z - tick #403
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.601Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.672Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.700Z - tick #404
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.701Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.771Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.801Z - tick #405
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.801Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.872Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.900Z - tick #406
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.900Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:48.971Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.000Z - tick #407
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.001Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.072Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.101Z - tick #408
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.101Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.172Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.201Z - tick #409
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.201Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.272Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.301Z - tick #410
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.301Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.372Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.401Z - tick #411
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.402Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.472Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.502Z - tick #412
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.502Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.573Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.602Z - tick #413
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.602Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.673Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.701Z - tick #414
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.701Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.772Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.801Z - tick #415
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.802Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.872Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.902Z - tick #416
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.902Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:49.973Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.002Z - tick #417
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.002Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.074Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.102Z - tick #418
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.102Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.173Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.202Z - tick #419
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.202Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.273Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.303Z - tick #420
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.303Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.373Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.403Z - tick #421
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.403Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.474Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.503Z - tick #422
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.503Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.574Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.603Z - tick #423
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.603Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.674Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.703Z - tick #424
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.704Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.804Z - tick #425
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.875Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.904Z - tick #426
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.904Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.906Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:50.975Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.005Z - tick #427
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.076Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.105Z - tick #428
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.105Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.106Z - Queueing action: bomb for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.176Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.204Z - tick #429
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.204Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.205Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.304Z - tick #430
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.306Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.375Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.405Z - tick #431
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.406Z - Queueing action: detonate for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.476Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.504Z - tick #432
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.504Z - {"x":4,"y":2,"type":"b","owner":0,"expires":469,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.504Z - Triggering blast from 4,2
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.575Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.604Z - tick #433
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.676Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.705Z - tick #434
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.777Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.805Z - tick #435
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.876Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.905Z - tick #436
+[34mgame-server_1   |[0m 2021-05-02T03:04:51.976Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.005Z - tick #437
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.076Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.106Z - tick #438
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.177Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.206Z - tick #439
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.277Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.305Z - tick #440
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.376Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.405Z - tick #441
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.476Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.505Z - tick #442
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.506Z - {"x":4,"y":2,"type":"x","owner":0,"expires":442} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.506Z - {"x":4,"y":3,"type":"x","owner":0,"expires":442} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.506Z - {"x":4,"y":1,"type":"x","owner":0,"expires":442} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.507Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.577Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.606Z - tick #443
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.609Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.677Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.705Z - tick #444
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.707Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.776Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.805Z - tick #445
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.807Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.876Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.906Z - tick #446
+[34mgame-server_1   |[0m 2021-05-02T03:04:52.977Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.006Z - tick #447
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.006Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.077Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.106Z - tick #448
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.108Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.177Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.206Z - tick #449
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.206Z - Failed to run action for agent 1 with error: Error: Cannot move left, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.208Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.277Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.306Z - tick #450
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.378Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.407Z - tick #451
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.408Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.478Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.507Z - tick #452
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.507Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.509Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.578Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.607Z - tick #453
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.678Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.707Z - tick #454
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.707Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.778Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.808Z - tick #455
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.808Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:53.907Z - tick #456
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.008Z - tick #457
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.108Z - tick #458
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.179Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.209Z - tick #459
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.210Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.280Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.309Z - tick #460
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.311Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.380Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.409Z - tick #461
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.409Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.411Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.509Z - tick #462
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.511Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.580Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.609Z - tick #463
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.610Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.611Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.710Z - tick #464
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.711Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.781Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.810Z - tick #465
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.810Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.812Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.881Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.910Z - tick #466
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.912Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:54.981Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.011Z - tick #467
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.082Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.111Z - tick #468
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.113Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.182Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.211Z - tick #469
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.213Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.282Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.311Z - tick #470
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.312Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.313Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.382Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.412Z - tick #471
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.413Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.483Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.512Z - tick #472
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.612Z - tick #473
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.683Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.713Z - tick #474
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.713Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.784Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.813Z - tick #475
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.813Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.884Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.913Z - tick #476
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.913Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:55.984Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.013Z - tick #477
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.014Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.113Z - tick #478
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.214Z - tick #479
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.285Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.314Z - tick #480
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.314Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.385Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.414Z - tick #481
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.416Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.485Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.515Z - tick #482
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.515Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.516Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.586Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.615Z - tick #483
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.686Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.715Z - tick #484
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.715Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.786Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.815Z - tick #485
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.817Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.886Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.916Z - tick #486
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.917Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:56.987Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.016Z - tick #487
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.016Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.018Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.117Z - tick #488
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.119Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.188Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.217Z - tick #489
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.218Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.227Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.290Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.318Z - tick #490
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.319Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.389Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.418Z - tick #491
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.518Z - tick #492
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.589Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.619Z - tick #493
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.619Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.620Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.690Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.719Z - tick #494
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.725Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.792Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.820Z - tick #495
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.891Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.920Z - tick #496
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.920Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.921Z - Queueing action: bomb for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:57.991Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.021Z - tick #497
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.021Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.026Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.120Z - tick #498
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.122Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.191Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.221Z - tick #499
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.222Z - Queueing action: detonate for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.292Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.321Z - tick #500
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.321Z - {"x":6,"y":4,"type":"b","owner":0,"expires":537,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.321Z - Triggering blast from 6,4
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.321Z - o at cell number 51 has remaining health: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.321Z - o at cell number 33 has remaining health: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.392Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.421Z - tick #501
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.522Z - tick #502
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.623Z - tick #503
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.722Z - tick #504
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.823Z - tick #505
+[34mgame-server_1   |[0m 2021-05-02T03:04:58.924Z - tick #506
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.023Z - tick #507
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.124Z - tick #508
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.224Z - tick #509
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.295Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.325Z - tick #510
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.325Z - {"x":6,"y":4,"type":"x","owner":0,"expires":510} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.325Z - {"x":5,"y":4,"type":"x","owner":0,"expires":510} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.325Z - {"x":7,"y":4,"type":"x","owner":0,"expires":510} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.327Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.396Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.425Z - tick #511
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.496Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.525Z - tick #512
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.525Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.596Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.625Z - tick #513
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.626Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.696Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.726Z - tick #514
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.726Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.797Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.825Z - tick #515
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.825Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.926Z - tick #516
+[34mgame-server_1   |[0m 2021-05-02T03:04:59.997Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.026Z - tick #517
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.026Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.097Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.125Z - tick #518
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.125Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.196Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.225Z - tick #519
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.227Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.296Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.326Z - tick #520
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.327Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.399Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.426Z - tick #521
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.426Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.497Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.526Z - tick #522
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.526Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.597Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.627Z - tick #523
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.627Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.698Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.727Z - tick #524
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.727Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.798Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.827Z - tick #525
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.827Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.898Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.928Z - tick #526
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.928Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:00.999Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.028Z - tick #527
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.028Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.099Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.128Z - tick #528
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.128Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.199Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.228Z - tick #529
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.229Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.299Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.329Z - tick #530
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.329Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.400Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.428Z - tick #531
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.428Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.499Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.528Z - tick #532
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.529Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.601Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.629Z - tick #533
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.629Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.700Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.729Z - tick #534
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.729Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.800Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.829Z - tick #535
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.829Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.900Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.929Z - tick #536
+[34mgame-server_1   |[0m 2021-05-02T03:05:01.930Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.000Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.030Z - tick #537
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.030Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.101Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.130Z - tick #538
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.130Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.201Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.230Z - tick #539
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.230Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.301Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.330Z - tick #540
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.331Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.401Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.431Z - tick #541
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.431Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.502Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.530Z - tick #542
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.530Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.601Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.630Z - tick #543
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.631Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.701Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.731Z - tick #544
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.731Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.802Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.831Z - tick #545
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.831Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.902Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.931Z - tick #546
+[34mgame-server_1   |[0m 2021-05-02T03:05:02.931Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.002Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.032Z - tick #547
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.032Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.104Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.132Z - tick #548
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.132Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.203Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.232Z - tick #549
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.232Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.303Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.332Z - tick #550
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.332Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.403Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.432Z - tick #551
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.432Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.503Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.532Z - tick #552
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.532Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.603Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.632Z - tick #553
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.633Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.704Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.733Z - tick #554
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.733Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.804Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.832Z - tick #555
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.832Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.903Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.932Z - tick #556
+[34mgame-server_1   |[0m 2021-05-02T03:05:03.932Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.003Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.032Z - tick #557
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.032Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.103Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.133Z - tick #558
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.133Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.204Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.232Z - tick #559
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.233Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.303Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.333Z - tick #560
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.333Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.406Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.433Z - tick #561
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.433Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.504Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.533Z - tick #562
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.533Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.604Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.633Z - tick #563
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.634Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.705Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.734Z - tick #564
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.734Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.805Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.833Z - tick #565
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.833Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.904Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.933Z - tick #566
+[34mgame-server_1   |[0m 2021-05-02T03:05:04.934Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.004Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.034Z - tick #567
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.034Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.105Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.134Z - tick #568
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.134Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.205Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.234Z - tick #569
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.234Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.305Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.334Z - tick #570
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.335Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.407Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.434Z - tick #571
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.434Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.505Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.535Z - tick #572
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.535Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.606Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.635Z - tick #573
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.635Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.706Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.735Z - tick #574
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.735Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.806Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.834Z - tick #575
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.835Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.908Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.934Z - tick #576
+[34mgame-server_1   |[0m 2021-05-02T03:05:05.934Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.005Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.034Z - tick #577
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.035Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.105Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.135Z - tick #578
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.135Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.206Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.234Z - tick #579
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.234Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.305Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.334Z - tick #580
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.334Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.405Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.435Z - tick #581
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.436Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.505Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.535Z - tick #582
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.536Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.635Z - tick #583
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.706Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.734Z - tick #584
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.736Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.805Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.834Z - tick #585
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.836Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.905Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.935Z - tick #586
+[34mgame-server_1   |[0m 2021-05-02T03:05:06.936Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.006Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.035Z - tick #587
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.035Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.037Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.106Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.135Z - tick #588
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.206Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.235Z - tick #589
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.237Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.306Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.336Z - tick #590
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.336Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.338Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.407Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.435Z - tick #591
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.536Z - tick #592
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.607Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.636Z - tick #593
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.636Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.707Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.736Z - tick #594
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.736Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.807Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.836Z - tick #595
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.836Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.907Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.936Z - tick #596
+[34mgame-server_1   |[0m 2021-05-02T03:05:07.938Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.007Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.037Z - tick #597
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.037Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.038Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.108Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.136Z - tick #598
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.207Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.236Z - tick #599
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.236Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.337Z - tick #600
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.407Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.437Z - tick #601
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.437Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.536Z - tick #602
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.609Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.636Z - tick #603
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.636Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.707Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.736Z - tick #604
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.737Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.807Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.837Z - tick #605
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.837Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.908Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.936Z - tick #606
+[34mgame-server_1   |[0m 2021-05-02T03:05:08.936Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.007Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.036Z - tick #607
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.038Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.107Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.136Z - tick #608
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.138Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.207Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.237Z - tick #609
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.237Z - Failed to run action for agent 1 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.238Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.308Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.337Z - tick #610
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.339Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.408Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.436Z - tick #611
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.537Z - tick #612
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.538Z - Queueing action: bomb for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.637Z - tick #613
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.641Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.738Z - tick #614
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.809Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.837Z - tick #615
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.839Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.908Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:09.937Z - tick #616
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.008Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.038Z - tick #617
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.137Z - tick #618
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.238Z - tick #619
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.339Z - tick #620
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.438Z - tick #621
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.539Z - tick #622
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.610Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.639Z - tick #623
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.710Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.739Z - tick #624
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.840Z - tick #625
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.911Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:10.940Z - tick #626
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.011Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.040Z - tick #627
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.111Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.141Z - tick #628
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.212Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.241Z - tick #629
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.341Z - tick #630
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.442Z - tick #631
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.541Z - tick #632
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.642Z - tick #633
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.741Z - tick #634
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.842Z - tick #635
+[34mgame-server_1   |[0m 2021-05-02T03:05:11.943Z - tick #636
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.014Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.043Z - tick #637
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.114Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.142Z - tick #638
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.243Z - tick #639
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.342Z - tick #640
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.443Z - tick #641
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.542Z - tick #642
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.614Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.642Z - tick #643
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.713Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.743Z - tick #644
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.814Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.843Z - tick #645
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.914Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:12.942Z - tick #646
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.043Z - tick #647
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.114Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.143Z - tick #648
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.214Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.243Z - tick #649
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.314Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.343Z - tick #650
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.414Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.444Z - tick #651
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.515Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.543Z - tick #652
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.550Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.616Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.643Z - tick #653
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.644Z - {"x":4,"y":4,"type":"b","owner":0,"expires":653,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.644Z - Triggering blast from 4,4
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.644Z - w at cell number 39 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.645Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.715Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.744Z - tick #654
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.752Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.818Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.845Z - tick #655
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.847Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.916Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.945Z - tick #656
+[34mgame-server_1   |[0m 2021-05-02T03:05:13.947Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.016Z - Queueing action: detonate for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.046Z - tick #657
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.046Z - {"x":3,"y":5,"type":"b","owner":1,"expires":692,"hp":1,"blast_diameter":9} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.046Z - Triggering blast from 3,5
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.046Z - w at cell number 30 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.046Z - o at cell number 47 has remaining health: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.046Z - {"x":4,"y":5,"type":"x","owner":0,"expires":663} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.046Z - o at cell number 51 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.048Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.145Z - tick #658
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.147Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.245Z - tick #659
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.346Z - tick #660
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.447Z - tick #661
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.546Z - tick #662
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.647Z - tick #663
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.647Z - {"x":4,"y":4,"type":"x","owner":0,"expires":663} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.647Z - {"x":4,"y":3,"type":"x","owner":0,"expires":663} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.647Z - {"x":5,"y":4,"type":"x","owner":0,"expires":663} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.746Z - tick #664
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.847Z - tick #665
+[34mgame-server_1   |[0m 2021-05-02T03:05:14.948Z - tick #666
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.018Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.048Z - tick #667
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.048Z - {"x":3,"y":5,"type":"x","owner":1,"expires":667} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.048Z - {"x":3,"y":6,"type":"x","owner":1,"expires":667} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.048Z - {"x":3,"y":4,"type":"x","owner":1,"expires":667} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.048Z - {"x":4,"y":5,"type":"x","owner":1,"expires":667} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.048Z - {"x":5,"y":5,"type":"x","owner":1,"expires":667} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.050Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.119Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.147Z - tick #668
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.149Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.218Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.247Z - tick #669
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.248Z - Failed to run action for agent 1 with error: Error: Cannot move right, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.248Z - Queueing action: bomb for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.319Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.348Z - tick #670
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.349Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.419Z - Queueing action: detonate for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.447Z - tick #671
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.447Z - {"x":5,"y":5,"type":"b","owner":1,"expires":710,"hp":1,"blast_diameter":9} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.447Z - Triggering blast from 5,5
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.447Z - w at cell number 59 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.447Z - w at cell number 32 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.447Z - o at cell number 47 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.448Z - b at cell number 51 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.448Z - Triggering blast from 6,5
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.448Z - {"x":5,"y":5,"type":"x","owner":1,"expires":681} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.449Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.519Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.548Z - tick #672
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.648Z - tick #673
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.749Z - tick #674
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.820Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.849Z - tick #675
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.920Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.949Z - tick #676
+[34mgame-server_1   |[0m 2021-05-02T03:05:15.961Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.030Z - Queueing action: detonate for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.050Z - tick #677
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.050Z - {"x":4,"y":4,"type":"b","owner":1,"expires":716,"hp":1,"blast_diameter":9} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.050Z - Triggering blast from 4,4
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.050Z - {"x":4,"y":5,"type":"x","owner":1,"expires":681} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.050Z - w at cell number 36 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.050Z - {"x":5,"y":4,"type":"x","owner":1,"expires":681} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.050Z - {"x":6,"y":4,"type":"x","owner":0,"expires":681} has expired
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.050Z - w at cell number 44 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.052Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.121Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.150Z - tick #678
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.152Z - Game completed shutting down in 5000ms
+[34mgame-server_1   |[0m 2021-05-02T03:05:16.223Z - Queueing action: up for agent: 1
