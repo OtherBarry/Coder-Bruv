@@ -22,7 +22,7 @@ services:
     agent-a:
         extends:
             file: base-compose.yml
-            service: python3-agent
+            service: python3-agent-dev
         environment:
             - GAME_CONNECTION_STRING=ws://game-server:3000/?role=agent&agentId=agentA&name=bruvbot
             - FWD_MODEL_CONNECTION_STRING=ws://fwd-server-a:6969/?role=admin
@@ -34,7 +34,7 @@ services:
     agent-b:
      extends:
          file: base-compose.yml
-         service: python3-agent
+         service: python3-qualifiers
      environment:
          - GAME_CONNECTION_STRING=ws://game-server:3000/?role=agent&agentId=agentB&name=other
          - FWD_MODEL_CONNECTION_STRING=ws://fwd-server-b:6969/?role=admin

@@ -9,6 +9,11 @@ services:
         build:
             context: python3
             dockerfile: Dockerfile
+        deploy:
+            resources:
+                limits:
+                    cpus: 2
+                    memory: 1024m
 
     python3-agent-dev:
         build:
@@ -16,18 +21,48 @@ services:
             dockerfile: Dockerfile
         volumes:
             - ./python3:/app
+        deploy:
+            resources:
+                limits:
+                    cpus: 2
+                    memory: 1024m
 
     python3-hill_climber:
         build:
             context: python3/
             dockerfile: app/enemies/hill_climber/Dockerfile
+        deploy:
+            resources:
+                limits:
+                    cpus: 2
+                    memory: 1024m
 
     python3-scrim-one:
         build:
             context: python3/
             dockerfile: app/enemies/scrim-one/Dockerfile
+        deploy:
+            resources:
+                limits:
+                    cpus: 2
+                    memory: 1024m
 
     python3-scrim-two:
         build:
             context: python3/
             dockerfile: app/enemies/scrim-two/Dockerfile
+        deploy:
+            resources:
+                limits:
+                    cpus: 2
+                    memory: 1024m
+
+    python3-qualifiers:
+        build:
+            context: python3/
+            dockerfile: app/enemies/qualifiers/Dockerfile
+        deploy:
+            resources:
+                limits:
+                    cpus: 2
+                    memory: 1024m
