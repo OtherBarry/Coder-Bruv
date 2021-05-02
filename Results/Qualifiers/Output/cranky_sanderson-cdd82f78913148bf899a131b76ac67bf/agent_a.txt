@@ -1,0 +1,33 @@
+[36magent-a_1       |[0m DEMOLISHING | TIME: 0.47%
+[36magent-a_1       |[0m DISMOUNTING | TIME: 0.32%
+[36magent-a_1       |[0m 1 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 0.45%
+[36magent-a_1       |[0m WAITING     | TIME: 0.28%
+[36magent-a_1       |[0m 1 1
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m ESCAPING    | TIME: 0.32%
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.10%
+[36magent-a_1       |[0m WAITING     | TIME: 0.90%
+[36magent-a_1       |[0m WAITING     | TIME: 1.18%
+[36magent-a_1       |[0m WAITING     | TIME: 1.00%
+[36magent-a_1       |[0m WAITING     | TIME: 1.17%
+[36magent-a_1       |[0m WAITING     | TIME: 0.97%
+[36magent-a_1       |[0m WAITING     | TIME: 1.06%
+[36magent-a_1       |[0m WAITING     | TIME: 1.18%
+[36magent-a_1       |[0m WAITING     | TIME: 0.99%
+[36magent-a_1       |[0m WAITING     | TIME: 0.93%
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.19%
+[36magent-a_1       |[0m IMPROVING   | TIME: 0.98%
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.01%
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.32%
+[36magent-a_1       |[0m WAITING     | TIME: 0.79%
+[36magent-a_1       |[0m WAITING     | TIME: 1.12%
+[36magent-a_1       |[0m WAITING     | TIME: 0.83%
+[36magent-a_1       |[0m WAITING     | TIME: 0.82%
+[36magent-a_1       |[0m WAITING     | TIME: 0.87%
+[36magent-a_1       |[0m WAITING     | TIME: 0.95%
+[36magent-a_1       |[0m WAITING     | TIME: 0.77%
+[36magent-a_1       |[0m WAITING     | TIME: 0.91%
+[36magent-a_1       |[0m WAITING     | TIME: 1.19%
+[36magent-a_1       |[0m WAITING     | TIME: 1.01%
+[36magent-a_1       |[0m Connection with server closed

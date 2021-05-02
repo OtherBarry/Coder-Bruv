@@ -1,0 +1,16 @@
+[36magent-a_1       |[0m PLANNING    | TIME: 0.96%
+[36magent-a_1       |[0m IMPROVING   | TIME: 0.49%
+[36magent-a_1       |[0m IMPROVING   | TIME: 0.45%
+[36magent-a_1       |[0m IMPROVING   | TIME: 0.47%
+[36magent-a_1       |[0m IMPROVING   | TIME: 0.61%
+[36magent-a_1       |[0m WAITING     | TIME: 0.45%
+[36magent-a_1       |[0m WAITING     | TIME: 0.51%
+[36magent-a_1       |[0m WAITING     | TIME: 0.35%
+[36magent-a_1       |[0m WAITING     | TIME: 0.39%
+[36magent-a_1       |[0m WAITING     | TIME: 0.51%
+[36magent-a_1       |[0m 1 0
+[36magent-a_1       |[0m WAITING     | TIME: 0.83%
+[36magent-a_1       |[0m 1 0
+[36magent-a_1       |[0m WAITING     | TIME: 0.63%
+[36magent-a_1       |[0m 1 0
+[36magent-a_1       |[0m WAITING     | TIME: 0.74%

@@ -1,0 +1,98 @@
+[36magent-a_1       |[0m DEMOLISHING | TIME: 0.47%
+[36magent-a_1       |[0m DISMOUNTING | TIME: 0.35%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m 1 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 0.61%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m 1 1
+[36magent-a_1       |[0m ESCAPING    | TIME: 0.46%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.14%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.20%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.97%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.21%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.10%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.07%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.97%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.04%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.03%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.95%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.33%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.03%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.30%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.24%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.05%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.03%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.05%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.85%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.04%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.06%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.94%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.06%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.04%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.91%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.83%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.83%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.91%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.85%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.95%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.05%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.86%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.95%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m WAITING     | TIME: 1.05%
+[36magent-a_1       |[0m 0 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.06%
+[36magent-a_1       |[0m None 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.05%
+[36magent-a_1       |[0m None 1
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.00%
+[36magent-a_1       |[0m None 1
+[36magent-a_1       |[0m WAITING     | TIME: 0.90%
+[36magent-a_1       |[0m WAITING     | TIME: 1.33%
+[36magent-a_1       |[0m IMPROVING   | TIME: 0.94%
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.24%
+[36magent-a_1       |[0m WAITING     | TIME: 1.01%
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.43%
+[36magent-a_1       |[0m WAITING     | TIME: 1.01%
+[36magent-a_1       |[0m WAITING     | TIME: 1.07%
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.07%
+[36magent-a_1       |[0m AREA DENIAL | TIME: 0.29%
+[36magent-a_1       |[0m DISMOUNTING | TIME: 0.63%
+[36magent-a_1       |[0m AREA DENIAL | TIME: 0.29%
+[36magent-a_1       |[0m DISMOUNTING | TIME: 0.52%
+[36magent-a_1       |[0m DETONATING  | TIME: 0.33%
+[36magent-a_1       |[0m IMPROVING   | TIME: 1.24%
+[36magent-a_1       |[0m WAITING     | TIME: 1.09%
+[36magent-a_1       |[0m Connection with server closed

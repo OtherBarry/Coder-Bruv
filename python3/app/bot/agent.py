@@ -204,6 +204,11 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
+        # TODO: Sean^2 trapping strat
+        # TODO: Double Detonation Traps
+        # TODO: Improve Bomb Placement Logic
+        # TODO: Suicide if trapped
+
         self.node_weights = {}
 
         self.danger_nodes = self._find_danger_nodes()

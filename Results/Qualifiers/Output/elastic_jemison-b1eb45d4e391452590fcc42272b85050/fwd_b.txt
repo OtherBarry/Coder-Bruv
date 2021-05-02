@@ -1,0 +1,50 @@
+[35mfwd-server-b_1  |[0m ADMIN_ROLE_ENABLED=1 (default: 1)
+[35mfwd-server-b_1  |[0m AGENT_ID_MAPPING=agentA,agentB (default: agentA,agentB)
+[35mfwd-server-b_1  |[0m AMMO_DURATION_TICKS=40 (default: 40)
+[35mfwd-server-b_1  |[0m AMMO_SPAWN_WEIGHTING=0.9 (default: 0.9)
+[35mfwd-server-b_1  |[0m BLAST_DURATION_TICKS=10 (default: 10)
+[35mfwd-server-b_1  |[0m BLAST_POWERUP_DURATION_TICKS=40 (default: 40)
+[35mfwd-server-b_1  |[0m BLAST_POWERUP_SPAWN_WEIGHTING=0.1 (default: 0.1)
+[35mfwd-server-b_1  |[0m BOMB_DURATION_TICKS=40 (default: 40)
+[35mfwd-server-b_1  |[0m ENTITY_SPAWN_PROBABILITY_PER_TICK=0.025 (default: 0.025)
+[35mfwd-server-b_1  |[0m FIRE_SPAWN_INTERVAL_TICKS=5 (default: 5)
+[35mfwd-server-b_1  |[0m GAME_DURATION_TICKS=1800 (default: 1800)
+[35mfwd-server-b_1  |[0m GAME_START_DELAY_MS=2000 (default: 2000)
+[35mfwd-server-b_1  |[0m INITIAL_AMMUNITION=3 (default: 3)
+[35mfwd-server-b_1  |[0m INITIAL_BLAST_DIAMETER=3 (default: 3)
+[35mfwd-server-b_1  |[0m INITIAL_HP=3 (default: 3)
+[35mfwd-server-b_1  |[0m INVULNERABILITY_TICKS=5 (default: 5)
+[35mfwd-server-b_1  |[0m TELEMETRY_ENABLED=1 (default: 1)
+[35mfwd-server-b_1  |[0m TRAINING_MODE_ENABLED=0 (default: 0)
+[35mfwd-server-b_1  |[0m SYMMETRICAL_MAP_ENABLED=1 (default: 1)
+[35mfwd-server-b_1  |[0m MAP_HEIGHT=9 (default: 9)
+[35mfwd-server-b_1  |[0m MAP_WIDTH=9 (default: 9)
+[35mfwd-server-b_1  |[0m ORE_BLOCK_FREQUENCY=0.0617283950617284 (default: 0.0617283950617284)
+[35mfwd-server-b_1  |[0m PORT=6969 (default: 3000)
+[35mfwd-server-b_1  |[0m PRNG_SEED=8234240562216576 (default: Random)
+[35mfwd-server-b_1  |[0m SAVE_REPLAY_ENABLED=1 (default: 1)
+[35mfwd-server-b_1  |[0m SHUTDOWN_ON_GAME_END_ENABLED=0 (default: 0)
+[35mfwd-server-b_1  |[0m STEEL_BLOCK_FREQUENCY=0.2222222222222222 (default: 0.2222222222222222)
+[35mfwd-server-b_1  |[0m TICK_RATE_HZ=10 (default: 10)
+[35mfwd-server-b_1  |[0m TOTAL_AGENTS=2 (default: 2)
+[35mfwd-server-b_1  |[0m TOURNAMENT_AGENT_CONNECTION_GRACE_PERIOD_MS=null (default: null)
+[35mfwd-server-b_1  |[0m WOOD_BLOCK_FREQUENCY=0.2469135802469136 (default: 0.2469135802469136)
+[35mfwd-server-b_1  |[0m WORLD_SEED=34 (default: Random)
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:45.275Z - {"agents":[{"coordinates":[8,7],"hp":3,"inventory":{"bombs":3},"blast_diameter":3,"number":0,"invulnerability":0},{"coordinates":[0,7],"hp":3,"inventory":{"bombs":3},"blast_diameter":3,"number":1,"invulnerability":0}],"entities":[{"x":6,"y":2,"type":"m"},{"x":2,"y":2,"type":"m"},{"x":6,"y":8,"type":"m"},{"x":2,"y":8,"type":"m"},{"x":1,"y":8,"type":"m"},{"x":7,"y":8,"type":"m"},{"x":8,"y":0,"type":"m"},{"x":0,"y":0,"type":"m"},{"x":6,"y":0,"type":"m"},{"x":2,"y":0,"type":"m"},{"x":8,"y":3,"type":"m"},{"x":0,"y":3,"type":"m"},{"x":7,"y":3,"type":"m"},{"x":1,"y":3,"type":"m"},{"x":5,"y":2,"type":"m"},{"x":3,"y":2,"type":"m"},{"x":3,"y":7,"type":"m"},{"x":5,"y":7,"type":"m"},{"x":0,"y":4,"type":"w","hp":1},{"x":8,"y":4,"type":"w","hp":1},{"x":0,"y":2,"type":"w","hp":1},{"x":8,"y":2,"type":"w","hp":1},{"x":5,"y":1,"type":"w","hp":1},{"x":3,"y":1,"type":"w","hp":1},{"x":0,"y":1,"type":"w","hp":1},{"x":8,"y":1,"type":"w","hp":1},{"x":0,"y":6,"type":"w","hp":1},{"x":8,"y":6,"type":"w","hp":1},{"x":1,"y":1,"type":"w","hp":1},{"x":7,"y":1,"type":"w","hp":1},{"x":5,"y":6,"type":"w","hp":1},{"x":3,"y":6,"type":"w","hp":1},{"x":3,"y":4,"type":"w","hp":1},{"x":5,"y":4,"type":"w","hp":1},{"x":8,"y":5,"type":"w","hp":1},{"x":0,"y":5,"type":"w","hp":1},{"x":3,"y":3,"type":"w","hp":1},{"x":5,"y":3,"type":"w","hp":1},{"x":6,"y":3,"type":"o","hp":3},{"x":2,"y":3,"type":"o","hp":3},{"x":2,"y":5,"type":"o","hp":3},{"x":6,"y":5,"type":"o","hp":3},{"x":2,"y":1,"type":"o","hp":3},{"x":6,"y":1,"type":"o","hp":3}]}
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:45.280Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:46.282Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:47.283Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:48.284Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:49.286Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:50.287Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:51.288Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:52.289Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:53.290Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:54.292Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:55.293Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:56.294Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:57.295Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:58.296Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:21:59.298Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:22:00.299Z - Waiting for agents to connect 0 of 2
+[35mfwd-server-b_1  |[0m 2021-05-01T14:22:01.300Z - Waiting for agents to connect 0 of 2
