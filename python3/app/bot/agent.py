@@ -216,6 +216,8 @@ class Agent:
         # TODO: Suicide if trapped
         # TODO: Improve weighting - fire > existing blast > their potential blast > our potential blast
         # TODO: Trapping player with body (Sean^2 strat)
+        # TODO: Extract map weights to central location
+        # TODO: ML Map weights
 
         self.node_weights = {}
 
