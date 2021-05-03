@@ -47,16 +47,16 @@ class TestBomb(TestCase):
             [call(i) for i in [(0, 1), (2, 1), (1, 0), (1, 2)]], any_order=True
         )
 
-    def test_calculate_impacts_no_nodes_in_graph_radius_2(self):
+    def test_calculate_impacts_no_nodes_in_graph_radius_3(self):
         map_mock = MagicMock()
         map_mock.graph.__contains__.return_value = False
         bomb = get_generic_bomb()
-        bomb.radius = 2
+        bomb.radius = 3
         bomb.calculate_impacts(map_mock)
         map_mock.graph.__contains__.assert_has_calls(
             [call(i) for i in [(0, 1), (2, 1), (1, 0), (1, 2)]], any_order=True
         )
-        self.assertEqual([], bomb.impacts)
+        self.assertCountEqual([(0, 1), (2, 1), (1, 0), (1, 2)], bomb.impacts)
 
     def test_calculate_impacts_radius_2(self):
         map_mock = MagicMock()
@@ -94,6 +94,36 @@ class TestBomb(TestCase):
         bomb.calculate_impacts(map_mock)
         self.assertCountEqual([(0, 1), (2, 1), (1, 0), (1, 2)], bomb.impacts)
 
+    def test_bomb_update_tick_early(self):
+        bomb = get_generic_bomb()
+        bomb.update_tick(2)
+        self.assertEqual(bomb.owner, "0")
+
+    def test_bomb_update_tick_one_before(self):
+        bomb = get_generic_bomb()
+        bomb.update_tick(39)
+        self.assertIsNone(bomb.owner)
+
+    def test_bomb_update_tick_on_expire(self):
+        bomb = get_generic_bomb()
+        bomb.update_tick(40)
+        self.assertIsNone(bomb.owner)
+
+    def test_bomb_update_tick_one_after(self):
+        bomb = get_generic_bomb()
+        bomb.update_tick(41)
+        self.assertIsNone(bomb.owner)
+
+    def test_bomb_equal(self):
+        bomb = get_generic_bomb()
+        other_bomb = get_generic_bomb()
+        self.assertEqual(bomb, other_bomb)
+
+    def test_bomb_not_equal(self):
+        bomb = get_generic_bomb()
+        other_bomb = get_generic_bomb()
+        other_bomb.position = (2, 2)
+        self.assertNotEqual(bomb, other_bomb)
 
 @patch("app.state.map.Map")
 @patch("app.state.bombs.Bomb")
@@ -109,6 +139,8 @@ class TestBombLibrary(TestCase):
         self.bl.add_bomb(entity, map)
         bomb_mock.assert_called_once_with(entity)
         self.assertIs(bomb, self.bl.get_bomb_at((1, 1)))
+
+    def test_add_two_bombs(self, bomb_mock, map_mock):
 
     def test_get_bomb_at(self, bomb_mock, map_mock):
         self.assertIsNone(self.bl.get_bomb_at((1, 1)))
@@ -132,28 +164,8 @@ class TestBombLibrary(TestCase):
         bomb.calculate_impacts.assert_called_with(map)
         self.bl.update(map)
         bomb.calculate_impacts.assert_called_with(map)
-        map.graph.nodes.__getitem__.assert_has_calls(
-            [call(c) for c in bomb.impacts], any_order=True
-        )
         for coords in bomb.impacts:
-            self.assertEqual([bomb], self.bl.get_bombs_impacting(coords))
+            self.assertEqual({bomb, }, self.bl.get_bombs_impacting(coords))
 
-        node = map.graph.nodes.__getitem__.return_value
-        weight = node.__getitem__.return_value
         self.assertEqual([], bomb.detonates)
         self.assertEqual([], bomb.detonated_by)
-
-    def test_remove_bomb_one_bomb(self, bomb_mock, map_mock):
-        bomb = bomb_mock.return_value
-        bomb.position = (1, 1)
-        bomb.impacts = [(0, 1), (2, 1), (1, 0), (1, 2)]
-        map = map_mock.return_value
-        self.bl.add_bomb({}, map)
-        self.bl.update(map)
-        map_mock.reset_mock()
-        map = map_mock.return_value
-        self.bl.remove_bomb((1, 1), map)
-        for coord in bomb.impacts:
-            self.assertIn(call(coord), map.graph.nodes.__getitem__.call_args_list)
-        node = map.graph.nodes.__getitem__.return_value
-        weight = node.__getitem__.return_value

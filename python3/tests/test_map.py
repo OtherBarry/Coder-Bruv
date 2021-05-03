@@ -32,7 +32,10 @@ class TestMap(TestCase):
         map = generate_empty_map()
         map.add_entity({"x": 0, "y": 0, "type": "a", "expires": 40})
         self.assertEqual("a", map.graph.nodes[(0, 0)]["entity"])
-        self.assertEqual(Map.WEIGHT_MAP["Default"] + Map.WEIGHT_MAP["a"], map.graph.nodes[(0, 0)]["weight"])
+        self.assertEqual(
+            Map.WEIGHT_MAP["Default"] + Map.WEIGHT_MAP["a"],
+            map.graph.nodes[(0, 0)]["weight"],
+        )
 
     def test_add_entity_bomb_1(self):
         map = generate_empty_map()
@@ -48,15 +51,6 @@ class TestMap(TestCase):
         )
         map.bomb_library.update(map)
         self.assertNotIn((1, 1), map.graph)
-        impacted_nodes = ((0, 1), (2, 1), (1, 0), (1, 2))
-        for node in map.graph.nodes:
-            if node in impacted_nodes:
-                self.assertEqual(
-                    Map.WEIGHT_MAP["Future Blast Zone"],
-                    map.graph.nodes[node]["weight"],
-                )
-            else:
-                self.assertEqual(Map.WEIGHT_MAP["Default"], map.graph.nodes[node]["weight"])
 
     def test_add_entity_bomb_2(self):
         map = generate_empty_map()
@@ -72,30 +66,15 @@ class TestMap(TestCase):
         )
         map.bomb_library.update(map)
         self.assertNotIn((2, 2), map.graph)
-        impacted_nodes = (
-            (0, 2),
-            (1, 2),
-            (3, 2),
-            (4, 2),
-            (2, 0),
-            (2, 1),
-            (2, 3),
-            (2, 4),
-        )
-        for node in map.graph.nodes:
-            if node in impacted_nodes:
-                self.assertEqual(
-                    Map.WEIGHT_MAP["Future Blast Zone"],
-                    map.graph.nodes[node]["weight"],
-                )
-            else:
-                self.assertEqual(Map.WEIGHT_MAP["Default"], map.graph.nodes[node]["weight"])
 
     def test_add_entity_powerup(self):
         map = generate_empty_map()
         map.add_entity({"x": 3, "y": 3, "type": "bp", "expires": 40})
         self.assertEqual("bp", map.graph.nodes[(3, 3)]["entity"])
-        self.assertEqual(Map.WEIGHT_MAP["Default"] + Map.WEIGHT_MAP["bp"], map.graph.nodes[(3, 3)]["weight"])
+        self.assertEqual(
+            Map.WEIGHT_MAP["Default"] + Map.WEIGHT_MAP["bp"],
+            map.graph.nodes[(3, 3)]["weight"],
+        )
 
     def test_add_entity_metal(self):
         map = generate_empty_map()
@@ -116,7 +95,10 @@ class TestMap(TestCase):
         map = generate_empty_map()
         map.add_entity({"x": 2, "y": 2, "type": "x", "expires": 10})
         self.assertEqual("x", map.graph.nodes[(2, 2)]["entity"])
-        self.assertEqual(Map.WEIGHT_MAP["Default"] + Map.WEIGHT_MAP["x"], map.graph.nodes[(2, 2)]["weight"])
+        self.assertEqual(
+            Map.WEIGHT_MAP["Default"] + Map.WEIGHT_MAP["x"],
+            map.graph.nodes[(2, 2)]["weight"],
+        )
 
     def test_remove_entity_ammo(self):
         map = generate_empty_map()
