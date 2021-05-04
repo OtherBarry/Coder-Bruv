@@ -1,20 +1,13 @@
 import networkx as nx
 
 from .bombs import BombLibrary
-from ..utilities import Entity, FIRE_SPAWN_MAP
+from ..utilities import Entity, FIRE_SPAWN_MAP, WEIGHT_MAP
 
 
 class Map:
     """Graph representation of the game map"""
 
     IMPASSABLE_ENTITIES = [Entity.BOMB, Entity.METAL, Entity.ORE, Entity.WOOD]
-    WEIGHT_MAP = {
-        Entity.AMMO: 90,
-        Entity.POWERUP: 5,
-        Entity.BLAST: 10000,
-        "Future Blast Zone": 1000,
-        "Default": 100,
-    }
 
     def __init__(self, world, entities):
         self._width = world["width"]
@@ -23,7 +16,7 @@ class Map:
         self.bomb_library = BombLibrary()
         self.block_library = {}
         for node in self.graph.nodes:
-            self.graph.nodes[node]["weight"] = Map.WEIGHT_MAP["Default"]
+            self.graph.nodes[node]["weight"] = WEIGHT_MAP["Default"]
         for entity in entities:
             self.add_entity(entity)
 
@@ -38,7 +31,7 @@ class Map:
         fire_coord = FIRE_SPAWN_MAP.get(tick + 2)
         if fire_coord in self.graph:
             self.graph.nodes[fire_coord]["entity"] = Entity.BLAST
-            self.graph.nodes[fire_coord]["weight"] = self.WEIGHT_MAP[Entity.BLAST]
+            self.graph.nodes[fire_coord]["weight"] = WEIGHT_MAP[Entity.BLAST]
 
     def add_entity(self, entity):
         """Adds the given entity to the map"""
@@ -54,17 +47,17 @@ class Map:
             self.graph.remove_node(coords)
         else:
             self.graph.nodes[coords]["entity"] = entity_type
-            self.graph.nodes[coords]["weight"] = Map.WEIGHT_MAP[entity_type]
+            self.graph.nodes[coords]["weight"] = WEIGHT_MAP[entity_type]
 
     def remove_entity(self, coords):
         """Removes an entity from the map at the given coordinates"""
         if coords in self.graph:
-            self.graph.nodes[coords]["weight"] = Map.WEIGHT_MAP["Default"]
+            self.graph.nodes[coords]["weight"] = WEIGHT_MAP["Default"]
             del self.graph.nodes[coords]["entity"]
         else:
             if self.bomb_library.get_bomb_at(coords) is not None:
                 self.bomb_library.remove_bomb(coords, self)
             elif self.block_library.get(coords) is not None:
                 del self.block_library[coords]
-            self.graph.add_node(coords, weight=Map.WEIGHT_MAP["Default"])
+            self.graph.add_node(coords, weight=WEIGHT_MAP["Default"])
             self.graph.add_edges_from(self._generate_edges(coords))

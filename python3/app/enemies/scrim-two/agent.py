@@ -3,7 +3,7 @@ import os
 import networkx as nx
 import math
 
-from app.utilities import Entity, PriorityQueue
+from app.utilities import Entity, PriorityQueue, WEIGHT_MAP
 from app.server_connection import ServerConnection
 
 uri = (
@@ -51,7 +51,7 @@ class Agent:
         weight = self.map.graph.nodes[node]["weight"]
         bomb_owners = self.map.bomb_library.get_bomb_impact_owners(node)
         if self.them.id in bomb_owners or None in bomb_owners:
-            weight += self.map.WEIGHT_MAP[Entity.BLAST]
+            weight += WEIGHT_MAP[Entity.BLAST]
         elif self.us.id in bomb_owners:
             weight += 1
         if self.us.is_invulnerable:
@@ -193,7 +193,7 @@ class Agent:
             them_to_entrance = _manhattan_distance(self.them.coords, entrance)
             if (
                 us_to_entrance == them_to_entrance == 1
-                and self._get_node_weight(entrance) < self.map.WEIGHT_MAP[Entity.BLAST]
+                and self._get_node_weight(entrance) < WEIGHT_MAP[Entity.BLAST]
             ):
                 move = _get_direction_from_coords(self.us.coords, entrance)
                 await self._server.send_move(move)
@@ -250,7 +250,7 @@ class Agent:
             elif (
                 kill_confirmed
                 and max(self._get_node_weight(node) for node in attack_path)
-                < self.map.WEIGHT_MAP[Entity.BLAST]
+                < WEIGHT_MAP[Entity.BLAST]
             ):
                 move = _get_direction_from_coords(self.us.coords, attack_path[1])
                 await self._server.send_move(move)

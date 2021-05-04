@@ -1,3 +1,4 @@
+import math
 from enum import Enum
 import heapq
 
@@ -40,6 +41,21 @@ class PriorityQueue:
         val = heapq.heappop(self.heap)
         self.size -= 1
         return val
+
+WEIGHT_MAP = {
+        Entity.AMMO: 90,
+        Entity.POWERUP: 5,
+        Entity.BLAST: 10000,
+        "Us Future Blast": 1000,
+        "Them Future Blast": 1000,
+        "Invincibility Cutoff": 200,
+        "Trap": 100,
+        "Default": 100,
+        "Enemy": -1,
+        "Enemy - next_to": math.inf,
+        "Enemy - in_bad_spot": 125,
+
+    }
 
 
 FIRE_SPAWN_MAP = {

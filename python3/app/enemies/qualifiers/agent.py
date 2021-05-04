@@ -6,7 +6,7 @@ import networkx as nx
 
 from app.server_connection import ServerConnection
 from app.state.bombs import Bomb
-from app.utilities import Entity, PriorityQueue
+from app.utilities import Entity, PriorityQueue, WEIGHT_MAP
 
 uri = (
     os.environ.get("GAME_CONNECTION_STRING")
@@ -58,18 +58,18 @@ class Agent:
         weight = self.map.graph.nodes[node]["weight"]
         bomb_owners = self.map.bomb_library.get_bomb_impact_owners(node)
         if self.them.id in bomb_owners or None in bomb_owners:
-            weight += self.map.WEIGHT_MAP[Entity.BLAST]
+            weight += WEIGHT_MAP[Entity.BLAST]
         elif self.us.id in bomb_owners:
             weight += 1
         if self.us.is_invulnerable:
-            weight = min(self.map.WEIGHT_MAP[Entity.BLAST] // 2, weight)
+            weight = min(WEIGHT_MAP[Entity.BLAST] // 2, weight)
         entrance = self.danger_nodes.get(node)
         if node == self.them.coords:
             if self.next_to_enemy:
                 weight += math.inf
             else:
                 us_weight = self._get_node_weight(self.us.coords)
-                if us_weight > self.map.WEIGHT_MAP["Default"]:
+                if us_weight > WEIGHT_MAP["Default"]:
                     weight += 125
                 elif self.state.tick < 1800 and self.us.hp > 1:
                     weight -= 1
@@ -85,7 +85,7 @@ class Agent:
             except (nx.NetworkXNoPath, nx.NodeNotFound):
                 valid = False
             if valid and (them_to_entrance <= 2 or us_to_entrance >= them_to_entrance):
-                weight += self.map.WEIGHT_MAP[Entity.BLAST] // 2
+                weight += WEIGHT_MAP[Entity.BLAST] // 2
         self.node_weights[node] = weight
         return weight
 
@@ -185,7 +185,7 @@ class Agent:
             neigbour_weight = self._get_node_weight(neighbour)
             best.push(
                 (
-                    neigbour_weight >= self.map.WEIGHT_MAP[Entity.BLAST],
+                    neigbour_weight >= WEIGHT_MAP[Entity.BLAST],
                     _manhattan_distance(neighbour, self.them.coords)
                     < current_enemy_distance,
                     -len(connected_nodes),
@@ -233,7 +233,7 @@ class Agent:
             them_to_entrance = _manhattan_distance(self.them.coords, entrance)
             if (
                 us_to_entrance == them_to_entrance == 1
-                and self._get_node_weight(entrance) < self.map.WEIGHT_MAP[Entity.BLAST]
+                and self._get_node_weight(entrance) < WEIGHT_MAP[Entity.BLAST]
             ):
                 move = _get_direction_from_coords(self.us.coords, entrance)
                 await self._server.send_move(move)
@@ -292,14 +292,14 @@ class Agent:
                 if (
                     escape == self.us.coords
                     and self._get_node_weight(escape)
-                    <= self.map.WEIGHT_MAP[Entity.BLAST]
+                    <= WEIGHT_MAP[Entity.BLAST]
                 ):
                     await self._server.send_bomb()
                     return
                 else:
                     path = self.paths[self.us.coords][escape]
                     worst_node = max(self._get_node_weight(n) for n in path)
-                    if worst_node <= self.map.WEIGHT_MAP["Default"]:
+                    if worst_node <= WEIGHT_MAP["Default"]:
                         move = _get_direction_from_coords(self.us.coords, path[1])
                         await self._server.send_move(move)
                         return
@@ -312,7 +312,7 @@ class Agent:
             elif (
                 kill_confirmed
                 and max(self._get_node_weight(node) for node in attack_path)
-                < self.map.WEIGHT_MAP[Entity.BLAST]
+                < WEIGHT_MAP[Entity.BLAST]
             ):
                 move = _get_direction_from_coords(self.us.coords, attack_path[1])
                 await self._server.send_move(move)
@@ -385,7 +385,7 @@ class Agent:
                 if (
                     node != (x, y)
                     and node not in bomb.impacts
-                    and node_weight < self.map.WEIGHT_MAP[Entity.BLAST]
+                    and node_weight < WEIGHT_MAP[Entity.BLAST]
                     and not self.map.bomb_library.get_bombs_impacting(node)
                 ):
                     return x, y

@@ -141,6 +141,7 @@ class TestBombLibrary(TestCase):
         self.assertIs(bomb, self.bl.get_bomb_at((1, 1)))
 
     def test_add_two_bombs(self, bomb_mock, map_mock):
+        pass
 
     def test_get_bomb_at(self, bomb_mock, map_mock):
         self.assertIsNone(self.bl.get_bomb_at((1, 1)))
