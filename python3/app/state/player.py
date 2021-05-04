@@ -12,6 +12,7 @@ class Player:
         self.hp = state["hp"]
         self.ammo = state["inventory"]["bombs"]
         self.blast_diameter = state["blast_diameter"]
+        self.blast_radius = self.blast_diameter // 2
         self._invulnerable_until = state["invulnerability"]
 
     def update_tick(self, tick):

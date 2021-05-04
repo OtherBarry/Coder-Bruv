@@ -291,8 +291,7 @@ class Agent:
             if escape is not None:
                 if (
                     escape == self.us.coords
-                    and self._get_node_weight(escape)
-                    <= WEIGHT_MAP[Entity.BLAST]
+                    and self._get_node_weight(escape) <= WEIGHT_MAP[Entity.BLAST]
                 ):
                     await self._server.send_bomb()
                     return
@@ -337,9 +336,7 @@ class Agent:
                 if bomb not in bad_bombs:
                     return bomb.position
             return None
-        connected_nodes = nx.node_connected_component(
-            self.map.graph, self.us.coords
-        )
+        connected_nodes = nx.node_connected_component(self.map.graph, self.us.coords)
         if len(connected_nodes) > len(
             nx.node_connected_component(self.map.graph, self.them.coords)
         ):
@@ -348,20 +345,14 @@ class Agent:
         for node in connected_nodes:
             if len(self.map.graph[node]) < 4:
                 destruction_value = 0
-                actual_neighbours = self.get_actual_neighbours(
-                    node
-                )
+                actual_neighbours = self.get_actual_neighbours(node)
                 for neighbour in actual_neighbours:
                     hp = self.map.block_library.get(neighbour)
                     if hp is not None:
                         destruction_value += 1 if hp > 1 else 2
-                        block_neighbours = self.get_actual_neighbours(
-                            neighbour
-                        )
+                        block_neighbours = self.get_actual_neighbours(neighbour)
                         for i in block_neighbours:
-                            if (
-                                i not in connected_nodes and i in self.map.graph
-                            ):
+                            if i not in connected_nodes and i in self.map.graph:
                                 destruction_value += (
                                     len(nx.node_connected_component(self.map.graph, i))
                                     / hp

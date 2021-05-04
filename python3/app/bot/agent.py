@@ -1,5 +1,4 @@
 import asyncio
-import math
 import os
 
 import networkx as nx
@@ -58,21 +57,21 @@ class Agent:
         weight = self.map.graph.nodes[node]["weight"]
         bomb_owners = self.map.bomb_library.get_bomb_impact_owners(node)
         if self.them.id in bomb_owners or None in bomb_owners:
-            weight += WEIGHT_MAP[Entity.BLAST]
+            weight += WEIGHT_MAP["Them Future Blast"]
         elif self.us.id in bomb_owners:
-            weight += 1
+            weight += WEIGHT_MAP["Us Future Blast"]
         if self.us.is_invulnerable:
-            weight = min(WEIGHT_MAP[Entity.BLAST] // 2, weight)
+            weight = min(WEIGHT_MAP["Invincibility Cutoff"], weight)
         entrance = self.danger_nodes.get(node)
         if node == self.them.coords:
             if self.next_to_enemy:
-                weight += math.inf
+                weight = WEIGHT_MAP["Enemy - next_to"]
             else:
                 us_weight = self._get_node_weight(self.us.coords)
-                if us_weight > WEIGHT_MAP["Default"]:
-                    weight += 125
+                if us_weight > WEIGHT_MAP["Default"] or self.us.hp == 1:
+                    weight += WEIGHT_MAP["Enemy - in_bad_spot"]
                 elif self.state.tick < 1800 and self.us.hp > 1:
-                    weight -= 1
+                    weight += WEIGHT_MAP["Enemy"]
         if entrance is not None:
             valid = True
             try:
@@ -85,14 +84,14 @@ class Agent:
             except (nx.NetworkXNoPath, nx.NodeNotFound):
                 valid = False
             if valid and (them_to_entrance <= 2 or us_to_entrance >= them_to_entrance):
-                weight += WEIGHT_MAP[Entity.BLAST] // 2
+                weight += WEIGHT_MAP["Trap"]
         self.node_weights[node] = weight
         return weight
 
     def _get_edge_weight(self, start, end, properties):
         return self._get_node_weight(start) + self._get_node_weight(end)
 
-    def _get_path_to_best(self, value_func):
+    def _get_path_to_best(self):
         best_nodes = PriorityQueue()
         for node, data in self.map.graph.nodes(data=True):
             entrance = self.danger_nodes.get(node)
@@ -102,7 +101,7 @@ class Agent:
                 if (
                     our_path is not None
                     and their_path is not None
-                    and len(their_path) <= len(our_path)
+                    and len(our_path) > len(their_path)
                 ):
                     continue
             if node in self.paths[self.us.coords]:
@@ -113,10 +112,13 @@ class Agent:
                     ),
                     default=self._get_node_weight(self.us.coords),
                 )
+
+                if worst_node > self._get_node_weight(self.us.coords):
+                    continue
                 best_nodes.push(
                     (
+                        worst_node > WEIGHT_MAP["Danger"],
                         self._get_node_weight(node),
-                        worst_node,
                         _manhattan_to_centre(node),
                         self.distances[self.us.coords][node],
                         node,
@@ -124,9 +126,7 @@ class Agent:
                 )
 
         if not best_nodes.is_empty():
-            _, worst_node, _, _, target = best_nodes.pop()
-            if worst_node <= self._get_node_weight(self.us.coords):
-                return self.paths[self.us.coords][target]
+            return self.paths[self.us.coords][best_nodes.pop()[-1]]
         return None
 
     def _find_danger_nodes(self):
@@ -149,18 +149,18 @@ class Agent:
                     danger_nodes[n] = exit
         return danger_nodes
 
-    def _is_enemy_trapped(self):
+    def _get_path_to_trap(self):
         entrance = self.danger_nodes.get(self.them.coords)
         if self.us.ammo > 0 and entrance is not None:
-            path = self.paths[self.us.coords].get(self.them.coords)
-            if path is None:
-                return None, False
             us_to_entrance = self.paths[self.us.coords].get(entrance)
             them_to_entrance = self.paths[self.them.coords].get(entrance)
-            if us_to_entrance is not None and them_to_entrance is not None:
-                guaranteed_roast = len(us_to_entrance) < len(them_to_entrance)
-                return path, guaranteed_roast
-        return None, False
+            if (
+                us_to_entrance is not None
+                and them_to_entrance is not None
+                and len(us_to_entrance) < len(them_to_entrance)
+            ):
+                return self.paths[self.us.coords].get(self.them.coords)
+        return None
 
     def _generate_neighbouring_tiles(self, coords):
         for i, m in [(1, 1), (0, 1), (1, -1), (0, -1)]:
@@ -171,31 +171,70 @@ class Agent:
                 yield new
 
     def _dismount_bomb(self):
-        neighbours = list(self._generate_neighbouring_tiles(self.us.coords))
         current_enemy_distance = -_manhattan_distance(self.us.coords, self.them.coords)
+        bomb = self.map.bomb_library.get_bomb_at(self.us.coords)
         best = PriorityQueue()
-        for neighbour in neighbours:
-            non_blast_node = False
+        for neighbour in self._generate_neighbouring_tiles(self.us.coords):
+            if neighbour == self.them.coords:
+                continue
             connected_nodes = nx.node_connected_component(self.map.graph, neighbour)
+            if self.them.coords in connected_nodes:
+                graph = self.map.graph.copy()
+                graph.remove_nodes_from(
+                    n for n in self.map.graph if n not in connected_nodes
+                )
+                graph.remove_node(self.them.coords)
+                connected_nodes = nx.node_connected_component(graph, neighbour)
+            valid_nodes = len(connected_nodes)
             for node in connected_nodes:
-                if not self.map.bomb_library.get_bombs_impacting(node):
-                    non_blast_node = True
-            if not non_blast_node:
+                if (
+                    node in bomb.impacts
+                    or self._get_node_weight(node) >= WEIGHT_MAP["Them Future Blast"]
+                ):
+                    valid_nodes -= 1
+            if valid_nodes < 1:
                 continue
             neigbour_weight = self._get_node_weight(neighbour)
             best.push(
                 (
-                    neigbour_weight >= WEIGHT_MAP[Entity.BLAST],
+                    neigbour_weight >= WEIGHT_MAP["Danger"],
                     _manhattan_distance(neighbour, self.them.coords)
                     < current_enemy_distance,
-                    -len(connected_nodes),
+                    -valid_nodes,
                     neigbour_weight,
                     neighbour,
                 )
             )
-        if neighbours:
+        while not best.is_empty():
             return best.pop()[-1]
         return None
+
+    def _is_coords_trapped(self, coords, enemy, graph=None):
+        if graph is None:
+            graph = self.map.graph
+        connected = nx.node_connected_component(graph, coords)
+        for node in connected:
+            if self._get_node_weight(node) < WEIGHT_MAP[
+                Entity.BLAST
+            ] and enemy.id not in self.map.bomb_library.get_bomb_impact_owners(node):
+                return False
+        return True
+
+    def _is_trapped(self, player):
+        # TODO: Account for if in enemy bomb radius and player path to escape > enemy path to escape
+        enemy = self.them if player == self.us else self.us
+        if enemy.coords in self.map.graph:
+            graph = self.map.graph.copy()
+            graph.remove_node(enemy.coords)
+        else:
+            graph = self.map.graph
+        if player.coords in graph:
+            return self._is_coords_trapped(player.coords, enemy, graph)
+        else:
+            for node in self._generate_neighbouring_tiles(player.coords):
+                if node in graph and not self._is_coords_trapped(node, enemy, graph):
+                    return False
+            return True
 
     async def _on_game_tick(self, tick_number, game_state):
         if game_state is not self.state:
@@ -204,19 +243,13 @@ class Agent:
             self.us = game_state.us
             self.them = game_state.them
 
+        # TODO: Improve blast avoidance - prioritise getting out quickly over losing more hp
         # TODO: Improve Bomb Placement:
-            # TODO: Less 'useless' plants
-            # TODO: Double plant strat
-            # TODO: Don't plant where able to get cornered
-            # TODO: Plant if trapped by enemy player body and our hp >= their hp
-        # TODO: Improve bomb dismount:
-            # TODO: Don't dismount into direct traps
-            # TODO: Don't dismount into potential traps - Remember can sit on bomb for up to 40 ticks
+        # TODO: Double plant strat
+        # TODO: Don't plant where able to get cornered
         # TODO: Bombs that are soon to explode should still get triggered for detonation if owned by us
-        # TODO: Suicide if trapped
-        # TODO: Improve weighting - fire > existing blast > their potential blast > our potential blast
         # TODO: Trapping player with body (Sean^2 strat)
-        # TODO: Extract map weights to central location
+        # TODO: Avoid tunnels with len >= enemy bomb radius if enemy close to entrance
         # TODO: ML Map weights
 
         self.node_weights = {}
@@ -229,69 +262,121 @@ class Agent:
             for b in self.map.bomb_library.get_bombs_impacting(self.them.coords)
             if b.owner == self.us.id
         ]
-
-        # Dismount or chadonate bomb if just planted
-        if self.us.coords not in self.map.graph:
-            if self.us.hp >= 2 > self.them.hp and not self.them.is_invulnerable:
-                for bomb in detonatable_bombs:
-                    if bomb.position == self.us.coords:
-                        await self._server.send_detonate(*bomb.position)
-                        print("CHADONATING", end=" | ")
-                        return
-            print("DISMOUNTING", end=" | ")
-            target = self._dismount_bomb()
-            if target is not None:
-                move = _get_direction_from_coords(self.us.coords, target)
-                await self._server.send_move(move)
-                return
-
-        # Move to entrance first if both 1 away
-        entrance = self.danger_nodes.get(self.them.coords)
-        if self.us.ammo > 0 and entrance:
-            us_to_entrance = _manhattan_distance(self.us.coords, entrance)
-            them_to_entrance = _manhattan_distance(self.them.coords, entrance)
-            if (
-                us_to_entrance == them_to_entrance == 1
-                and self._get_node_weight(entrance) < WEIGHT_MAP[Entity.BLAST]
-            ):
-                print("BLOCKING   ", end=" | ")
-                move = _get_direction_from_coords(self.us.coords, entrance)
-                await self._server.send_move(move)
-                return
+        bad_bombs = self.map.bomb_library.get_bombs_impacting(self.us.coords)
+        trapped = self._is_trapped(self.us)
 
         # Detonate bomb if bad for enemy
         for bomb in detonatable_bombs:
             if (
-                (
-                    self.us.hp >= 2 > self.them.hp
-                    or bomb
-                    not in self.map.bomb_library.get_bombs_impacting(self.us.coords)
-                )
-                and not self.them.is_invulnerable
-                and self.them.coords in bomb.impacts
-            ):
+                (bomb not in bad_bombs and bomb.position != self.us.coords)
+                or (trapped and (self.us.hp > 1 or self.us.hp == self.them.hp))
+                or self.us.hp > self.them.hp
+            ) and not self.them.is_invulnerable:
                 await self._server.send_detonate(*bomb.position)
                 print("DETONATING ", end=" | ")
                 return
 
-        # Plant bomb if abundance of ammo and space and next to enemy
+        # Dismount bomb if just planted
+        if self.us.coords not in self.map.graph:
+            target = self._dismount_bomb()
+            if target is not None:
+                print("DISMOUNTING", end=" | ")
+                move = _get_direction_from_coords(self.us.coords, target)
+                await self._server.send_move(move)
+            else:
+                print("STUCK      ", end=" | ")
+            return
+
+        # Block enemy if trapped
         if (
-            self.us.coords not in self.danger_nodes
-            and self.next_to_enemy
-            and (self.us.ammo > self.them.hp or self.us.ammo == self.them.hp == 1)
+            self._is_trapped(self.them)
+            and self._get_node_weight(self.us.coords) < WEIGHT_MAP["Danger"]
         ):
-            print("AREA DENIAL", end=" | ")
+            best_node = min(self._get_node_weight(node) for node in self.map.graph)
+            if self.us.ammo and best_node <= WEIGHT_MAP[Entity.AMMO]:
+                print("TRAPPING   ", end=" | ")
+                await self._server.send_bomb()
+                return
+            else:
+                print("BLOCKING   ", end=" | ")
+                return
+
+        # Suicide Bombing
+        if (
+            self.them.coords not in self.map.graph
+            and trapped
+            and self.us.coords in self.map.graph
+            and self.us.ammo
+            and self.next_to_enemy
+        ):
+            print("SUICIDING  ", end=" | ")
             await self._server.send_bomb()
             return
 
-        for bomb in self.map.bomb_library.get_bombs_impacting(self.them.coords):
-            if bomb.owner == self.us.id and (
-                self.us.hp >= 2 > self.them.hp
-                or bomb not in self.map.bomb_library.get_bombs_impacting(self.us.coords)
-            ):
-                await self._server.send_detonate(*bomb.position)
-                print("DETONATING ", end=" | ")
+        # Plant bomb if abundance of ammo and space and next to enemy
+        if (
+            self.us.ammo
+            and self.us.coords in self.map.graph
+            and self.us.id
+            not in self.map.bomb_library.get_bomb_impact_owners(self.them.coords)
+        ):
+            x, y = self.us.coords
+            self.map.bomb_library.add_bomb(
+                {
+                    "x": x,
+                    "y": y,
+                    "blast_diameter": self.us.blast_diameter,
+                    "owner": self.us.id,
+                    "expires": self.state.tick + 40,
+                },
+                self.map,
+            )
+            self.map.bomb_library.update(self.map)
+            can_hit = self.us.id in self.map.bomb_library.get_bomb_impact_owners(
+                self.them.coords
+            )
+            guaranteed = True
+            for coords in self._generate_neighbouring_tiles(self.them.coords):
+                if not self.us.id in self.map.bomb_library.get_bomb_impact_owners(
+                    coords
+                ):
+                    guaranteed = False
+                    break
+            enemy_trapped = self._is_trapped(self.them)
+            guaranteed = guaranteed or enemy_trapped
+            if enemy_trapped:
+                print("\nENEMY IS TRAPPED\n")
+            self.map.bomb_library.remove_bomb(self.us.coords, self.map)
+            self.map.bomb_library.update(self.map)
+            if enemy_trapped:
+                print("TRAP PLANT ", end=" | ")
+                await self._server.send_bomb()
                 return
+            if can_hit:
+                if guaranteed:
+                    if self.us.hp > self.them.hp:
+                        print("CHAD PLANT ", end=" | ")
+                        await self._server.send_bomb()
+                        return
+                    elif trapped:
+                        print("SUICIDING  ", end=" | ")
+                        await self._server.send_bomb()
+                        return
+                    elif (
+                        self.them.id
+                        not in self.map.bomb_library.get_bomb_impact_owners(
+                            self.us.coords
+                        )
+                    ):
+                        print("PLANTING   ", end=" | ")
+                        await self._server.send_bomb()
+                        return
+                elif self.us.ammo >= self.them.hp * (
+                    2 if self.state.tick < 1800 else 1
+                ):
+                    print("AREA DENIAL", end=" | ")
+                    await self._server.send_bomb()
+                    return
 
         # Generate dijkstra paths from all players to all other nodes
         self.paths = {}
@@ -318,8 +403,7 @@ class Agent:
             if escape is not None:
                 if (
                     escape == self.us.coords
-                    and self._get_node_weight(escape)
-                    <= WEIGHT_MAP[Entity.BLAST]
+                    and self._get_node_weight(escape) <= WEIGHT_MAP["Danger"]
                 ):
                     print("DEMOLISHING", end=" | ")
                     await self._server.send_bomb()
@@ -333,24 +417,18 @@ class Agent:
                         await self._server.send_move(move)
                         return
 
-        attack_path, kill_confirmed = self._is_enemy_trapped()
-        if attack_path is not None:
-            if self.next_to_enemy:
-                # Plant bomb if enemy trapped and we're next to enemy
-                print("PLANTING   ", end=" | ")
-                await self._server.send_bomb()
-                return
-            elif (
-                kill_confirmed
-                and max(self._get_node_weight(node) for node in attack_path)
-                < WEIGHT_MAP[Entity.BLAST]
-            ):
-                print("ATTACKING  ", end=" | ")
-                move = _get_direction_from_coords(self.us.coords, attack_path[1])
-                await self._server.send_move(move)
-                return
-        optimal_path = self._get_path_to_best(self._get_node_weight)
+        attack_path = self._get_path_to_trap()
+        if (
+            attack_path is not None
+            and max(self._get_node_weight(node) for node in attack_path)
+            < WEIGHT_MAP["Danger"]
+        ):
+            print("ATTACKING  ", end=" | ")
+            move = _get_direction_from_coords(self.us.coords, attack_path[1])
+            await self._server.send_move(move)
+            return
 
+        optimal_path = self._get_path_to_best()
         if optimal_path is not None and len(optimal_path) > 1:
             print("IMPROVING  ", end=" | ")
             move = _get_direction_from_coords(self.us.coords, optimal_path[1])
@@ -386,6 +464,9 @@ class Agent:
                     node
                 )  # Get coords of neighbours regardless of graph
                 for neighbour in actual_neighbours:
+                    bomb = self.map.bomb_library.get_bomb_at(neighbour)
+                    if bomb is not None:
+                        return None
                     hp = self.map.block_library.get(neighbour)
                     if hp is not None:
                         destruction_value += 1 if hp > 1 else 2
@@ -419,7 +500,7 @@ class Agent:
                 if (
                     node != (x, y)
                     and node not in bomb.impacts
-                    and node_weight < WEIGHT_MAP[Entity.BLAST]
+                    and node_weight < WEIGHT_MAP["Danger"]
                     and not self.map.bomb_library.get_bombs_impacting(node)
                 ):
                     return x, y
