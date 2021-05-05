@@ -245,10 +245,9 @@ class Agent:
 
         # TODO: Improve blast avoidance - prioritise getting out quickly over losing more hp
         # TODO: Improve Bomb Placement:
-        # TODO: Double plant strat
-        # TODO: Don't plant where able to get cornered
+            # TODO: Double plant strat
+            # TODO: Don't plant where able to get cornered
         # TODO: Bombs that are soon to explode should still get triggered for detonation if owned by us
-        # TODO: Trapping player with body (Sean^2 strat)
         # TODO: Avoid tunnels with len >= enemy bomb radius if enemy close to entrance
         # TODO: ML Map weights
 
@@ -293,7 +292,7 @@ class Agent:
             and self._get_node_weight(self.us.coords) < WEIGHT_MAP["Danger"]
         ):
             best_node = min(self._get_node_weight(node) for node in self.map.graph)
-            if self.us.ammo and best_node <= WEIGHT_MAP[Entity.AMMO]:
+            if self.us.ammo and best_node <= WEIGHT_MAP[Entity.AMMO] and self.map.graph.nodes[self.us.coords].get("entity") != Entity.BLAST:
                 print("TRAPPING   ", end=" | ")
                 await self._server.send_bomb()
                 return
@@ -348,13 +347,14 @@ class Agent:
                 print("\nENEMY IS TRAPPED\n")
             self.map.bomb_library.remove_bomb(self.us.coords, self.map)
             self.map.bomb_library.update(self.map)
+            danger_plant = self.map.graph.nodes[self.us.coords].get("entity") != Entity.BLAST
             if enemy_trapped:
                 print("TRAP PLANT ", end=" | ")
                 await self._server.send_bomb()
                 return
             if can_hit:
                 if guaranteed:
-                    if self.us.hp > self.them.hp:
+                    if self.us.hp > self.them.hp and not self.them.is_invulnerable:
                         print("CHAD PLANT ", end=" | ")
                         await self._server.send_bomb()
                         return
@@ -366,14 +366,14 @@ class Agent:
                         self.them.id
                         not in self.map.bomb_library.get_bomb_impact_owners(
                             self.us.coords
-                        )
+                        ) and not self.them.is_invulnerable
                     ):
                         print("PLANTING   ", end=" | ")
                         await self._server.send_bomb()
                         return
                 elif self.us.ammo >= self.them.hp * (
                     2 if self.state.tick < 1800 else 1
-                ):
+                ) and not danger_plant:
                     print("AREA DENIAL", end=" | ")
                     await self._server.send_bomb()
                     return
