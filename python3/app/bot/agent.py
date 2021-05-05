@@ -511,11 +511,16 @@ class Agent:
         actual_neighbours = [((x + 1), y), ((x - 1), y), (x, (y + 1)), (x, (y - 1))]
         return actual_neighbours
 
-    def num_ticks_to_get_out(self):
-        shortest = {}
+    def shortest_path_to_safe(self):
+        shortest = PriorityQueue()
+        paths = []
         for node in self.map.graph:
             node_weight = self._get_node_weight(node)
             if node_weight < WEIGHT_MAP[Entity.BLAST]:  # Loop through safe nodes
                 (distance, path) = nx.single_source_dijkstra(self.map.graph, self.us.coords, target=node)
-                shortest[distance] = path
-        return shortest
+                shortest.push(distance, path)
+                for i in range(shortest):
+                    lowest = shortest.pop()
+                    if lowest[0] == min(shortest[0]):
+                        paths.append(lowest[1])
+        return paths
