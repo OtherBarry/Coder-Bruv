@@ -20,7 +20,7 @@ class TestPlayer(TestCase):
         self.assertEqual(player.hp, state["hp"])
         self.assertEqual(player.ammo, state["inventory"]["bombs"])
         self.assertEqual(player.blast_diameter, state["blast_diameter"])
-        self.assertEqual(player._invulnerable_until, state["invulnerability"])
+        self.assertEqual(player.invulnerable_until, state["invulnerability"])
 
     @patch("app.state.player.Player.update_state", autospec=True)
     def test_constructor_calls_update_state(self, mocked):
