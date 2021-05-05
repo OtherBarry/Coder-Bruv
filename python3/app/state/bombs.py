@@ -6,6 +6,7 @@ class Bomb:
         self.position = (entity["x"], entity["y"])
         self.radius = entity["blast_diameter"] // 2
         self.owner = str(entity["owner"])
+        self.planted_by = str(entity["owner"])
         self.detonates_at = entity["expires"]
         self.detonated_by = []
         self.detonates = []
