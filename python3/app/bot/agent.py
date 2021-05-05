@@ -247,7 +247,6 @@ class Agent:
         # TODO: Improve Bomb Placement:
             # TODO: Double plant strat
             # TODO: Don't plant where able to get cornered
-        # TODO: Bombs that are soon to explode should still get triggered for detonation if owned by us
         # TODO: Avoid tunnels with len >= enemy bomb radius if enemy close to entrance
         # TODO: ML Map weights
 
@@ -259,7 +258,7 @@ class Agent:
         detonatable_bombs = [
             b
             for b in self.map.bomb_library.get_bombs_impacting(self.them.coords)
-            if b.owner == self.us.id
+            if b.planted_by == self.us.id
         ]
         bad_bombs = self.map.bomb_library.get_bombs_impacting(self.us.coords)
         trapped = self._is_trapped(self.us)
