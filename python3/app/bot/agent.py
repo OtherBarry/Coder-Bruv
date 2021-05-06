@@ -221,7 +221,6 @@ class Agent:
         return True
 
     def _is_trapped(self, player):
-        # TODO: Account for if in enemy bomb radius and player path to escape > enemy path to escape
         enemy = self.them if player == self.us else self.us
         if enemy.coords in self.map.graph:
             graph = self.map.graph.copy()
@@ -342,9 +341,6 @@ class Agent:
                     guaranteed = False
                     break
             enemy_trapped = self._is_trapped(self.them)
-            guaranteed = guaranteed or enemy_trapped
-            if enemy_trapped:
-                print("\nENEMY IS TRAPPED\n")
             self.map.bomb_library.remove_bomb(self.us.coords, self.map)
             self.map.bomb_library.update(self.map)
             danger_plant = self.map.graph.nodes[self.us.coords].get("entity") != Entity.BLAST
@@ -510,17 +506,3 @@ class Agent:
         x, y = node
         actual_neighbours = [((x + 1), y), ((x - 1), y), (x, (y + 1)), (x, (y - 1))]
         return actual_neighbours
-
-    def shortest_path_to_safe(self):
-        shortest = PriorityQueue()
-        paths = []
-        for node in self.map.graph:
-            node_weight = self._get_node_weight(node)
-            if node_weight < WEIGHT_MAP[Entity.BLAST]:  # Loop through safe nodes
-                (distance, path) = nx.single_source_dijkstra(self.map.graph, self.us.coords, target=node)
-                shortest.push(distance, path)
-                for i in range(shortest):
-                    lowest = shortest.pop()
-                    if lowest[0] == min(shortest[0]):
-                        paths.append(lowest[1])
-        return paths
