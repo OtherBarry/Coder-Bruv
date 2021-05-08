@@ -1,0 +1,13 @@
+{
+    "_teamId": "606fbd4eb6822e5c6fb6ae8c",
+    "teamName": "bruh",
+    "submitted": null,
+    "image": "docker.io/otherbarrydocker/bruh",
+    "members": {
+        "_id": "606fbd4eb6822e5c6fb6ae8c",
+        "name": "bruh",
+        "members": [
+            "charlie@charliewilson.co"
+        ]
+    }
+}

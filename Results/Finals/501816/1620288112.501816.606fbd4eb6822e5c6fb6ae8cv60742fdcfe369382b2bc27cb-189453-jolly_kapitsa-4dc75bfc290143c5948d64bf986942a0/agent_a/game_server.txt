@@ -1,0 +1,2535 @@
+[34mgame-server_1   |[0m ADMIN_ROLE_ENABLED=0 (default: 1)
+[34mgame-server_1   |[0m AGENT_ID_MAPPING=8571,28573 (default: agentA,agentB)
+[34mgame-server_1   |[0m AMMO_DURATION_TICKS=40 (default: 40)
+[34mgame-server_1   |[0m AMMO_SPAWN_WEIGHTING=0.9 (default: 0.9)
+[34mgame-server_1   |[0m BLAST_DURATION_TICKS=10 (default: 10)
+[34mgame-server_1   |[0m BLAST_POWERUP_DURATION_TICKS=40 (default: 40)
+[34mgame-server_1   |[0m BLAST_POWERUP_SPAWN_WEIGHTING=0.1 (default: 0.1)
+[34mgame-server_1   |[0m BOMB_DURATION_TICKS=40 (default: 40)
+[34mgame-server_1   |[0m ENTITY_SPAWN_PROBABILITY_PER_TICK=0.025 (default: 0.025)
+[34mgame-server_1   |[0m FIRE_SPAWN_INTERVAL_TICKS=5 (default: 5)
+[34mgame-server_1   |[0m GAME_DURATION_TICKS=1800 (default: 1800)
+[34mgame-server_1   |[0m GAME_START_DELAY_MS=2000 (default: 2000)
+[34mgame-server_1   |[0m INITIAL_AMMUNITION=3 (default: 3)
+[34mgame-server_1   |[0m INITIAL_BLAST_DIAMETER=3 (default: 3)
+[34mgame-server_1   |[0m INITIAL_HP=3 (default: 3)
+[34mgame-server_1   |[0m INVULNERABILITY_TICKS=5 (default: 5)
+[34mgame-server_1   |[0m TELEMETRY_ENABLED=1 (default: 1)
+[34mgame-server_1   |[0m TRAINING_MODE_ENABLED=0 (default: 0)
+[34mgame-server_1   |[0m SYMMETRICAL_MAP_ENABLED=1 (default: 1)
+[34mgame-server_1   |[0m MAP_HEIGHT=9 (default: 9)
+[34mgame-server_1   |[0m MAP_WIDTH=9 (default: 9)
+[34mgame-server_1   |[0m ORE_BLOCK_FREQUENCY=0.0617283950617284 (default: 0.0617283950617284)
+[34mgame-server_1   |[0m PORT=3000 (default: 3000)
+[34mgame-server_1   |[0m PRNG_SEED=3828283387143290 (default: Random)
+[34mgame-server_1   |[0m SAVE_REPLAY_ENABLED=1 (default: 1)
+[34mgame-server_1   |[0m SHUTDOWN_ON_GAME_END_ENABLED=1 (default: 0)
+[34mgame-server_1   |[0m STEEL_BLOCK_FREQUENCY=0.2222222222222222 (default: 0.2222222222222222)
+[34mgame-server_1   |[0m TICK_RATE_HZ=10 (default: 10)
+[34mgame-server_1   |[0m TOTAL_AGENTS=2 (default: 2)
+[34mgame-server_1   |[0m TOURNAMENT_AGENT_CONNECTION_GRACE_PERIOD_MS=60000 (default: null)
+[34mgame-server_1   |[0m WOOD_BLOCK_FREQUENCY=0.2469135802469136 (default: 0.2469135802469136)
+[34mgame-server_1   |[0m WORLD_SEED=189453 (default: Random)
+[34mgame-server_1   |[0m 2021-05-06T15:05:22.358Z - {"agents":[{"coordinates":[8,6],"hp":3,"inventory":{"bombs":3},"blast_diameter":3,"number":0,"invulnerability":0},{"coordinates":[0,6],"hp":3,"inventory":{"bombs":3},"blast_diameter":3,"number":1,"invulnerability":0}],"entities":[{"x":0,"y":5,"type":"m"},{"x":8,"y":5,"type":"m"},{"x":0,"y":1,"type":"m"},{"x":8,"y":1,"type":"m"},{"x":6,"y":7,"type":"m"},{"x":2,"y":7,"type":"m"},{"x":2,"y":0,"type":"m"},{"x":6,"y":0,"type":"m"},{"x":5,"y":1,"type":"m"},{"x":3,"y":1,"type":"m"},{"x":3,"y":8,"type":"m"},{"x":5,"y":8,"type":"m"},{"x":8,"y":3,"type":"m"},{"x":0,"y":3,"type":"m"},{"x":0,"y":7,"type":"m"},{"x":8,"y":7,"type":"m"},{"x":2,"y":8,"type":"m"},{"x":6,"y":8,"type":"m"},{"x":5,"y":6,"type":"w","hp":1},{"x":3,"y":6,"type":"w","hp":1},{"x":3,"y":2,"type":"w","hp":1},{"x":5,"y":2,"type":"w","hp":1},{"x":3,"y":5,"type":"w","hp":1},{"x":5,"y":5,"type":"w","hp":1},{"x":3,"y":0,"type":"w","hp":1},{"x":5,"y":0,"type":"w","hp":1},{"x":6,"y":1,"type":"w","hp":1},{"x":2,"y":1,"type":"w","hp":1},{"x":5,"y":4,"type":"w","hp":1},{"x":3,"y":4,"type":"w","hp":1},{"x":7,"y":3,"type":"w","hp":1},{"x":1,"y":3,"type":"w","hp":1},{"x":8,"y":2,"type":"w","hp":1},{"x":0,"y":2,"type":"w","hp":1},{"x":6,"y":4,"type":"w","hp":1},{"x":2,"y":4,"type":"w","hp":1},{"x":2,"y":6,"type":"w","hp":1},{"x":6,"y":6,"type":"w","hp":1},{"x":0,"y":8,"type":"o","hp":3},{"x":8,"y":8,"type":"o","hp":3},{"x":5,"y":3,"type":"o","hp":3},{"x":3,"y":3,"type":"o","hp":3},{"x":6,"y":3,"type":"o","hp":3},{"x":2,"y":3,"type":"o","hp":3}]}
+[34mgame-server_1   |[0m 2021-05-06T15:05:22.363Z - Grace period configured to 60000ms, game will terminate in: 60000ms
+[34mgame-server_1   |[0m 2021-05-06T15:05:22.363Z - Waiting for agents to connect 0 of 2
+[34mgame-server_1   |[0m 2021-05-06T15:05:23.290Z - Agent [agent-b](28573) connected to the server
+[34mgame-server_1   |[0m 2021-05-06T15:05:23.364Z - Grace period configured to 60000ms, game will terminate in: 58999ms
+[34mgame-server_1   |[0m 2021-05-06T15:05:23.364Z - Waiting for agents to connect 1 of 2
+[34mgame-server_1   |[0m 2021-05-06T15:05:23.444Z - Agent [agent-a](8571) connected to the server
+[34mgame-server_1   |[0m 2021-05-06T15:05:24.365Z - Agents have connected starting game in 2000 ms
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.467Z - tick #1
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.473Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.474Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.568Z - tick #2
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.571Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.571Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.668Z - tick #3
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.671Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.671Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.769Z - tick #4
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.771Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.772Z - Queueing action: bomb for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.870Z - tick #5
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.874Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.875Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.971Z - tick #6
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.973Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:26.974Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.072Z - tick #7
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.074Z - Queueing action: detonate for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.074Z - Queueing action: detonate for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.172Z - tick #8
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.173Z - {"x":2,"y":5,"type":"b","owner":1,"expires":45,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.173Z - Triggering blast from 2,5
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.173Z - w at cell number 56 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.174Z - w at cell number 38 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.174Z - w at cell number 48 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.174Z - {"x":6,"y":5,"type":"b","owner":0,"expires":45,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.174Z - Triggering blast from 6,5
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.174Z - w at cell number 60 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.174Z - w at cell number 42 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.174Z - w at cell number 50 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.177Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.273Z - tick #9
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.374Z - tick #10
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.473Z - tick #11
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.574Z - tick #12
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.675Z - tick #13
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.776Z - tick #14
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.875Z - tick #15
+[34mgame-server_1   |[0m 2021-05-06T15:05:27.976Z - tick #16
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.077Z - tick #17
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.176Z - tick #18
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.177Z - {"x":2,"y":5,"type":"x","owner":1,"expires":18} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.177Z - {"x":1,"y":5,"type":"x","owner":1,"expires":18} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.177Z - {"x":6,"y":5,"type":"x","owner":0,"expires":18} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.177Z - {"x":7,"y":5,"type":"x","owner":0,"expires":18} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.180Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.187Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.276Z - tick #19
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.279Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.286Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.377Z - tick #20
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.391Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.397Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.478Z - tick #21
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.577Z - tick #22
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.677Z - tick #23
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.785Z - tick #24
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.886Z - tick #25
+[34mgame-server_1   |[0m 2021-05-06T15:05:28.987Z - tick #26
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.086Z - tick #27
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.187Z - tick #28
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.287Z - tick #29
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.388Z - tick #30
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.489Z - tick #31
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.589Z - tick #32
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.689Z - tick #33
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.788Z - tick #34
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.889Z - tick #35
+[34mgame-server_1   |[0m 2021-05-06T15:05:29.990Z - tick #36
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.091Z - tick #37
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.192Z - tick #38
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.291Z - tick #39
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.392Z - tick #40
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.492Z - tick #41
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.593Z - tick #42
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.694Z - tick #43
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.793Z - tick #44
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.894Z - tick #45
+[34mgame-server_1   |[0m 2021-05-06T15:05:30.995Z - tick #46
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.094Z - tick #47
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.100Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.195Z - tick #48
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.205Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.295Z - tick #49
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.396Z - tick #50
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.497Z - tick #51
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.597Z - tick #52
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.697Z - tick #53
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.796Z - tick #54
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.897Z - tick #55
+[34mgame-server_1   |[0m 2021-05-06T15:05:31.998Z - tick #56
+[34mgame-server_1   |[0m 2021-05-06T15:05:32.099Z - tick #57
+[34mgame-server_1   |[0m 2021-05-06T15:05:32.200Z - tick #58
+[34mgame-server_1   |[0m 2021-05-06T15:05:32.299Z - tick #59
+[34mgame-server_1   |[0m 2021-05-06T15:05:32.400Z - tick #60
+[34mgame-server_1   |[0m 2021-05-06T15:05:32.501Z - tick #61
+[34mgame-server_1   |[0m 2021-05-06T15:05:32.600Z - tick #62
+[34mgame-server_1   |[0m 2021-05-06T15:05:32.701Z - tick #63
+[34mgame-server_1   |[0m 2021-05-06T15:05:32.802Z - tick #64
+[34mgame-server_1   |[0m 2021-05-06T15:05:32.906Z - tick #65
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.007Z - tick #66
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.107Z - tick #67
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.206Z - tick #68
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.307Z - tick #69
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.407Z - tick #70
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.508Z - tick #71
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.609Z - tick #72
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.710Z - tick #73
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.809Z - tick #74
+[34mgame-server_1   |[0m 2021-05-06T15:05:33.910Z - tick #75
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.011Z - tick #76
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.110Z - tick #77
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.211Z - tick #78
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.312Z - tick #79
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.411Z - tick #80
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.512Z - tick #81
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.613Z - tick #82
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.712Z - tick #83
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.812Z - tick #84
+[34mgame-server_1   |[0m 2021-05-06T15:05:34.913Z - tick #85
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.014Z - tick #86
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.115Z - tick #87
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.214Z - tick #88
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.315Z - tick #89
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.416Z - tick #90
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.515Z - tick #91
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.616Z - tick #92
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.717Z - tick #93
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.818Z - tick #94
+[34mgame-server_1   |[0m 2021-05-06T15:05:35.917Z - tick #95
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.017Z - tick #96
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.118Z - tick #97
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.218Z - tick #98
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.319Z - tick #99
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.420Z - tick #100
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.521Z - tick #101
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.621Z - tick #102
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.722Z - tick #103
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.823Z - tick #104
+[34mgame-server_1   |[0m 2021-05-06T15:05:36.922Z - tick #105
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.022Z - tick #106
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.123Z - tick #107
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.224Z - tick #108
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.323Z - tick #109
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.423Z - tick #110
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.523Z - tick #111
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.624Z - tick #112
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.725Z - tick #113
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.826Z - tick #114
+[34mgame-server_1   |[0m 2021-05-06T15:05:37.925Z - tick #115
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.026Z - tick #116
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.127Z - tick #117
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.228Z - tick #118
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.329Z - tick #119
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.430Z - tick #120
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.530Z - tick #121
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.629Z - tick #122
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.730Z - tick #123
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.831Z - tick #124
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.831Z - {"x":6,"y":5,"type":"a","expires":124,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:38.931Z - tick #125
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.031Z - tick #126
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.130Z - tick #127
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.231Z - tick #128
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.332Z - tick #129
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.432Z - tick #130
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.531Z - tick #131
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.632Z - tick #132
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.732Z - tick #133
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.832Z - tick #134
+[34mgame-server_1   |[0m 2021-05-06T15:05:39.933Z - tick #135
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.034Z - tick #136
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.134Z - tick #137
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.233Z - tick #138
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.334Z - tick #139
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.435Z - tick #140
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.535Z - tick #141
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.634Z - tick #142
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.735Z - tick #143
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.836Z - tick #144
+[34mgame-server_1   |[0m 2021-05-06T15:05:40.936Z - tick #145
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.037Z - tick #146
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.138Z - tick #147
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.238Z - tick #148
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.339Z - tick #149
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.440Z - tick #150
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.539Z - tick #151
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.540Z - {"x":8,"y":6,"type":"a","expires":151,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.639Z - tick #152
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.740Z - tick #153
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.840Z - tick #154
+[34mgame-server_1   |[0m 2021-05-06T15:05:41.940Z - tick #155
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.041Z - tick #156
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.141Z - tick #157
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.242Z - tick #158
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.343Z - tick #159
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.442Z - tick #160
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.543Z - tick #161
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.644Z - tick #162
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.743Z - tick #163
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.844Z - tick #164
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.945Z - tick #165
+[34mgame-server_1   |[0m 2021-05-06T15:05:42.945Z - {"x":4,"y":1,"type":"bp","expires":165,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.044Z - tick #166
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.145Z - tick #167
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.246Z - tick #168
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.347Z - tick #169
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.447Z - tick #170
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.548Z - tick #171
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.647Z - tick #172
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.748Z - tick #173
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.849Z - tick #174
+[34mgame-server_1   |[0m 2021-05-06T15:05:43.950Z - tick #175
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.049Z - tick #176
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.150Z - tick #177
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.251Z - tick #178
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.350Z - tick #179
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.451Z - tick #180
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.552Z - tick #181
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.653Z - tick #182
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.752Z - tick #183
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.853Z - tick #184
+[34mgame-server_1   |[0m 2021-05-06T15:05:44.954Z - tick #185
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.054Z - tick #186
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.153Z - tick #187
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.254Z - tick #188
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.355Z - tick #189
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.455Z - tick #190
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.555Z - tick #191
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.656Z - tick #192
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.757Z - tick #193
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.858Z - tick #194
+[34mgame-server_1   |[0m 2021-05-06T15:05:45.959Z - tick #195
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.058Z - tick #196
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.158Z - tick #197
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.259Z - tick #198
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.358Z - tick #199
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.458Z - tick #200
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.559Z - tick #201
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.660Z - tick #202
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.759Z - tick #203
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.859Z - tick #204
+[34mgame-server_1   |[0m 2021-05-06T15:05:46.960Z - tick #205
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.061Z - tick #206
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.160Z - tick #207
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.260Z - tick #208
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.361Z - tick #209
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.462Z - tick #210
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.562Z - tick #211
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.661Z - tick #212
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.761Z - tick #213
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.861Z - tick #214
+[34mgame-server_1   |[0m 2021-05-06T15:05:47.962Z - tick #215
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.063Z - tick #216
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.163Z - tick #217
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.263Z - tick #218
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.363Z - tick #219
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.464Z - tick #220
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.565Z - tick #221
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.666Z - tick #222
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.765Z - tick #223
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.865Z - tick #224
+[34mgame-server_1   |[0m 2021-05-06T15:05:48.966Z - tick #225
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.067Z - tick #226
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.166Z - tick #227
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.266Z - tick #228
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.367Z - tick #229
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.468Z - tick #230
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.567Z - tick #231
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.668Z - tick #232
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.769Z - tick #233
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.868Z - tick #234
+[34mgame-server_1   |[0m 2021-05-06T15:05:49.969Z - tick #235
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.070Z - tick #236
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.169Z - tick #237
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.269Z - tick #238
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.370Z - tick #239
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.471Z - tick #240
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.570Z - tick #241
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.671Z - tick #242
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.770Z - tick #243
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.870Z - tick #244
+[34mgame-server_1   |[0m 2021-05-06T15:05:50.971Z - tick #245
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.070Z - tick #246
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.170Z - tick #247
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.271Z - tick #248
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.370Z - tick #249
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.470Z - tick #250
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.571Z - tick #251
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.671Z - tick #252
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.770Z - tick #253
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.870Z - tick #254
+[34mgame-server_1   |[0m 2021-05-06T15:05:51.971Z - tick #255
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.070Z - tick #256
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.071Z - {"x":8,"y":6,"type":"a","expires":256,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.170Z - tick #257
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.271Z - tick #258
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.372Z - tick #259
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.471Z - tick #260
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.572Z - tick #261
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.673Z - tick #262
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.772Z - tick #263
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.873Z - tick #264
+[34mgame-server_1   |[0m 2021-05-06T15:05:52.974Z - tick #265
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.073Z - tick #266
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.174Z - tick #267
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.275Z - tick #268
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.275Z - {"x":4,"y":8,"type":"a","expires":268,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.374Z - tick #269
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.474Z - tick #270
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.575Z - tick #271
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.675Z - tick #272
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.775Z - tick #273
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.876Z - tick #274
+[34mgame-server_1   |[0m 2021-05-06T15:05:53.977Z - tick #275
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.077Z - tick #276
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.178Z - tick #277
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.277Z - tick #278
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.378Z - tick #279
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.479Z - tick #280
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.579Z - tick #281
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.679Z - tick #282
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.780Z - tick #283
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.881Z - tick #284
+[34mgame-server_1   |[0m 2021-05-06T15:05:54.980Z - tick #285
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.081Z - tick #286
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.182Z - tick #287
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.281Z - tick #288
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.382Z - tick #289
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.483Z - tick #290
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.582Z - tick #291
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.682Z - tick #292
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.783Z - tick #293
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.884Z - tick #294
+[34mgame-server_1   |[0m 2021-05-06T15:05:55.983Z - tick #295
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.084Z - tick #296
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.185Z - tick #297
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.285Z - tick #298
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.386Z - tick #299
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.487Z - tick #300
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.586Z - tick #301
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.687Z - tick #302
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.788Z - tick #303
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.888Z - tick #304
+[34mgame-server_1   |[0m 2021-05-06T15:05:56.988Z - tick #305
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.089Z - tick #306
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.189Z - tick #307
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.289Z - tick #308
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.390Z - tick #309
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.491Z - tick #310
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.592Z - tick #311
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.691Z - tick #312
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.791Z - tick #313
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.892Z - tick #314
+[34mgame-server_1   |[0m 2021-05-06T15:05:57.993Z - tick #315
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.092Z - tick #316
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.193Z - tick #317
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.293Z - tick #318
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.393Z - tick #319
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.494Z - tick #320
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.594Z - tick #321
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.693Z - tick #322
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.794Z - tick #323
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.895Z - tick #324
+[34mgame-server_1   |[0m 2021-05-06T15:05:58.994Z - tick #325
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.095Z - tick #326
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.196Z - tick #327
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.295Z - tick #328
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.396Z - tick #329
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.497Z - tick #330
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.596Z - tick #331
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.697Z - tick #332
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.798Z - tick #333
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.898Z - tick #334
+[34mgame-server_1   |[0m 2021-05-06T15:05:59.998Z - tick #335
+[34mgame-server_1   |[0m 2021-05-06T15:06:00.099Z - tick #336
+[34mgame-server_1   |[0m 2021-05-06T15:06:00.198Z - tick #337
+[34mgame-server_1   |[0m 2021-05-06T15:06:00.298Z - tick #338
+[34mgame-server_1   |[0m 2021-05-06T15:06:00.399Z - tick #339
+[34mgame-server_1   |[0m 2021-05-06T15:06:00.498Z - tick #340
+[34mgame-server_1   |[0m 2021-05-06T15:06:00.599Z - tick #341
+[34mgame-server_1   |[0m 2021-05-06T15:06:00.700Z - tick #342
+[34mgame-server_1   |[0m 2021-05-06T15:06:00.801Z - tick #343
+[34mgame-server_1   |[0m 2021-05-06T15:06:00.900Z - tick #344
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.001Z - tick #345
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.101Z - tick #346
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.200Z - tick #347
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.301Z - tick #348
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.400Z - tick #349
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.501Z - tick #350
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.602Z - tick #351
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.701Z - tick #352
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.801Z - tick #353
+[34mgame-server_1   |[0m 2021-05-06T15:06:01.902Z - tick #354
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.003Z - tick #355
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.102Z - tick #356
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.203Z - tick #357
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.304Z - tick #358
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.403Z - tick #359
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.504Z - tick #360
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.605Z - tick #361
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.704Z - tick #362
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.805Z - tick #363
+[34mgame-server_1   |[0m 2021-05-06T15:06:02.906Z - tick #364
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.005Z - tick #365
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.106Z - tick #366
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.207Z - tick #367
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.306Z - tick #368
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.407Z - tick #369
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.507Z - tick #370
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.606Z - tick #371
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.706Z - tick #372
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.807Z - tick #373
+[34mgame-server_1   |[0m 2021-05-06T15:06:03.908Z - tick #374
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.007Z - tick #375
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.108Z - tick #376
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.209Z - tick #377
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.308Z - tick #378
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.409Z - tick #379
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.510Z - tick #380
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.609Z - tick #381
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.710Z - tick #382
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.811Z - tick #383
+[34mgame-server_1   |[0m 2021-05-06T15:06:04.910Z - tick #384
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.011Z - tick #385
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.112Z - tick #386
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.211Z - tick #387
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.312Z - tick #388
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.413Z - tick #389
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.512Z - tick #390
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.613Z - tick #391
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.714Z - tick #392
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.813Z - tick #393
+[34mgame-server_1   |[0m 2021-05-06T15:06:05.914Z - tick #394
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.015Z - tick #395
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.114Z - tick #396
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.214Z - tick #397
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.315Z - tick #398
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.416Z - tick #399
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.515Z - tick #400
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.616Z - tick #401
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.717Z - tick #402
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.816Z - tick #403
+[34mgame-server_1   |[0m 2021-05-06T15:06:06.916Z - tick #404
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.016Z - tick #405
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.117Z - tick #406
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.217Z - tick #407
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.318Z - tick #408
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.417Z - tick #409
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.518Z - tick #410
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.619Z - tick #411
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.718Z - tick #412
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.818Z - tick #413
+[34mgame-server_1   |[0m 2021-05-06T15:06:07.919Z - tick #414
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.018Z - tick #415
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.119Z - tick #416
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.119Z - {"x":6,"y":2,"type":"a","expires":416,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.219Z - tick #417
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.320Z - tick #418
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.421Z - tick #419
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.520Z - tick #420
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.620Z - tick #421
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.725Z - tick #422
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.826Z - tick #423
+[34mgame-server_1   |[0m 2021-05-06T15:06:08.927Z - tick #424
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.026Z - tick #425
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.127Z - tick #426
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.228Z - tick #427
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.327Z - tick #428
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.428Z - tick #429
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.529Z - tick #430
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.628Z - tick #431
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.728Z - tick #432
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.829Z - tick #433
+[34mgame-server_1   |[0m 2021-05-06T15:06:09.928Z - tick #434
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.029Z - tick #435
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.130Z - tick #436
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.229Z - tick #437
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.330Z - tick #438
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.431Z - tick #439
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.530Z - tick #440
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.631Z - tick #441
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.732Z - tick #442
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.831Z - tick #443
+[34mgame-server_1   |[0m 2021-05-06T15:06:10.931Z - tick #444
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.032Z - tick #445
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.131Z - tick #446
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.232Z - tick #447
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.333Z - tick #448
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.432Z - tick #449
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.533Z - tick #450
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.634Z - tick #451
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.734Z - tick #452
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.833Z - tick #453
+[34mgame-server_1   |[0m 2021-05-06T15:06:11.934Z - tick #454
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.034Z - tick #455
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.135Z - tick #456
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.236Z - tick #457
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.336Z - tick #458
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.435Z - tick #459
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.536Z - tick #460
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.636Z - tick #461
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.746Z - tick #462
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.847Z - tick #463
+[34mgame-server_1   |[0m 2021-05-06T15:06:12.948Z - tick #464
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.047Z - tick #465
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.148Z - tick #466
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.247Z - tick #467
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.348Z - tick #468
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.449Z - tick #469
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.548Z - tick #470
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.649Z - tick #471
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.749Z - tick #472
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.850Z - tick #473
+[34mgame-server_1   |[0m 2021-05-06T15:06:13.951Z - tick #474
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.050Z - tick #475
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.151Z - tick #476
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.251Z - tick #477
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.352Z - tick #478
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.453Z - tick #479
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.552Z - tick #480
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.653Z - tick #481
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.754Z - tick #482
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.853Z - tick #483
+[34mgame-server_1   |[0m 2021-05-06T15:06:14.954Z - tick #484
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.055Z - tick #485
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.154Z - tick #486
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.255Z - tick #487
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.356Z - tick #488
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.455Z - tick #489
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.556Z - tick #490
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.657Z - tick #491
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.756Z - tick #492
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.857Z - tick #493
+[34mgame-server_1   |[0m 2021-05-06T15:06:15.958Z - tick #494
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.057Z - tick #495
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.158Z - tick #496
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.259Z - tick #497
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.358Z - tick #498
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.459Z - tick #499
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.560Z - tick #500
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.659Z - tick #501
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.760Z - tick #502
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.861Z - tick #503
+[34mgame-server_1   |[0m 2021-05-06T15:06:16.960Z - tick #504
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.061Z - tick #505
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.162Z - tick #506
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.261Z - tick #507
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.362Z - tick #508
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.462Z - tick #509
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.561Z - tick #510
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.662Z - tick #511
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.761Z - tick #512
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.862Z - tick #513
+[34mgame-server_1   |[0m 2021-05-06T15:06:17.963Z - tick #514
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.062Z - tick #515
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.163Z - tick #516
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.262Z - tick #517
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.363Z - tick #518
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.464Z - tick #519
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.564Z - tick #520
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.663Z - tick #521
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.764Z - tick #522
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.764Z - {"x":8,"y":0,"type":"a","expires":522,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.864Z - tick #523
+[34mgame-server_1   |[0m 2021-05-06T15:06:18.965Z - tick #524
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.064Z - tick #525
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.165Z - tick #526
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.266Z - tick #527
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.366Z - tick #528
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.466Z - tick #529
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.567Z - tick #530
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.666Z - tick #531
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.767Z - tick #532
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.868Z - tick #533
+[34mgame-server_1   |[0m 2021-05-06T15:06:19.967Z - tick #534
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.067Z - tick #535
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.168Z - tick #536
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.168Z - {"x":6,"y":5,"type":"a","expires":536,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.267Z - tick #537
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.368Z - tick #538
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.469Z - tick #539
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.568Z - tick #540
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.669Z - tick #541
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.770Z - tick #542
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.869Z - tick #543
+[34mgame-server_1   |[0m 2021-05-06T15:06:20.970Z - tick #544
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.071Z - tick #545
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.170Z - tick #546
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.271Z - tick #547
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.370Z - tick #548
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.471Z - tick #549
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.572Z - tick #550
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.671Z - tick #551
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.772Z - tick #552
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.873Z - tick #553
+[34mgame-server_1   |[0m 2021-05-06T15:06:21.972Z - tick #554
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.073Z - tick #555
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.174Z - tick #556
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.273Z - tick #557
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.374Z - tick #558
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.374Z - {"x":3,"y":7,"type":"a","expires":558,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.475Z - tick #559
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.574Z - tick #560
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.675Z - tick #561
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.776Z - tick #562
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.875Z - tick #563
+[34mgame-server_1   |[0m 2021-05-06T15:06:22.976Z - tick #564
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.077Z - tick #565
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.176Z - tick #566
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.277Z - tick #567
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.377Z - tick #568
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.477Z - tick #569
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.578Z - tick #570
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.679Z - tick #571
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.779Z - tick #572
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.880Z - tick #573
+[34mgame-server_1   |[0m 2021-05-06T15:06:23.981Z - tick #574
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.080Z - tick #575
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.181Z - tick #576
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.282Z - tick #577
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.381Z - tick #578
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.482Z - tick #579
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.581Z - tick #580
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.682Z - tick #581
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.783Z - tick #582
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.882Z - tick #583
+[34mgame-server_1   |[0m 2021-05-06T15:06:24.983Z - tick #584
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.085Z - tick #585
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.184Z - tick #586
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.285Z - tick #587
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.386Z - tick #588
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.485Z - tick #589
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.586Z - tick #590
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.686Z - tick #591
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.787Z - tick #592
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.888Z - tick #593
+[34mgame-server_1   |[0m 2021-05-06T15:06:25.988Z - tick #594
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.087Z - tick #595
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.188Z - tick #596
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.289Z - tick #597
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.388Z - tick #598
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.489Z - tick #599
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.590Z - tick #600
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.689Z - tick #601
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.790Z - tick #602
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.891Z - tick #603
+[34mgame-server_1   |[0m 2021-05-06T15:06:26.990Z - tick #604
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.091Z - tick #605
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.190Z - tick #606
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.291Z - tick #607
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.392Z - tick #608
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.491Z - tick #609
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.592Z - tick #610
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.693Z - tick #611
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.693Z - {"x":1,"y":5,"type":"a","expires":611,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.794Z - tick #612
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.895Z - tick #613
+[34mgame-server_1   |[0m 2021-05-06T15:06:27.994Z - tick #614
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.094Z - tick #615
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.195Z - tick #616
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.294Z - tick #617
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.395Z - tick #618
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.496Z - tick #619
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.595Z - tick #620
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.696Z - tick #621
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.796Z - tick #622
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.896Z - tick #623
+[34mgame-server_1   |[0m 2021-05-06T15:06:28.996Z - tick #624
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.097Z - tick #625
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.196Z - tick #626
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.297Z - tick #627
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.396Z - tick #628
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.397Z - {"x":8,"y":4,"type":"a","expires":628,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.496Z - tick #629
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.597Z - tick #630
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.696Z - tick #631
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.797Z - tick #632
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.898Z - tick #633
+[34mgame-server_1   |[0m 2021-05-06T15:06:29.997Z - tick #634
+[34mgame-server_1   |[0m 2021-05-06T15:06:30.098Z - tick #635
+[34mgame-server_1   |[0m 2021-05-06T15:06:30.197Z - tick #636
+[34mgame-server_1   |[0m 2021-05-06T15:06:30.298Z - tick #637
+[34mgame-server_1   |[0m 2021-05-06T15:06:30.399Z - tick #638
+[34mgame-server_1   |[0m 2021-05-06T15:06:30.498Z - tick #639
+[34mgame-server_1   |[0m 2021-05-06T15:06:30.599Z - tick #640
+[34mgame-server_1   |[0m 2021-05-06T15:06:30.700Z - tick #641
+[34mgame-server_1   |[0m 2021-05-06T15:06:30.799Z - tick #642
+[34mgame-server_1   |[0m 2021-05-06T15:06:30.900Z - tick #643
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.001Z - tick #644
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.100Z - tick #645
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.201Z - tick #646
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.302Z - tick #647
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.403Z - tick #648
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.504Z - tick #649
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.603Z - tick #650
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.704Z - tick #651
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.805Z - tick #652
+[34mgame-server_1   |[0m 2021-05-06T15:06:31.904Z - tick #653
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.005Z - tick #654
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.106Z - tick #655
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.205Z - tick #656
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.306Z - tick #657
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.405Z - tick #658
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.506Z - tick #659
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.606Z - tick #660
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.706Z - tick #661
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.807Z - tick #662
+[34mgame-server_1   |[0m 2021-05-06T15:06:32.908Z - tick #663
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.007Z - tick #664
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.108Z - tick #665
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.108Z - {"x":7,"y":7,"type":"a","expires":665,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.208Z - tick #666
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.307Z - tick #667
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.408Z - tick #668
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.508Z - tick #669
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.609Z - tick #670
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.710Z - tick #671
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.809Z - tick #672
+[34mgame-server_1   |[0m 2021-05-06T15:06:33.910Z - tick #673
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.011Z - tick #674
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.110Z - tick #675
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.211Z - tick #676
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.312Z - tick #677
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.411Z - tick #678
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.512Z - tick #679
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.613Z - tick #680
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.714Z - tick #681
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.813Z - tick #682
+[34mgame-server_1   |[0m 2021-05-06T15:06:34.914Z - tick #683
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.015Z - tick #684
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.114Z - tick #685
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.215Z - tick #686
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.316Z - tick #687
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.415Z - tick #688
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.516Z - tick #689
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.617Z - tick #690
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.716Z - tick #691
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.817Z - tick #692
+[34mgame-server_1   |[0m 2021-05-06T15:06:35.918Z - tick #693
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.017Z - tick #694
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.118Z - tick #695
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.219Z - tick #696
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.219Z - {"x":7,"y":5,"type":"a","expires":696,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.318Z - tick #697
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.419Z - tick #698
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.520Z - tick #699
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.620Z - tick #700
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.720Z - tick #701
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.821Z - tick #702
+[34mgame-server_1   |[0m 2021-05-06T15:06:36.922Z - tick #703
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.021Z - tick #704
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.122Z - tick #705
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.222Z - tick #706
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.321Z - tick #707
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.422Z - tick #708
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.523Z - tick #709
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.622Z - tick #710
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.723Z - tick #711
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.723Z - {"x":7,"y":0,"type":"a","expires":711,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.823Z - tick #712
+[34mgame-server_1   |[0m 2021-05-06T15:06:37.923Z - tick #713
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.024Z - tick #714
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.125Z - tick #715
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.224Z - tick #716
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.325Z - tick #717
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.426Z - tick #718
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.525Z - tick #719
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.626Z - tick #720
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.727Z - tick #721
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.828Z - tick #722
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.927Z - tick #723
+[34mgame-server_1   |[0m 2021-05-06T15:06:38.927Z - {"x":3,"y":5,"type":"bp","expires":723,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.028Z - tick #724
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.129Z - tick #725
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.228Z - tick #726
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.329Z - tick #727
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.430Z - tick #728
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.529Z - tick #729
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.630Z - tick #730
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.731Z - tick #731
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.830Z - tick #732
+[34mgame-server_1   |[0m 2021-05-06T15:06:39.931Z - tick #733
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.032Z - tick #734
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.131Z - tick #735
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.131Z - {"x":2,"y":2,"type":"a","expires":735,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.232Z - tick #736
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.333Z - tick #737
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.432Z - tick #738
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.533Z - tick #739
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.634Z - tick #740
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.733Z - tick #741
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.834Z - tick #742
+[34mgame-server_1   |[0m 2021-05-06T15:06:40.933Z - tick #743
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.034Z - tick #744
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.135Z - tick #745
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.234Z - tick #746
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.235Z - {"x":5,"y":5,"type":"a","expires":746,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.335Z - tick #747
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.436Z - tick #748
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.536Z - tick #749
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.636Z - tick #750
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.736Z - tick #751
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.836Z - tick #752
+[34mgame-server_1   |[0m 2021-05-06T15:06:41.937Z - tick #753
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.038Z - tick #754
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.137Z - tick #755
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.238Z - tick #756
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.339Z - tick #757
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.439Z - tick #758
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.539Z - tick #759
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.646Z - tick #760
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.747Z - tick #761
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.846Z - tick #762
+[34mgame-server_1   |[0m 2021-05-06T15:06:42.947Z - tick #763
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.048Z - tick #764
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.149Z - tick #765
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.250Z - tick #766
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.350Z - tick #767
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.450Z - tick #768
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.551Z - tick #769
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.651Z - tick #770
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.751Z - tick #771
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.852Z - tick #772
+[34mgame-server_1   |[0m 2021-05-06T15:06:43.953Z - tick #773
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.052Z - tick #774
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.153Z - tick #775
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.253Z - tick #776
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.354Z - tick #777
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.454Z - tick #778
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.554Z - tick #779
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.654Z - tick #780
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.755Z - tick #781
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.854Z - tick #782
+[34mgame-server_1   |[0m 2021-05-06T15:06:44.954Z - tick #783
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.055Z - tick #784
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.155Z - tick #785
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.256Z - tick #786
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.355Z - tick #787
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.456Z - tick #788
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.557Z - tick #789
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.656Z - tick #790
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.757Z - tick #791
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.858Z - tick #792
+[34mgame-server_1   |[0m 2021-05-06T15:06:45.959Z - tick #793
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.060Z - tick #794
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.160Z - tick #795
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.259Z - tick #796
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.360Z - tick #797
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.461Z - tick #798
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.560Z - tick #799
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.661Z - tick #800
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.762Z - tick #801
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.861Z - tick #802
+[34mgame-server_1   |[0m 2021-05-06T15:06:46.962Z - tick #803
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.063Z - tick #804
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.162Z - tick #805
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.263Z - tick #806
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.363Z - tick #807
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.464Z - tick #808
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.565Z - tick #809
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.664Z - tick #810
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.765Z - tick #811
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.866Z - tick #812
+[34mgame-server_1   |[0m 2021-05-06T15:06:47.967Z - tick #813
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.066Z - tick #814
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.167Z - tick #815
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.266Z - tick #816
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.367Z - tick #817
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.467Z - tick #818
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.566Z - tick #819
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.668Z - tick #820
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.668Z - {"x":4,"y":3,"type":"a","expires":820,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.769Z - tick #821
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.870Z - tick #822
+[34mgame-server_1   |[0m 2021-05-06T15:06:48.969Z - tick #823
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.070Z - tick #824
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.171Z - tick #825
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.270Z - tick #826
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.371Z - tick #827
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.472Z - tick #828
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.572Z - tick #829
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.671Z - tick #830
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.772Z - tick #831
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.873Z - tick #832
+[34mgame-server_1   |[0m 2021-05-06T15:06:49.974Z - tick #833
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.073Z - tick #834
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.174Z - tick #835
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.274Z - tick #836
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.375Z - tick #837
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.476Z - tick #838
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.575Z - tick #839
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.676Z - tick #840
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.777Z - tick #841
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.876Z - tick #842
+[34mgame-server_1   |[0m 2021-05-06T15:06:50.977Z - tick #843
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.078Z - tick #844
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.177Z - tick #845
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.278Z - tick #846
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.379Z - tick #847
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.478Z - tick #848
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.579Z - tick #849
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.680Z - tick #850
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.779Z - tick #851
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.880Z - tick #852
+[34mgame-server_1   |[0m 2021-05-06T15:06:51.981Z - tick #853
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.080Z - tick #854
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.181Z - tick #855
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.282Z - tick #856
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.381Z - tick #857
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.482Z - tick #858
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.583Z - tick #859
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.684Z - tick #860
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.783Z - tick #861
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.884Z - tick #862
+[34mgame-server_1   |[0m 2021-05-06T15:06:52.985Z - tick #863
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.085Z - tick #864
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.185Z - tick #865
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.284Z - tick #866
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.384Z - tick #867
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.485Z - tick #868
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.584Z - tick #869
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.684Z - tick #870
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.785Z - tick #871
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.886Z - tick #872
+[34mgame-server_1   |[0m 2021-05-06T15:06:53.987Z - tick #873
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.086Z - tick #874
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.186Z - tick #875
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.287Z - tick #876
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.386Z - tick #877
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.487Z - tick #878
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.588Z - tick #879
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.687Z - tick #880
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.787Z - tick #881
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.888Z - tick #882
+[34mgame-server_1   |[0m 2021-05-06T15:06:54.989Z - tick #883
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.089Z - tick #884
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.188Z - tick #885
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.289Z - tick #886
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.390Z - tick #887
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.489Z - tick #888
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.590Z - tick #889
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.691Z - tick #890
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.792Z - tick #891
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.891Z - tick #892
+[34mgame-server_1   |[0m 2021-05-06T15:06:55.992Z - tick #893
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.093Z - tick #894
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.193Z - tick #895
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.292Z - tick #896
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.393Z - tick #897
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.494Z - tick #898
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.594Z - tick #899
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.694Z - tick #900
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.795Z - tick #901
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.895Z - tick #902
+[34mgame-server_1   |[0m 2021-05-06T15:06:56.995Z - tick #903
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.096Z - tick #904
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.196Z - tick #905
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.295Z - tick #906
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.396Z - tick #907
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.497Z - tick #908
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.596Z - tick #909
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.697Z - tick #910
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.798Z - tick #911
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.897Z - tick #912
+[34mgame-server_1   |[0m 2021-05-06T15:06:57.998Z - tick #913
+[34mgame-server_1   |[0m 2021-05-06T15:06:58.099Z - tick #914
+[34mgame-server_1   |[0m 2021-05-06T15:06:58.199Z - tick #915
+[34mgame-server_1   |[0m 2021-05-06T15:06:58.298Z - tick #916
+[34mgame-server_1   |[0m 2021-05-06T15:06:58.399Z - tick #917
+[34mgame-server_1   |[0m 2021-05-06T15:06:58.500Z - tick #918
+[34mgame-server_1   |[0m 2021-05-06T15:06:58.599Z - tick #919
+[34mgame-server_1   |[0m 2021-05-06T15:06:58.700Z - tick #920
+[34mgame-server_1   |[0m 2021-05-06T15:06:58.801Z - tick #921
+[34mgame-server_1   |[0m 2021-05-06T15:06:58.900Z - tick #922
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.001Z - tick #923
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.102Z - tick #924
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.201Z - tick #925
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.302Z - tick #926
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.401Z - tick #927
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.502Z - tick #928
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.603Z - tick #929
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.702Z - tick #930
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.802Z - tick #931
+[34mgame-server_1   |[0m 2021-05-06T15:06:59.903Z - tick #932
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.004Z - tick #933
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.103Z - tick #934
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.204Z - tick #935
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.305Z - tick #936
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.405Z - tick #937
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.506Z - tick #938
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.605Z - tick #939
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.706Z - tick #940
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.807Z - tick #941
+[34mgame-server_1   |[0m 2021-05-06T15:07:00.906Z - tick #942
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.007Z - tick #943
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.108Z - tick #944
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.207Z - tick #945
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.307Z - tick #946
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.408Z - tick #947
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.508Z - tick #948
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.608Z - tick #949
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.709Z - tick #950
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.810Z - tick #951
+[34mgame-server_1   |[0m 2021-05-06T15:07:01.909Z - tick #952
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.010Z - tick #953
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.109Z - tick #954
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.209Z - tick #955
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.310Z - tick #956
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.411Z - tick #957
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.510Z - tick #958
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.511Z - {"x":2,"y":6,"type":"a","expires":958,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.610Z - tick #959
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.711Z - tick #960
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.811Z - tick #961
+[34mgame-server_1   |[0m 2021-05-06T15:07:02.912Z - tick #962
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.013Z - tick #963
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.112Z - tick #964
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.213Z - tick #965
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.313Z - tick #966
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.413Z - tick #967
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.513Z - tick #968
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.614Z - tick #969
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.713Z - tick #970
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.814Z - tick #971
+[34mgame-server_1   |[0m 2021-05-06T15:07:03.914Z - tick #972
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.014Z - tick #973
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.115Z - tick #974
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.216Z - tick #975
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.317Z - tick #976
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.416Z - tick #977
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.517Z - tick #978
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.616Z - tick #979
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.717Z - tick #980
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.817Z - tick #981
+[34mgame-server_1   |[0m 2021-05-06T15:07:04.918Z - tick #982
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.019Z - tick #983
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.120Z - tick #984
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.219Z - tick #985
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.320Z - tick #986
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.421Z - tick #987
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.421Z - {"x":7,"y":1,"type":"a","expires":987,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.522Z - tick #988
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.623Z - tick #989
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.722Z - tick #990
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.823Z - tick #991
+[34mgame-server_1   |[0m 2021-05-06T15:07:05.922Z - tick #992
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.023Z - tick #993
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.124Z - tick #994
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.223Z - tick #995
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.324Z - tick #996
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.425Z - tick #997
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.524Z - tick #998
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.625Z - tick #999
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.625Z - {"x":6,"y":4,"type":"a","expires":999,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.727Z - tick #1000
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.830Z - tick #1001
+[34mgame-server_1   |[0m 2021-05-06T15:07:06.930Z - tick #1002
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.031Z - tick #1003
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.130Z - tick #1004
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.231Z - tick #1005
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.332Z - tick #1006
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.431Z - tick #1007
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.532Z - tick #1008
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.633Z - tick #1009
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.732Z - tick #1010
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.833Z - tick #1011
+[34mgame-server_1   |[0m 2021-05-06T15:07:07.934Z - tick #1012
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.033Z - tick #1013
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.134Z - tick #1014
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.235Z - tick #1015
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.236Z - {"x":0,"y":6,"type":"a","expires":1015,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.336Z - tick #1016
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.435Z - tick #1017
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.536Z - tick #1018
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.636Z - tick #1019
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.737Z - tick #1020
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.838Z - tick #1021
+[34mgame-server_1   |[0m 2021-05-06T15:07:08.937Z - tick #1022
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.038Z - tick #1023
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.139Z - tick #1024
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.238Z - tick #1025
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.339Z - tick #1026
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.438Z - tick #1027
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.539Z - tick #1028
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.639Z - tick #1029
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.740Z - tick #1030
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.841Z - tick #1031
+[34mgame-server_1   |[0m 2021-05-06T15:07:09.941Z - tick #1032
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.040Z - tick #1033
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.141Z - tick #1034
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.242Z - tick #1035
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.341Z - tick #1036
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.442Z - tick #1037
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.541Z - tick #1038
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.641Z - tick #1039
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.742Z - tick #1040
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.842Z - tick #1041
+[34mgame-server_1   |[0m 2021-05-06T15:07:10.941Z - tick #1042
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.042Z - tick #1043
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.141Z - tick #1044
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.241Z - tick #1045
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.341Z - tick #1046
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.442Z - tick #1047
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.543Z - tick #1048
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.642Z - tick #1049
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.743Z - tick #1050
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.843Z - tick #1051
+[34mgame-server_1   |[0m 2021-05-06T15:07:11.942Z - tick #1052
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.043Z - tick #1053
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.144Z - tick #1054
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.243Z - tick #1055
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.344Z - tick #1056
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.443Z - tick #1057
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.544Z - tick #1058
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.645Z - tick #1059
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.744Z - tick #1060
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.845Z - tick #1061
+[34mgame-server_1   |[0m 2021-05-06T15:07:12.944Z - tick #1062
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.045Z - tick #1063
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.145Z - tick #1064
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.246Z - tick #1065
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.347Z - tick #1066
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.446Z - tick #1067
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.547Z - tick #1068
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.648Z - tick #1069
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.747Z - tick #1070
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.848Z - tick #1071
+[34mgame-server_1   |[0m 2021-05-06T15:07:13.947Z - tick #1072
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.048Z - tick #1073
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.149Z - tick #1074
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.248Z - tick #1075
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.348Z - tick #1076
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.449Z - tick #1077
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.550Z - tick #1078
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.649Z - tick #1079
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.750Z - tick #1080
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.850Z - tick #1081
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.949Z - tick #1082
+[34mgame-server_1   |[0m 2021-05-06T15:07:14.949Z - {"x":0,"y":6,"type":"a","expires":1082,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.050Z - tick #1083
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.151Z - tick #1084
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.250Z - tick #1085
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.251Z - {"x":1,"y":5,"type":"a","expires":1085,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.351Z - tick #1086
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.451Z - tick #1087
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.552Z - tick #1088
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.653Z - tick #1089
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.752Z - tick #1090
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.853Z - tick #1091
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.853Z - {"x":4,"y":0,"type":"a","expires":1091,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:15.953Z - tick #1092
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.052Z - tick #1093
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.153Z - tick #1094
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.252Z - tick #1095
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.353Z - tick #1096
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.454Z - tick #1097
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.554Z - tick #1098
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.653Z - tick #1099
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.754Z - tick #1100
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.853Z - tick #1101
+[34mgame-server_1   |[0m 2021-05-06T15:07:16.954Z - tick #1102
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.055Z - tick #1103
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.154Z - tick #1104
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.254Z - tick #1105
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.355Z - tick #1106
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.456Z - tick #1107
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.555Z - tick #1108
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.656Z - tick #1109
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.755Z - tick #1110
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.856Z - tick #1111
+[34mgame-server_1   |[0m 2021-05-06T15:07:17.957Z - tick #1112
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.056Z - tick #1113
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.157Z - tick #1114
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.256Z - tick #1115
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.357Z - tick #1116
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.456Z - tick #1117
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.557Z - tick #1118
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.658Z - tick #1119
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.757Z - tick #1120
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.858Z - tick #1121
+[34mgame-server_1   |[0m 2021-05-06T15:07:18.957Z - tick #1122
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.058Z - tick #1123
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.158Z - tick #1124
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.259Z - tick #1125
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.360Z - tick #1126
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.459Z - tick #1127
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.560Z - tick #1128
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.660Z - tick #1129
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.760Z - tick #1130
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.861Z - tick #1131
+[34mgame-server_1   |[0m 2021-05-06T15:07:19.960Z - tick #1132
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.061Z - tick #1133
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.161Z - tick #1134
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.261Z - tick #1135
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.362Z - tick #1136
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.461Z - tick #1137
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.561Z - tick #1138
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.662Z - tick #1139
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.762Z - tick #1140
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.862Z - tick #1141
+[34mgame-server_1   |[0m 2021-05-06T15:07:20.963Z - tick #1142
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.062Z - tick #1143
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.163Z - tick #1144
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.263Z - tick #1145
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.364Z - tick #1146
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.464Z - tick #1147
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.565Z - tick #1148
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.664Z - tick #1149
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.765Z - tick #1150
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.864Z - tick #1151
+[34mgame-server_1   |[0m 2021-05-06T15:07:21.965Z - tick #1152
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.064Z - tick #1153
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.165Z - tick #1154
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.264Z - tick #1155
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.365Z - tick #1156
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.466Z - tick #1157
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.565Z - tick #1158
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.666Z - tick #1159
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.767Z - tick #1160
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.866Z - tick #1161
+[34mgame-server_1   |[0m 2021-05-06T15:07:22.967Z - tick #1162
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.066Z - tick #1163
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.167Z - tick #1164
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.268Z - tick #1165
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.368Z - tick #1166
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.469Z - tick #1167
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.570Z - tick #1168
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.669Z - tick #1169
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.770Z - tick #1170
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.871Z - tick #1171
+[34mgame-server_1   |[0m 2021-05-06T15:07:23.970Z - tick #1172
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.071Z - tick #1173
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.172Z - tick #1174
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.271Z - tick #1175
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.372Z - tick #1176
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.471Z - tick #1177
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.572Z - tick #1178
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.673Z - tick #1179
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.772Z - tick #1180
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.873Z - tick #1181
+[34mgame-server_1   |[0m 2021-05-06T15:07:24.973Z - tick #1182
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.074Z - tick #1183
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.074Z - {"x":7,"y":1,"type":"a","expires":1183,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.175Z - tick #1184
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.276Z - tick #1185
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.375Z - tick #1186
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.476Z - tick #1187
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.577Z - tick #1188
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.676Z - tick #1189
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.777Z - tick #1190
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.876Z - tick #1191
+[34mgame-server_1   |[0m 2021-05-06T15:07:25.977Z - tick #1192
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.076Z - tick #1193
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.177Z - tick #1194
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.277Z - tick #1195
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.378Z - tick #1196
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.479Z - tick #1197
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.578Z - tick #1198
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.679Z - tick #1199
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.780Z - tick #1200
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.879Z - tick #1201
+[34mgame-server_1   |[0m 2021-05-06T15:07:26.980Z - tick #1202
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.080Z - tick #1203
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.179Z - tick #1204
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.280Z - tick #1205
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.379Z - tick #1206
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.480Z - tick #1207
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.581Z - tick #1208
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.680Z - tick #1209
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.781Z - tick #1210
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.880Z - tick #1211
+[34mgame-server_1   |[0m 2021-05-06T15:07:27.981Z - tick #1212
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.082Z - tick #1213
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.181Z - tick #1214
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.282Z - tick #1215
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.381Z - tick #1216
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.482Z - tick #1217
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.583Z - tick #1218
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.682Z - tick #1219
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.783Z - tick #1220
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.882Z - tick #1221
+[34mgame-server_1   |[0m 2021-05-06T15:07:28.982Z - tick #1222
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.082Z - tick #1223
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.183Z - tick #1224
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.282Z - tick #1225
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.383Z - tick #1226
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.484Z - tick #1227
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.584Z - tick #1228
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.685Z - tick #1229
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.785Z - tick #1230
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.886Z - tick #1231
+[34mgame-server_1   |[0m 2021-05-06T15:07:29.986Z - tick #1232
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.086Z - tick #1233
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.187Z - tick #1234
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.286Z - tick #1235
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.387Z - tick #1236
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.487Z - tick #1237
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.588Z - tick #1238
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.689Z - tick #1239
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.788Z - tick #1240
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.889Z - tick #1241
+[34mgame-server_1   |[0m 2021-05-06T15:07:30.988Z - tick #1242
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.089Z - tick #1243
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.190Z - tick #1244
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.291Z - tick #1245
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.390Z - tick #1246
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.491Z - tick #1247
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.590Z - tick #1248
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.691Z - tick #1249
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.791Z - tick #1250
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.792Z - {"x":4,"y":1,"type":"a","expires":1250,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.892Z - tick #1251
+[34mgame-server_1   |[0m 2021-05-06T15:07:31.993Z - tick #1252
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.092Z - tick #1253
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.193Z - tick #1254
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.293Z - tick #1255
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.393Z - tick #1256
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.494Z - tick #1257
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.593Z - tick #1258
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.694Z - tick #1259
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.795Z - tick #1260
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.894Z - tick #1261
+[34mgame-server_1   |[0m 2021-05-06T15:07:32.995Z - tick #1262
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.094Z - tick #1263
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.195Z - tick #1264
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.294Z - tick #1265
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.395Z - tick #1266
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.496Z - tick #1267
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.595Z - tick #1268
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.696Z - tick #1269
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.795Z - tick #1270
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.896Z - tick #1271
+[34mgame-server_1   |[0m 2021-05-06T15:07:33.997Z - tick #1272
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.096Z - tick #1273
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.197Z - tick #1274
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.296Z - tick #1275
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.397Z - tick #1276
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.497Z - tick #1277
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.598Z - tick #1278
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.699Z - tick #1279
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.798Z - tick #1280
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.899Z - tick #1281
+[34mgame-server_1   |[0m 2021-05-06T15:07:34.998Z - tick #1282
+[34mgame-server_1   |[0m 2021-05-06T15:07:35.099Z - tick #1283
+[34mgame-server_1   |[0m 2021-05-06T15:07:35.199Z - tick #1284
+[34mgame-server_1   |[0m 2021-05-06T15:07:35.300Z - tick #1285
+[34mgame-server_1   |[0m 2021-05-06T15:07:35.400Z - tick #1286
+[34mgame-server_1   |[0m 2021-05-06T15:07:35.501Z - tick #1287
+[34mgame-server_1   |[0m 2021-05-06T15:07:35.602Z - tick #1288
+[34mgame-server_1   |[0m 2021-05-06T15:07:35.701Z - tick #1289
+[34mgame-server_1   |[0m 2021-05-06T15:07:35.802Z - tick #1290
+[34mgame-server_1   |[0m 2021-05-06T15:07:35.901Z - tick #1291
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.002Z - tick #1292
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.101Z - tick #1293
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.202Z - tick #1294
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.303Z - tick #1295
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.402Z - tick #1296
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.503Z - tick #1297
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.603Z - tick #1298
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.604Z - {"x":7,"y":8,"type":"a","expires":1298,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.703Z - tick #1299
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.804Z - tick #1300
+[34mgame-server_1   |[0m 2021-05-06T15:07:36.903Z - tick #1301
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.004Z - tick #1302
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.104Z - tick #1303
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.204Z - tick #1304
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.305Z - tick #1305
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.404Z - tick #1306
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.505Z - tick #1307
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.605Z - tick #1308
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.706Z - tick #1309
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.807Z - tick #1310
+[34mgame-server_1   |[0m 2021-05-06T15:07:37.907Z - tick #1311
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.008Z - tick #1312
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.109Z - tick #1313
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.208Z - tick #1314
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.208Z - {"x":8,"y":4,"type":"a","expires":1314,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.309Z - tick #1315
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.408Z - tick #1316
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.509Z - tick #1317
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.610Z - tick #1318
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.709Z - tick #1319
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.810Z - tick #1320
+[34mgame-server_1   |[0m 2021-05-06T15:07:38.910Z - tick #1321
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.011Z - tick #1322
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.112Z - tick #1323
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.211Z - tick #1324
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.311Z - tick #1325
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.412Z - tick #1326
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.513Z - tick #1327
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.612Z - tick #1328
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.713Z - tick #1329
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.812Z - tick #1330
+[34mgame-server_1   |[0m 2021-05-06T15:07:39.913Z - tick #1331
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.014Z - tick #1332
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.113Z - tick #1333
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.214Z - tick #1334
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.313Z - tick #1335
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.414Z - tick #1336
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.515Z - tick #1337
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.614Z - tick #1338
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.715Z - tick #1339
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.814Z - tick #1340
+[34mgame-server_1   |[0m 2021-05-06T15:07:40.915Z - tick #1341
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.014Z - tick #1342
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.115Z - tick #1343
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.215Z - tick #1344
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.316Z - tick #1345
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.416Z - tick #1346
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.517Z - tick #1347
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.616Z - tick #1348
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.717Z - tick #1349
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.818Z - tick #1350
+[34mgame-server_1   |[0m 2021-05-06T15:07:41.917Z - tick #1351
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.018Z - tick #1352
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.117Z - tick #1353
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.218Z - tick #1354
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.318Z - tick #1355
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.419Z - tick #1356
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.520Z - tick #1357
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.619Z - tick #1358
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.720Z - tick #1359
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.819Z - tick #1360
+[34mgame-server_1   |[0m 2021-05-06T15:07:42.920Z - tick #1361
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.021Z - tick #1362
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.120Z - tick #1363
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.221Z - tick #1364
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.321Z - tick #1365
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.422Z - tick #1366
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.422Z - {"x":4,"y":4,"type":"a","expires":1366,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.522Z - tick #1367
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.522Z - {"x":2,"y":4,"type":"a","expires":1367,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.623Z - tick #1368
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.724Z - tick #1369
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.823Z - tick #1370
+[34mgame-server_1   |[0m 2021-05-06T15:07:43.924Z - tick #1371
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.025Z - tick #1372
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.124Z - tick #1373
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.225Z - tick #1374
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.326Z - tick #1375
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.425Z - tick #1376
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.526Z - tick #1377
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.625Z - tick #1378
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.726Z - tick #1379
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.827Z - tick #1380
+[34mgame-server_1   |[0m 2021-05-06T15:07:44.926Z - tick #1381
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.027Z - tick #1382
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.126Z - tick #1383
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.126Z - {"x":4,"y":1,"type":"a","expires":1383,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.227Z - tick #1384
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.328Z - tick #1385
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.427Z - tick #1386
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.528Z - tick #1387
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.627Z - tick #1388
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.728Z - tick #1389
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.829Z - tick #1390
+[34mgame-server_1   |[0m 2021-05-06T15:07:45.928Z - tick #1391
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.029Z - tick #1392
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.128Z - tick #1393
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.229Z - tick #1394
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.330Z - tick #1395
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.429Z - tick #1396
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.530Z - tick #1397
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.631Z - tick #1398
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.730Z - tick #1399
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.831Z - tick #1400
+[34mgame-server_1   |[0m 2021-05-06T15:07:46.930Z - tick #1401
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.031Z - tick #1402
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.132Z - tick #1403
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.231Z - tick #1404
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.332Z - tick #1405
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.432Z - tick #1406
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.533Z - tick #1407
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.634Z - tick #1408
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.733Z - tick #1409
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.833Z - tick #1410
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.934Z - tick #1411
+[34mgame-server_1   |[0m 2021-05-06T15:07:47.934Z - {"x":3,"y":7,"type":"a","expires":1411,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.033Z - tick #1412
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.134Z - tick #1413
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.233Z - tick #1414
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.334Z - tick #1415
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.435Z - tick #1416
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.534Z - tick #1417
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.635Z - tick #1418
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.734Z - tick #1419
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.835Z - tick #1420
+[34mgame-server_1   |[0m 2021-05-06T15:07:48.936Z - tick #1421
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.035Z - tick #1422
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.136Z - tick #1423
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.235Z - tick #1424
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.335Z - tick #1425
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.436Z - tick #1426
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.536Z - tick #1427
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.636Z - tick #1428
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.737Z - tick #1429
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.836Z - tick #1430
+[34mgame-server_1   |[0m 2021-05-06T15:07:49.937Z - tick #1431
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.038Z - tick #1432
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.137Z - tick #1433
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.238Z - tick #1434
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.337Z - tick #1435
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.438Z - tick #1436
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.539Z - tick #1437
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.638Z - tick #1438
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.739Z - tick #1439
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.839Z - tick #1440
+[34mgame-server_1   |[0m 2021-05-06T15:07:50.939Z - tick #1441
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.040Z - tick #1442
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.141Z - tick #1443
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.240Z - tick #1444
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.341Z - tick #1445
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.440Z - tick #1446
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.541Z - tick #1447
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.642Z - tick #1448
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.741Z - tick #1449
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.842Z - tick #1450
+[34mgame-server_1   |[0m 2021-05-06T15:07:51.941Z - tick #1451
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.042Z - tick #1452
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.143Z - tick #1453
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.242Z - tick #1454
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.343Z - tick #1455
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.442Z - tick #1456
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.542Z - tick #1457
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.643Z - tick #1458
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.742Z - tick #1459
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.843Z - tick #1460
+[34mgame-server_1   |[0m 2021-05-06T15:07:52.944Z - tick #1461
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.043Z - tick #1462
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.144Z - tick #1463
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.243Z - tick #1464
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.344Z - tick #1465
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.445Z - tick #1466
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.544Z - tick #1467
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.645Z - tick #1468
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.746Z - tick #1469
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.845Z - tick #1470
+[34mgame-server_1   |[0m 2021-05-06T15:07:53.945Z - tick #1471
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.046Z - tick #1472
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.147Z - tick #1473
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.246Z - tick #1474
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.347Z - tick #1475
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.447Z - tick #1476
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.546Z - tick #1477
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.647Z - tick #1478
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.746Z - tick #1479
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.846Z - tick #1480
+[34mgame-server_1   |[0m 2021-05-06T15:07:54.947Z - tick #1481
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.046Z - tick #1482
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.147Z - tick #1483
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.246Z - tick #1484
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.347Z - tick #1485
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.447Z - tick #1486
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.547Z - tick #1487
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.648Z - tick #1488
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.747Z - tick #1489
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.848Z - tick #1490
+[34mgame-server_1   |[0m 2021-05-06T15:07:55.956Z - tick #1491
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.057Z - tick #1492
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.156Z - tick #1493
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.257Z - tick #1494
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.356Z - tick #1495
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.457Z - tick #1496
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.557Z - tick #1497
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.658Z - tick #1498
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.759Z - tick #1499
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.858Z - tick #1500
+[34mgame-server_1   |[0m 2021-05-06T15:07:56.959Z - tick #1501
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.059Z - tick #1502
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.160Z - tick #1503
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.260Z - tick #1504
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.361Z - tick #1505
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.460Z - tick #1506
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.561Z - tick #1507
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.662Z - tick #1508
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.761Z - tick #1509
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.862Z - tick #1510
+[34mgame-server_1   |[0m 2021-05-06T15:07:57.961Z - tick #1511
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.062Z - tick #1512
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.162Z - tick #1513
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.263Z - tick #1514
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.364Z - tick #1515
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.463Z - tick #1516
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.564Z - tick #1517
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.663Z - tick #1518
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.764Z - tick #1519
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.865Z - tick #1520
+[34mgame-server_1   |[0m 2021-05-06T15:07:58.964Z - tick #1521
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.065Z - tick #1522
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.164Z - tick #1523
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.265Z - tick #1524
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.365Z - tick #1525
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.466Z - tick #1526
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.566Z - tick #1527
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.667Z - tick #1528
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.768Z - tick #1529
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.867Z - tick #1530
+[34mgame-server_1   |[0m 2021-05-06T15:07:59.968Z - tick #1531
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.068Z - tick #1532
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.169Z - tick #1533
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.269Z - tick #1534
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.369Z - tick #1535
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.469Z - tick #1536
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.570Z - tick #1537
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.670Z - tick #1538
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.771Z - tick #1539
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.872Z - tick #1540
+[34mgame-server_1   |[0m 2021-05-06T15:08:00.971Z - tick #1541
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.072Z - tick #1542
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.171Z - tick #1543
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.272Z - tick #1544
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.373Z - tick #1545
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.473Z - tick #1546
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.574Z - tick #1547
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.674Z - tick #1548
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.775Z - tick #1549
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.876Z - tick #1550
+[34mgame-server_1   |[0m 2021-05-06T15:08:01.975Z - tick #1551
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.076Z - tick #1552
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.176Z - tick #1553
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.276Z - tick #1554
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.377Z - tick #1555
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.476Z - tick #1556
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.577Z - tick #1557
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.677Z - tick #1558
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.777Z - tick #1559
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.878Z - tick #1560
+[34mgame-server_1   |[0m 2021-05-06T15:08:02.978Z - tick #1561
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.078Z - tick #1562
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.179Z - tick #1563
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.278Z - tick #1564
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.378Z - tick #1565
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.478Z - tick #1566
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.579Z - tick #1567
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.680Z - tick #1568
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.780Z - tick #1569
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.880Z - tick #1570
+[34mgame-server_1   |[0m 2021-05-06T15:08:03.981Z - tick #1571
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.081Z - tick #1572
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.182Z - tick #1573
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.283Z - tick #1574
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.382Z - tick #1575
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.483Z - tick #1576
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.583Z - tick #1577
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.684Z - tick #1578
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.785Z - tick #1579
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.884Z - tick #1580
+[34mgame-server_1   |[0m 2021-05-06T15:08:04.985Z - tick #1581
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.084Z - tick #1582
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.185Z - tick #1583
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.286Z - tick #1584
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.385Z - tick #1585
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.486Z - tick #1586
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.587Z - tick #1587
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.686Z - tick #1588
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.787Z - tick #1589
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.886Z - tick #1590
+[34mgame-server_1   |[0m 2021-05-06T15:08:05.987Z - tick #1591
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.086Z - tick #1592
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.186Z - tick #1593
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.287Z - tick #1594
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.386Z - tick #1595
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.387Z - {"x":0,"y":0,"type":"a","expires":1595,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.487Z - tick #1596
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.588Z - tick #1597
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.687Z - tick #1598
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.788Z - tick #1599
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.788Z - {"x":8,"y":0,"type":"a","expires":1599,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.889Z - tick #1600
+[34mgame-server_1   |[0m 2021-05-06T15:08:06.988Z - tick #1601
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.089Z - tick #1602
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.190Z - tick #1603
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.289Z - tick #1604
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.390Z - tick #1605
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.491Z - tick #1606
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.590Z - tick #1607
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.691Z - tick #1608
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.792Z - tick #1609
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.891Z - tick #1610
+[34mgame-server_1   |[0m 2021-05-06T15:08:07.992Z - tick #1611
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.093Z - tick #1612
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.192Z - tick #1613
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.293Z - tick #1614
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.393Z - tick #1615
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.493Z - tick #1616
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.594Z - tick #1617
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.695Z - tick #1618
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.796Z - tick #1619
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.895Z - tick #1620
+[34mgame-server_1   |[0m 2021-05-06T15:08:08.996Z - tick #1621
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.097Z - tick #1622
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.196Z - tick #1623
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.297Z - tick #1624
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.396Z - tick #1625
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.497Z - tick #1626
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.598Z - tick #1627
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.698Z - tick #1628
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.799Z - tick #1629
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.900Z - tick #1630
+[34mgame-server_1   |[0m 2021-05-06T15:08:09.999Z - tick #1631
+[34mgame-server_1   |[0m 2021-05-06T15:08:10.100Z - tick #1632
+[34mgame-server_1   |[0m 2021-05-06T15:08:10.201Z - tick #1633
+[34mgame-server_1   |[0m 2021-05-06T15:08:10.301Z - tick #1634
+[34mgame-server_1   |[0m 2021-05-06T15:08:10.400Z - tick #1635
+[34mgame-server_1   |[0m 2021-05-06T15:08:10.501Z - tick #1636
+[34mgame-server_1   |[0m 2021-05-06T15:08:10.602Z - tick #1637
+[34mgame-server_1   |[0m 2021-05-06T15:08:10.701Z - tick #1638
+[34mgame-server_1   |[0m 2021-05-06T15:08:10.802Z - tick #1639
+[34mgame-server_1   |[0m 2021-05-06T15:08:10.903Z - tick #1640
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.003Z - tick #1641
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.103Z - tick #1642
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.203Z - tick #1643
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.304Z - tick #1644
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.405Z - tick #1645
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.504Z - tick #1646
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.505Z - {"x":1,"y":6,"type":"a","expires":1646,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.604Z - tick #1647
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.705Z - tick #1648
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.804Z - tick #1649
+[34mgame-server_1   |[0m 2021-05-06T15:08:11.905Z - tick #1650
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.005Z - tick #1651
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.106Z - tick #1652
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.207Z - tick #1653
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.306Z - tick #1654
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.406Z - tick #1655
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.507Z - tick #1656
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.606Z - tick #1657
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.707Z - tick #1658
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.807Z - tick #1659
+[34mgame-server_1   |[0m 2021-05-06T15:08:12.908Z - tick #1660
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.009Z - tick #1661
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.108Z - tick #1662
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.209Z - tick #1663
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.308Z - tick #1664
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.409Z - tick #1665
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.509Z - tick #1666
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.610Z - tick #1667
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.711Z - tick #1668
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.810Z - tick #1669
+[34mgame-server_1   |[0m 2021-05-06T15:08:13.911Z - tick #1670
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.011Z - tick #1671
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.111Z - tick #1672
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.212Z - tick #1673
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.311Z - tick #1674
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.412Z - tick #1675
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.511Z - tick #1676
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.612Z - tick #1677
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.712Z - tick #1678
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.813Z - tick #1679
+[34mgame-server_1   |[0m 2021-05-06T15:08:14.914Z - tick #1680
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.013Z - tick #1681
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.114Z - tick #1682
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.214Z - tick #1683
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.315Z - tick #1684
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.416Z - tick #1685
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.515Z - tick #1686
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.616Z - tick #1687
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.715Z - tick #1688
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.816Z - tick #1689
+[34mgame-server_1   |[0m 2021-05-06T15:08:15.917Z - tick #1690
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.016Z - tick #1691
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.117Z - tick #1692
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.218Z - tick #1693
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.317Z - tick #1694
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.418Z - tick #1695
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.517Z - tick #1696
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.618Z - tick #1697
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.718Z - tick #1698
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.818Z - tick #1699
+[34mgame-server_1   |[0m 2021-05-06T15:08:16.919Z - tick #1700
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.018Z - tick #1701
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.119Z - tick #1702
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.220Z - tick #1703
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.319Z - tick #1704
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.420Z - tick #1705
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.521Z - tick #1706
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.621Z - tick #1707
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.721Z - tick #1708
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.822Z - tick #1709
+[34mgame-server_1   |[0m 2021-05-06T15:08:17.921Z - tick #1710
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.022Z - tick #1711
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.123Z - tick #1712
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.223Z - tick #1713
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.323Z - tick #1714
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.424Z - tick #1715
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.523Z - tick #1716
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.624Z - tick #1717
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.725Z - tick #1718
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.824Z - tick #1719
+[34mgame-server_1   |[0m 2021-05-06T15:08:18.925Z - tick #1720
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.025Z - tick #1721
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.124Z - tick #1722
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.225Z - tick #1723
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.326Z - tick #1724
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.427Z - tick #1725
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.526Z - tick #1726
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.627Z - tick #1727
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.728Z - tick #1728
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.827Z - tick #1729
+[34mgame-server_1   |[0m 2021-05-06T15:08:19.928Z - tick #1730
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.029Z - tick #1731
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.029Z - {"x":7,"y":7,"type":"a","expires":1731,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.128Z - tick #1732
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.229Z - tick #1733
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.330Z - tick #1734
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.429Z - tick #1735
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.530Z - tick #1736
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.631Z - tick #1737
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.730Z - tick #1738
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.831Z - tick #1739
+[34mgame-server_1   |[0m 2021-05-06T15:08:20.932Z - tick #1740
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.031Z - tick #1741
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.132Z - tick #1742
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.233Z - tick #1743
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.333Z - tick #1744
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.433Z - tick #1745
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.534Z - tick #1746
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.634Z - tick #1747
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.733Z - tick #1748
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.834Z - tick #1749
+[34mgame-server_1   |[0m 2021-05-06T15:08:21.935Z - tick #1750
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.035Z - tick #1751
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.136Z - tick #1752
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.236Z - tick #1753
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.336Z - tick #1754
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.437Z - tick #1755
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.536Z - tick #1756
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.637Z - tick #1757
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.736Z - tick #1758
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.837Z - tick #1759
+[34mgame-server_1   |[0m 2021-05-06T15:08:22.937Z - tick #1760
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.037Z - tick #1761
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.138Z - tick #1762
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.238Z - tick #1763
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.337Z - tick #1764
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.438Z - tick #1765
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.537Z - tick #1766
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.638Z - tick #1767
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.737Z - tick #1768
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.838Z - tick #1769
+[34mgame-server_1   |[0m 2021-05-06T15:08:23.937Z - tick #1770
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.038Z - tick #1771
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.139Z - tick #1772
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.239Z - tick #1773
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.340Z - tick #1774
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.439Z - tick #1775
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.540Z - tick #1776
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.641Z - tick #1777
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.740Z - tick #1778
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.841Z - tick #1779
+[34mgame-server_1   |[0m 2021-05-06T15:08:24.940Z - tick #1780
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.041Z - tick #1781
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.142Z - tick #1782
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.241Z - tick #1783
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.342Z - tick #1784
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.443Z - tick #1785
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.544Z - tick #1786
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.643Z - tick #1787
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.744Z - tick #1788
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.845Z - tick #1789
+[34mgame-server_1   |[0m 2021-05-06T15:08:25.944Z - tick #1790
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.045Z - tick #1791
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.145Z - tick #1792
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.245Z - tick #1793
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.346Z - tick #1794
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.447Z - tick #1795
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.547Z - tick #1796
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.648Z - tick #1797
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.747Z - tick #1798
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.848Z - tick #1799
+[34mgame-server_1   |[0m 2021-05-06T15:08:26.948Z - tick #1800
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.048Z - tick #1801
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.051Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.148Z - tick #1802
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.149Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.151Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.248Z - tick #1803
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.249Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.250Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.348Z - tick #1804
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.349Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.351Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.448Z - tick #1805
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.449Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.450Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.549Z - tick #1806
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.550Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.551Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.649Z - tick #1807
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.650Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.654Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.750Z - tick #1808
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.755Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.766Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.849Z - tick #1809
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.850Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.855Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.949Z - tick #1810
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.950Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:27.952Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.049Z - tick #1811
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.050Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.055Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.149Z - tick #1812
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.150Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.152Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.249Z - tick #1813
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.250Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.255Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.350Z - tick #1814
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.355Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.358Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.450Z - tick #1815
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.450Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.451Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.549Z - tick #1816
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.551Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.552Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.649Z - tick #1817
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.650Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.651Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.749Z - tick #1818
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.750Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.752Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.849Z - tick #1819
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.849Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.850Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.950Z - tick #1820
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.951Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:28.952Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.050Z - tick #1821
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.051Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.055Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.151Z - tick #1822
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.156Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.165Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.252Z - tick #1823
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.252Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.253Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.352Z - tick #1824
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.353Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.354Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.452Z - tick #1825
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.452Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.453Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.552Z - tick #1826
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.557Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.565Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.653Z - tick #1827
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.653Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.654Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.754Z - tick #1828
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.755Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.756Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.854Z - tick #1829
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.854Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.855Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.954Z - tick #1830
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.960Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:29.962Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.053Z - tick #1831
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.054Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.059Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.154Z - tick #1832
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.159Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.168Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.255Z - tick #1833
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.255Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.256Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.355Z - tick #1834
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.360Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.362Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.455Z - tick #1835
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.455Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.457Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.555Z - tick #1836
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.557Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.559Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.656Z - tick #1837
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.657Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.658Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.756Z - tick #1838
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.757Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.759Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.856Z - tick #1839
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.856Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.857Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.955Z - tick #1840
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.957Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:30.958Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.056Z - tick #1841
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.056Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.057Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.155Z - tick #1842
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.157Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.158Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.255Z - tick #1843
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.256Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.257Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.355Z - tick #1844
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.357Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.358Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.455Z - tick #1845
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.456Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.457Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.555Z - tick #1846
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.560Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.570Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.656Z - tick #1847
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.656Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.657Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.755Z - tick #1848
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.757Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.758Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.856Z - tick #1849
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.856Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.857Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.956Z - tick #1850
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.958Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:31.959Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.056Z - tick #1851
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.056Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.059Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.156Z - tick #1852
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.158Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.159Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.256Z - tick #1853
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.257Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.259Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.357Z - tick #1854
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.359Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.360Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.457Z - tick #1855
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.457Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.460Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.558Z - tick #1856
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.568Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.574Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.658Z - tick #1857
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.659Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.661Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.759Z - tick #1858
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.761Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.762Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.860Z - tick #1859
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.860Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.862Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.960Z - tick #1860
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.962Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:32.963Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.061Z - tick #1861
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.061Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.065Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.161Z - tick #1862
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.168Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.169Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.262Z - tick #1863
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.262Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.265Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.363Z - tick #1864
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.365Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.366Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.463Z - tick #1865
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.463Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.467Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.564Z - tick #1866
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.566Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.567Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.664Z - tick #1867
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.665Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.667Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.764Z - tick #1868
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.767Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.767Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.865Z - tick #1869
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.865Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.867Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.964Z - tick #1870
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.967Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:33.968Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.064Z - tick #1871
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.064Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.066Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.165Z - tick #1872
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.167Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.168Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.264Z - tick #1873
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.265Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.268Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.365Z - tick #1874
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.368Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.368Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.465Z - tick #1875
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.465Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.468Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.566Z - tick #1876
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.569Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.569Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.665Z - tick #1877
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.665Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.670Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.765Z - tick #1878
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.768Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.769Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.866Z - tick #1879
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.866Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.869Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.967Z - tick #1880
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.970Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:34.970Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.066Z - tick #1881
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.066Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.069Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.166Z - tick #1882
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.171Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.171Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.266Z - tick #1883
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.267Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.269Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.367Z - tick #1884
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.370Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.370Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.467Z - tick #1885
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.467Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.470Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.566Z - tick #1886
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.569Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.569Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.666Z - tick #1887
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.667Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.670Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.766Z - tick #1888
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.770Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.771Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.867Z - tick #1889
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.867Z - {"x":2,"y":6,"type":"a","expires":1889,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.867Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.870Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.967Z - tick #1890
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.970Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:35.970Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.068Z - tick #1891
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.068Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.072Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.168Z - tick #1892
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.170Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.171Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.267Z - tick #1893
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.267Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.270Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.367Z - tick #1894
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.367Z - {"x":7,"y":2,"type":"bp","expires":1894,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.369Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.370Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.468Z - tick #1895
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.468Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.470Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.567Z - tick #1896
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.569Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.570Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.668Z - tick #1897
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.668Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.670Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.767Z - tick #1898
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.771Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.772Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.868Z - tick #1899
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.868Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.871Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.968Z - tick #1900
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.970Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:36.971Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.068Z - tick #1901
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.069Z - {"x":7,"y":1,"type":"a","expires":1901,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.069Z - Failed to run action for agent 0 with error: Error: Cannot move down, cell is not vacant
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.070Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.169Z - tick #1902
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.171Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.172Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.268Z - tick #1903
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.270Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.273Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.369Z - tick #1904
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.371Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.469Z - tick #1905
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.471Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.570Z - tick #1906
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.572Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.670Z - tick #1907
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.671Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.771Z - tick #1908
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.772Z - Queueing action: detonate for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.871Z - tick #1909
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.871Z - {"x":4,"y":7,"type":"b","owner":1,"expires":1946,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.871Z - Triggering blast from 4,7
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.871Z - {"x":4,"y":8,"type":"x"} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.873Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.875Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.971Z - tick #1910
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.972Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:37.974Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.070Z - tick #1911
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.072Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.074Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.171Z - tick #1912
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.174Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.272Z - tick #1913
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.272Z - {"x":0,"y":6,"type":"a","expires":1913,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.273Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.275Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.371Z - tick #1914
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.374Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.376Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.472Z - tick #1915
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.474Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.573Z - tick #1916
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.674Z - tick #1917
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.774Z - tick #1918
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.875Z - tick #1919
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.875Z - {"x":4,"y":7,"type":"x","owner":1,"expires":1919} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.875Z - {"x":4,"y":6,"type":"x","owner":1,"expires":1919} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.875Z - {"x":3,"y":7,"type":"x","owner":1,"expires":1919} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.875Z - {"x":5,"y":7,"type":"x","owner":1,"expires":1919} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:38.976Z - tick #1920
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.076Z - tick #1921
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.175Z - tick #1922
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.276Z - tick #1923
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.377Z - tick #1924
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.477Z - tick #1925
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.578Z - tick #1926
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.677Z - tick #1927
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.778Z - tick #1928
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.879Z - tick #1929
+[34mgame-server_1   |[0m 2021-05-06T15:08:39.978Z - tick #1930
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.079Z - tick #1931
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.180Z - tick #1932
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.279Z - tick #1933
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.380Z - tick #1934
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.479Z - tick #1935
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.580Z - tick #1936
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.680Z - tick #1937
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.781Z - tick #1938
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.882Z - tick #1939
+[34mgame-server_1   |[0m 2021-05-06T15:08:40.981Z - tick #1940
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.082Z - tick #1941
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.183Z - tick #1942
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.284Z - tick #1943
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.384Z - tick #1944
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.484Z - tick #1945
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.585Z - tick #1946
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.685Z - tick #1947
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.786Z - tick #1948
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.887Z - tick #1949
+[34mgame-server_1   |[0m 2021-05-06T15:08:41.987Z - tick #1950
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.088Z - tick #1951
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.089Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.187Z - tick #1952
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.189Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.190Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.288Z - tick #1953
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.387Z - tick #1954
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.488Z - tick #1955
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.589Z - tick #1956
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.688Z - tick #1957
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.789Z - tick #1958
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.890Z - tick #1959
+[34mgame-server_1   |[0m 2021-05-06T15:08:42.989Z - tick #1960
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.090Z - tick #1961
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.189Z - tick #1962
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.290Z - tick #1963
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.390Z - tick #1964
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.491Z - tick #1965
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.590Z - tick #1966
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.691Z - tick #1967
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.791Z - tick #1968
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.891Z - tick #1969
+[34mgame-server_1   |[0m 2021-05-06T15:08:43.992Z - tick #1970
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.092Z - tick #1971
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.192Z - tick #1972
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.293Z - tick #1973
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.392Z - tick #1974
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.493Z - tick #1975
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.594Z - tick #1976
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.693Z - tick #1977
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.794Z - tick #1978
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.893Z - tick #1979
+[34mgame-server_1   |[0m 2021-05-06T15:08:44.994Z - tick #1980
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.094Z - tick #1981
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.195Z - tick #1982
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.296Z - tick #1983
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.395Z - tick #1984
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.495Z - tick #1985
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.596Z - tick #1986
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.600Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.695Z - tick #1987
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.697Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.795Z - tick #1988
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.896Z - tick #1989
+[34mgame-server_1   |[0m 2021-05-06T15:08:45.995Z - tick #1990
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.096Z - tick #1991
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.195Z - tick #1992
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.195Z - {"x":4,"y":5,"type":"b","owner":1,"expires":1992,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.195Z - Triggering blast from 4,5
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.296Z - tick #1993
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.396Z - tick #1994
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.496Z - tick #1995
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.597Z - tick #1996
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.696Z - tick #1997
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.797Z - tick #1998
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.896Z - tick #1999
+[34mgame-server_1   |[0m 2021-05-06T15:08:46.997Z - tick #2000
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.097Z - tick #2001
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.198Z - tick #2002
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.198Z - {"x":4,"y":5,"type":"x","owner":1,"expires":2002} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.198Z - {"x":4,"y":6,"type":"x","owner":1,"expires":2002} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.198Z - {"x":4,"y":4,"type":"x","owner":1,"expires":2002} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.198Z - {"x":3,"y":5,"type":"x","owner":1,"expires":2002} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.198Z - {"x":5,"y":5,"type":"x","owner":1,"expires":2002} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.201Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.202Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.299Z - tick #2003
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.301Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.399Z - tick #2004
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.401Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.500Z - tick #2005
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.506Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.600Z - tick #2006
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.601Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.604Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.700Z - tick #2007
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.700Z - Failed to run action for agent 1 with error: Error: Unable to place bomb already occupied
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.701Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.799Z - tick #2008
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.801Z - Queueing action: bomb for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.900Z - tick #2009
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.905Z - Queueing action: bomb for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:47.908Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.001Z - tick #2010
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.100Z - tick #2011
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.201Z - tick #2012
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.300Z - tick #2013
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.401Z - tick #2014
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.501Z - tick #2015
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.602Z - tick #2016
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.703Z - tick #2017
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.802Z - tick #2018
+[34mgame-server_1   |[0m 2021-05-06T15:08:48.903Z - tick #2019
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.004Z - tick #2020
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.103Z - tick #2021
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.204Z - tick #2022
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.303Z - tick #2023
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.404Z - tick #2024
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.505Z - tick #2025
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.604Z - tick #2026
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.705Z - tick #2027
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.804Z - tick #2028
+[34mgame-server_1   |[0m 2021-05-06T15:08:49.905Z - tick #2029
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.006Z - tick #2030
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.105Z - tick #2031
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.206Z - tick #2032
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.307Z - tick #2033
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.406Z - tick #2034
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.507Z - tick #2035
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.607Z - tick #2036
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.708Z - tick #2037
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.816Z - tick #2038
+[34mgame-server_1   |[0m 2021-05-06T15:08:50.917Z - tick #2039
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.016Z - tick #2040
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.117Z - tick #2041
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.216Z - tick #2042
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.317Z - tick #2043
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.417Z - tick #2044
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.518Z - tick #2045
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.618Z - tick #2046
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - {"x":4,"y":5,"type":"b","owner":1,"expires":2046,"hp":1,"blast_diameter":3} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - Triggering blast from 4,5
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - b at cell number 40 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - Triggering blast from 4,4
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - {"x":4,"y":5,"type":"x","owner":1,"expires":2056} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - b at cell number 31 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - Triggering blast from 4,3
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - {"x":4,"y":4,"type":"x","owner":1,"expires":2056} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - o at cell number 30 has remaining health: 2
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - o at cell number 32 has remaining health: 2
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - w at cell number 39 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.619Z - w at cell number 41 has remaining health: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.621Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.623Z - Queueing action: down for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.719Z - tick #2047
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.720Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.722Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.820Z - tick #2048
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.821Z - Queueing action: down for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.823Z - Queueing action: left for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.919Z - tick #2049
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.921Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:51.923Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.019Z - tick #2050
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.025Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.120Z - tick #2051
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.123Z - Queueing action: right for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.220Z - tick #2052
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.222Z - Queueing action: left for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.320Z - tick #2053
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.321Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.419Z - tick #2054
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.420Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.520Z - tick #2055
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.521Z - Queueing action: up for agent: 1
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.620Z - tick #2056
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.620Z - {"x":4,"y":6,"type":"x","owner":1,"expires":2056} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.620Z - {"x":4,"y":5,"type":"x","owner":1,"expires":2056} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.620Z - {"x":4,"y":3,"type":"x","owner":0,"expires":2056} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.620Z - {"x":4,"y":4,"type":"x","owner":0,"expires":2056} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.620Z - {"x":4,"y":2,"type":"x","owner":0,"expires":2056} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.620Z - {"x":3,"y":5,"type":"x","owner":1,"expires":2056} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.620Z - {"x":5,"y":5,"type":"x","owner":1,"expires":2056} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.721Z - tick #2057
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.820Z - tick #2058
+[34mgame-server_1   |[0m 2021-05-06T15:08:52.921Z - tick #2059
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.020Z - tick #2060
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.121Z - tick #2061
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.222Z - tick #2062
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.321Z - tick #2063
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.422Z - tick #2064
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.523Z - tick #2065
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.623Z - tick #2066
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.724Z - tick #2067
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.825Z - tick #2068
+[34mgame-server_1   |[0m 2021-05-06T15:08:53.924Z - tick #2069
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.025Z - tick #2070
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.124Z - tick #2071
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.225Z - tick #2072
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.325Z - tick #2073
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.426Z - tick #2074
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.527Z - tick #2075
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.628Z - tick #2076
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.727Z - tick #2077
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.828Z - tick #2078
+[34mgame-server_1   |[0m 2021-05-06T15:08:54.927Z - tick #2079
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.028Z - tick #2080
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.127Z - tick #2081
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.228Z - tick #2082
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.327Z - tick #2083
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.427Z - tick #2084
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.527Z - tick #2085
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.628Z - tick #2086
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.728Z - tick #2087
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.829Z - tick #2088
+[34mgame-server_1   |[0m 2021-05-06T15:08:55.929Z - tick #2089
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.030Z - tick #2090
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.131Z - tick #2091
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.230Z - tick #2092
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.331Z - tick #2093
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.430Z - tick #2094
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.531Z - tick #2095
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.630Z - tick #2096
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.731Z - tick #2097
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.830Z - tick #2098
+[34mgame-server_1   |[0m 2021-05-06T15:08:56.931Z - tick #2099
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.032Z - tick #2100
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.131Z - tick #2101
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.232Z - tick #2102
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.331Z - tick #2103
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.432Z - tick #2104
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.532Z - tick #2105
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.631Z - tick #2106
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.732Z - tick #2107
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.831Z - tick #2108
+[34mgame-server_1   |[0m 2021-05-06T15:08:57.932Z - tick #2109
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.032Z - tick #2110
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.133Z - tick #2111
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.234Z - tick #2112
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.333Z - tick #2113
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.333Z - {"x":6,"y":6,"type":"a","expires":2113,"hp":1} has expired
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.434Z - tick #2114
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.534Z - tick #2115
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.635Z - tick #2116
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.735Z - tick #2117
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.836Z - tick #2118
+[34mgame-server_1   |[0m 2021-05-06T15:08:58.937Z - tick #2119
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.036Z - tick #2120
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.137Z - tick #2121
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.237Z - tick #2122
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.338Z - tick #2123
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.342Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.438Z - tick #2124
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.442Z - Queueing action: right for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.538Z - tick #2125
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.542Z - Queueing action: up for agent: 0
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.638Z - tick #2126
+[34mgame-server_1   |[0m 2021-05-06T15:08:59.641Z - Game completed shutting down in 5000ms
